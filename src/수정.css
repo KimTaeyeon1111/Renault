@@ -1,0 +1,192 @@
+body{margin: 0; padding: 0}
+
+ul,li,ol{list-style: none; margin: 0; padding: 0;}
+
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+/* Swiper */
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        background: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+/* Header */
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+.mainPage_header_all {width: 100%; height: auto; display: flex; justify-content: center; align-items: center;} 
+.mainPage_header {width: 1920px; height: 70px; background-color: rgb(155, 206, 206); display: block;}
+
+.mainPage_banner_content {width: 1690px; height: 953px; display: flex; justify-content: center;  position: absolute;}
+.mainPage_header_all_banner_img {height: 953px; opacity: 85%; position: relative;}
+
+/* leftBox */
+.mainPage_banner_content_left_box {width: 55%; overflow: hidden; opacity: 0%; animation: leftSlide 2s ease-out forwards; animation-delay: -0.7s;}
+.mainPage_banner_content_header {width: 100%; height: 70px; margin: 30px 0 0 40px;}
+.mainPage_banner_content_header_img {width: 60px;}
+
+.navbar_koleos {margin: 37px 25px 0 20px; font-size: 25px; color: #ffffff;}
+.navbar_filante {margin: 37px 0 0; font-size: 25px; color: #ffffff;}
+
+@keyframes leftSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.navbar_koleos:hover, .navbar_filante:hover,
+.navbar_koleos:active, .navbar_filante:active,
+.navbar_koleos:focus, .navbar_filante:focus,
+.navbar_koleos.active, .navbar_filante.active {color: rgb(255, 255, 255) !important; transition: all 0.3s ease;
+  text-shadow:
+  0 0 5px #ffffff,
+  0 0 10px #ffffff,
+  0 0 20px #ffffff,
+  0 0 30px #ffffff;
+  }
+
+
+
+
+/* rightBox */
+.mainPage_banner_content_right_box {width: 45%;  font-size: 50px;  display: flex;  justify-content: right;  align-items: center;  padding-right: 5%;  overflow: hidden;}
+.mainPage_banner_content_right_box_content {color: #ffffff; font-weight: bold; text-align: right; line-height: 10px;
+}
+
+.mainPage_banner_content_right_box_content_p1 {position: relative; display: block; width: max-content; margin: 40px auto 50px; padding: 0 30px; box-sizing: border-box; text-align: center; font-size: 50px; color: rgb(255, 255, 255); font-weight: 1000;}
+.mainPage_banner_content_right_box_content_p1::before {content: ""; position: absolute; left: 15px; top: -30px; width: 40px; height: 20px; border-top: 3px solid white; border-left: 3px solid white;}
+.mainPage_banner_content_right_box_content_p1::after {content: ""; position: absolute; right: 15px; bottom: -38px; width: 40px; height: 20px; border-right: 3px solid white; border-bottom: 3px solid white;}
+
+
+.mainPage_banner_content_right_box_content_p1,
+.mainPage_banner_content_right_box_content_p2,
+.mainPage_banner_content_right_box_content_p3,
+.mainPage_banner_content_right_box_content_p4,
+.mainPage_banner_content_right_box_content_p5 {opacity: 0; animation: rightSlide 1s ease-out forwards;}
+
+.mainPage_banner_content_right_box_content_p1 {animation-delay: 0.2s;}
+.mainPage_banner_content_right_box_content_p2 {animation-delay: 0.4s;}
+.mainPage_banner_content_right_box_content_p3 {animation-delay: 0.6s;}
+.mainPage_banner_content_right_box_content_p4 {animation-delay: 0.8s;}
+.mainPage_banner_content_right_box_content_p5 {animation-delay: 1.0s;}
+/* 우측에서 슬라이드 */
+@keyframes rightSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 휴대폰 진동 */
+.mainPage_banner_content_right_box_content_number:hover i {animation: phone 0.3s ease-in-out infinite;}
+@keyframes phone {
+  0% {
+    transform: rotateX(8deg);
+  }
+  25% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  75% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotateX(8deg);
+  }
+}
+
+
+.mainPage_banner_content_right_box_social {width: 350px; height: 70px; display: flex; justify-content: space-between; align-items: center; float: right;}
+.mainPage_banner_content_right_box_social a {text-decoration: none;}
+.mainPage_banner_content_right_box_social i {width: 60px; height: 60px; display: flex; justify-content: center; align-items: center;}
+.mainPage_banner_content_right_box_social i:hover {transition:all 0.3s ease; color: #ffffff;}
+
+/* 인스타 */
+.fa-instagram {background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    transition: all 0.5s ease;}
+
+.fa-instagram:hover, .fa-kakao-talk:hover, .fa-youtube-shorts:hover, .fa-location-dot:hover {
+    background: #ffffff;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* Slide_1 section */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.slide_1_section {width: 100%; display: flex; justify-content: center; align-items: center;}
+.mainPage_slide_1_all {width: 1555px; height: 953px; position: relative; display: flex; justify-content: center; align-items: center; background-color: #00da41;}
+.mainPage_slide_1_left {position: absolute; 
+  display: flex; justify-items: center;
+  top: 0;
+  left: 0;
+  width: 900px;
+  height: 750px;
+  background-color: #53565d;
+  z-index: 2;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);}
+
+.mainPage_slide_1_right_content h2 {font-size: 50px;}
+.mainPage_slide_1_right {position: absolute;
+  top: 0;
+  right: 0;
+  width: 900px;
+  height: 750px;
+  background-color: #a0b4e2; /* 박스 배경색 확인하기. 박스 배경 또는 전체 배경 색 고민 */
+  z-index: 2;
+  box-sizing: border-box;
+  padding-left: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  /* 다각형(polygon)으로 모양 깎기: 좌상(0,0) -> 우상(100%, 0) -> 우하(70%, 100%) -> 좌하(0, 100%) */
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);}

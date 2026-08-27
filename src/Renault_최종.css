@@ -1,0 +1,64 @@
+body{margin: 0; padding: 0}
+
+ul,li,ol{list-style: none; margin: 0; padding: 0;}
+
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+/* Swiper */
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+/* Header */
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+.mainPage_header_all {width: 100%; height: auto; display: flex; justify-content: center; align-items: center;} 
+.mainPage_header {width: 1200px; height: 100px; background-color: rgb(155, 206, 206);  display: flex; justify-content: center; align-items: end;}
+
+.mainPage_header_nav {width: 1200px; height: 40px; background-color: azure;}
+
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+/* Slide 1 */
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+.mainPage_slide_1_all {width: 1600px; height: 850px; position: relative; margin: 0 auto;}
+.mainPage_slide_1 {width: 1600px; height: 850px;}
+
+/* Koleos */
+.koleos {opacity: 40%;}
+.koleos img {width: 100%; height: 100%; object-fit: cover;}
+
+.koleos_content_all {position: absolute; top: 0; left: 0; width: 1600px; height: 850px; z-index: 10;}
+.koleos_content_all h2 {position: relative; display: block; width: max-content; margin: 40px auto 50px; padding: 0 35px; box-sizing: border-box; text-align: center; font-size: 50px; color: black; font-weight: 1000;}
+.koleos_content_all h2::before {content: ""; position: absolute; left: 0; top: -8px; width: 45px; height: 25px; border-top: 3px solid black; border-left: 3px solid black;}
+.koleos_content_all h2::after {content: ""; position: absolute; right: 0; bottom: -8px; width: 45px; height: 25px; border-right: 3px solid black; border-bottom: 3px solid black;}
+
+.koleos_text {width: 1300px; padding: 0; margin: 60px auto 0; box-sizing: border-box; display: flex; justify-content: center;}
+.koleos_text_left {width: 55%; margin-left: 20px;}
+.koleos_text_right {width: 45%; padding: 0; margin-left: 40px; box-sizing: border-box;}
+.koleos_text h3 {font-size: 30px; margin: 0; color: black; font-weight: 1000;}
+.koleos_text p {font-size: 19px; font-weight: 800; margin: 5px 0 0 20px; color: black;}
+
+.koleos_text_left span {color: blue;}
+.koleos_text_left hr {margin-top: 30px;}
