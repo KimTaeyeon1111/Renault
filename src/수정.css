@@ -1,6 +1,11 @@
-body{margin: 0; padding: 0}
+body{margin: 0; padding: 0; user-select: none;}
 
 ul,li,ol{list-style: none; margin: 0; padding: 0;}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
 
 
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
@@ -30,9 +35,16 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
 
 
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+/* 올라가는 버튼 */
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+.top-button {position: fixed; right: 30px; bottom: 30px; width: 50px; height: 50px; border: solid 1px #444; border-radius: 50%; background-color: #000; color: #fff; font-size: 20px; cursor: pointer; z-index: 100; transition: all 0.4s ease;}
+.top-button.show {opacity: 1; visibility: visible; transform: translateY(0);}
+.top-button:hover {transition: all 0.3 ease;border: solid 1px #444; border-radius: 50%; background-color: #ffffff; color: #000000;}
+
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
 /* Header */
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
-.mainPage_header_all {width: 100%; height: auto; display: flex; justify-content: center; align-items: center;} 
+.mainPage_header_all {width: 100%; height: 953px; display: flex; justify-content: center; align-items: center;} 
 .mainPage_header {width: 1920px; height: 70px; background-color: rgb(155, 206, 206); display: block;}
 
 .mainPage_banner_content {width: 1690px; height: 953px; display: flex; justify-content: center;  position: absolute;}
@@ -43,8 +55,9 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
 .mainPage_banner_content_header {width: 100%; height: 70px; margin: 30px 0 0 40px;}
 .mainPage_banner_content_header_img {width: 60px;}
 
-.navbar_koleos {margin: 37px 25px 0 20px; font-size: 25px; color: #ffffff;}
-.navbar_filante {margin: 37px 0 0; font-size: 25px; color: #ffffff;}
+.navbar_koleos {margin: 37px 25px 0 20px; font-size: 25px; color: #ffffff !important; text-shadow: none;}
+.navbar_filante {margin: 37px 25px 0 0; font-size: 25px; color: #ffffff !important; text-shadow: none;}
+.navbar_arkana {margin: 37px 0 0; font-size: 25px; color: #ffffff !important; text-shadow: none;}
 
 @keyframes leftSlide {
   0% {
@@ -57,16 +70,17 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
   }
 }
 
-.navbar_koleos:hover, .navbar_filante:hover,
-.navbar_koleos:active, .navbar_filante:active,
-.navbar_koleos:focus, .navbar_filante:focus,
-.navbar_koleos.active, .navbar_filante.active {color: rgb(255, 255, 255) !important; transition: all 0.3s ease;
+.navbar_koleos:hover, .navbar_filante:hover, .navbar_arkana:hover{color: rgb(255, 255, 255) !important; transition: all 0.3s ease;
   text-shadow:
   0 0 5px #ffffff,
   0 0 10px #ffffff,
   0 0 20px #ffffff,
   0 0 30px #ffffff;
   }
+
+.navbar_koleos:active, .navbar_filante:active, .navbar_arkana:active,
+.navbar_koleos:focus, .navbar_filante:focus, .navbar_arkana:focus {color: #fff !important;
+    text-shadow: none !important;}
 
 
 
@@ -154,31 +168,65 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
     color: transparent;
 }
 
+
+
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* Slide_1 ALL */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.slide_section_all {width: 100%; height: 2560px; display: flex; justify-content: center;}
+.slide_section {width: 1920px; position: relative;}
+.slide_section span {color: blue;}
+
+
+.slide_section_koleos{width: 1920px; height: 200px; margin-top: 75px; display: flex; justify-content: center; align-items: center;}
+.slide_section_koleos_box {width: 500px; height: 120px; display: flex; justify-content: center; align-items: center;}
+.slide_section_koleos_box img {width: 1694px;}
+
+
+.slide_section_filante_banner {width: 1920px; height: 200px; position: relative;}
+.slide_section_filante {width: 1920px; height: 200px; margin-top: 30px; display: flex; justify-content: center; align-items: center;}
+.slide_section_filante_box {width: 500px; height: 120px; display: flex; justify-content: center; align-items: center;}
+.slide_section_filante_box img {width: 1694px;}
+
+.slide_section_filante_box_Rassure_box {width: 800px; position: absolute; margin-left: 1070px; top: 165px;}
+.slide_section_filante_box_Rassure {color: white; font-size: 11px;}
+.slide_section_filante_box_Rassure a {text-decoration: underline; color: #ffffff;}
+
+.slide_section_arkana {width: 1920px; height: 200px; margin-top: 30px; display: flex; justify-content: center; align-items: center;}
+.slide_section_arkana_box {width: 500px; height: 120px; display: flex; justify-content: center; align-items: center;}
+.slide_section_arkana_box img {width: 1694px;}
+
+
+
 /* Slide_1 section */
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-.slide_1_section {width: 100%; display: flex; justify-content: center; align-items: center;}
-.mainPage_slide_1_all {width: 1555px; height: 953px; position: relative; display: flex; justify-content: center; align-items: center; background-color: #00da41;}
+.slide_1_section {width: 1920PX; height: 953px; display: flex; justify-content: center; align-items: center;}
+.mainPage_slide_1_all {width: 1530px; height: 953px; position: relative; display: flex; justify-content: center; align-items: center;}
 .mainPage_slide_1_left {position: absolute; 
   display: flex; justify-items: center;
   top: 0;
-  left: 0;
+  left: 5px;
   width: 900px;
   height: 750px;
-  background-color: #53565d;
   z-index: 2;
   box-sizing: border-box;
   overflow: hidden;
-
+  margin-top: 70px;
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);}
 
-.mainPage_slide_1_right_content h2 {font-size: 50px;}
+.mainPage_slide_1_right {box-shadow: 0 10px 30px rgba(16, 21, 26, 0.35);}
+.mainPage_slide_1_right_content h2 {font-size: 40px; font-weight: 700;}
+.mainPage_slide_1_right_content_h2 {margin-top: 30px; padding-bottom: 25px;}
+.mainPage_slide_1_right_content_strong {font-size: 20px; font-weight: 600;}
+.mainPage_slide_1_right_content_p {line-height: 10px;}
+.slide_1_right_content_p_2 {line-height: 6px;}
+.slide_1_right_strong {margin-top: 30px;}
+
 .mainPage_slide_1_right {position: absolute;
   top: 0;
-  right: 0;
+  right: 5px;
   width: 900px;
   height: 750px;
-  background-color: #a0b4e2; /* 박스 배경색 확인하기. 박스 배경 또는 전체 배경 색 고민 */
+  background-color: #aaaaaa67; /* 박스 배경색 확인하기. 박스 배경 또는 전체 배경 색 고민 */
   z-index: 2;
   box-sizing: border-box;
   padding-left: 16%;
@@ -186,7 +234,99 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  
+  text-align: right;
+  margin-top: 130px;
   /* 다각형(polygon)으로 모양 깎기: 좌상(0,0) -> 우상(100%, 0) -> 우하(70%, 100%) -> 좌하(0, 100%) */
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);}
+
+.mainPage_slide_1_right_content_comment {margin: 0 200px; position: absolute; top: 1160px; right: 0px; text-decoration: underline;}
+
+
+
+/* Slide_2 section */
+.slide_2_section {width: 1920PX; height: 953px; display: flex; justify-content: center; align-items: center;}
+.mainPage_slide_2_all {width: 1520px; height: 953px; position: relative; display: flex; justify-content: center; align-items: center;}
+
+.mainPage_slide_2_left_content h2 {font-size: 40px; font-weight: 700; margin-bottom: 10px;}
+.mainPage_slide_2_left_content_h2 {margin-top: 30px; padding-bottom: 20px;}
+.mainPage_slide_2_left_content_strong {font-size: 20px; font-weight: 600;}
+.mainPage_slide_2_left_content_p {line-height: 10px;}
+.slide_2_left_content_p_2 {line-height: 6px;}
+.slide_2_left_strong {margin-top: 30px;}
+
+.mainPage_slide_2_left {position: absolute; 
+  top: 0;
+  left: 0;
+  width: 900px;
+  height: 750px;
+  background-color: #aaaaaa67;
+  z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  margin-top: 70px;
+  padding-left: 3.5%;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);}
+
+
+.mainPage_slide_2_right {position: absolute;
+  top: 0;
+  right: 0;
+  width: 900px;
+  height: 750px;
+  z-index: 2;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 130px;
+  /* 다각형(polygon)으로 모양 깎기: 좌상(0,0) -> 우상(100%, 0) -> 우하(70%, 100%) -> 좌하(0, 100%) */
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);}
+
+  .mainPage_slide_2_left_content_comment {margin: 0 200px; position: absolute; text-decoration: underline; top: 2284px;}
+  .mainPage_slide_2_left_content_comment_2 {margin: 0 200px; position: absolute; text-decoration: underline; top: 2312px;}
+
+
+
+/* Slide_3 section */
+.slide_3_section {width: 1920PX; height: 953px; display: flex; justify-content: center; align-items: center;}
+.mainPage_slide_3_all {width: 1530px; height: 953px; position: relative; display: flex; justify-content: center; align-items: center;}
+.mainPage_slide_3_left {position: absolute; 
+  display: flex; justify-items: center;
+  top: 0;
+  left: 5px;
+  width: 900px;
+  height: 750px;
+  z-index: 2;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 70px;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);}
+
+.mainPage_slide_3_right {box-shadow: 0 10px 30px rgba(16, 21, 26, 0.35);}
+.mainPage_slide_3_right_content h2 {font-size: 40px; font-weight: 700;}
+.mainPage_slide_3_right_content_h2 {margin-top: 30px; padding-bottom: 25px;}
+.mainPage_slide_3_right_content_strong {font-size: 20px; font-weight: 600;}
+.mainPage_slide_3_right_content_p {line-height: 10px;}
+.slide_3_right_content_p_2 {line-height: 6px;}
+.slide_3_right_strong {margin-top: 30px;}
+
+.mainPage_slide_3_right {position: absolute;
+  top: 0;
+  right: 5px;
+  width: 900px;
+  height: 750px;
+  background-color: #aaaaaa67; /* 박스 배경색 확인하기. 박스 배경 또는 전체 배경 색 고민 */
+  z-index: 2;
+  box-sizing: border-box;
+  padding-left: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  margin-top: 130px;
+  /* 다각형(polygon)으로 모양 깎기: 좌상(0,0) -> 우상(100%, 0) -> 우하(70%, 100%) -> 좌하(0, 100%) */
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);}
+
+.mainPage_slide_3_right_content_comment {margin: 0 200px; position: absolute; top: 1160px; right: 0px; text-decoration: underline;}.mainPage_slide_3_right_content_comment {margin: 0 200px; position: absolute; top: 3525px; right: 0px; text-decoration: underline;}
