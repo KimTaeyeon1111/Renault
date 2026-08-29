@@ -29,10 +29,11 @@ function Popup() {
     return(
         <div className='popup_overlay'>
             <div className='popup'>
-                <button className='popup_close' onClick={closePopup}>
-                    <i class="bi bi-x-lg"></i>
-                </button>
-
+                <div className='popup_top'>
+                    <button className='popup_close' onClick={closePopup}>
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
                 <div className='popup_content'>
                     <img src={img("popup_ex1.png")} alt="예시 이미지" />
                 </div>

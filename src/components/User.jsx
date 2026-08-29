@@ -25,7 +25,12 @@ function User() {
                         </a>
                     </div>
                     <div className='user_main_box_content'>
-                        
+                        <img src={img("명함_ex1.png")} alt="박진영 명함" className='user_main_box_content_img' />
+                    </div>
+                    <div className='user_main_back_home'>
+                        <button onClick={() => navigate('/')}>
+                            돌아가기
+                        </button>
                     </div>
                 </div>
             </div>
@@ -34,7 +39,7 @@ function User() {
             {/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */}
             {/* Footer */}
             {/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */}
-            <div className='mainPage_footer_bottom'>
+            <div className='mainPage_footer_bottom user_page_bottom'>
                 <div className='mainPage_footer_bottom_box'>
                     <div className='mainPage_footer_bottom_box_left_content'>
                     <div className='mainPage_footer_bottom_box_left_content_box'>

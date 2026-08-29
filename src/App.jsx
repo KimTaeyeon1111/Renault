@@ -63,10 +63,14 @@ function App() {
       {/* 헤더 및 메인 배너 */}
       {/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */}
       <div className="mainPage_header_all" id='home'>
-        <img
+        <video
           className="mainPage_header_all_banner_img"
-          src={img("르노르고_표지.gif")}
-          alt="메인 배너 르노 GIF"
+          src={img("르노르고_표지.mp4")}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload='auto'
         />
         <div className="mainPage_banner_content">
 
@@ -338,8 +342,14 @@ function App() {
       {/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */}
 
       <div className='mainPage_Footer'>
-        <div className='mainPage_Footer_gif'>
-          <img src={img("Footer_section.gif")} alt="르노코리아 홈페이지 공식 영상" />
+        <div className='mainPage_Footer_video'>
+          <video src={img("Footer_section.mp4")}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload='auto'
+           />
           <div className='mainPage_Footer_blackBox'>
             <div className='mainPage_Footer_blackBox_icon blackBox_icon1'>
               <a onClick={() => navigate('/user')}>
