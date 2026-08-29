@@ -33,22 +33,22 @@ img {
 
 
 
-
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
 /* 올라가는 버튼 */
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
 .top-button {position: fixed; right: 30px; bottom: 30px; width: 50px; height: 50px; border: solid 1px #444; border-radius: 50%; background-color: #000; color: #fff; font-size: 20px; cursor: pointer; z-index: 100; transition: all 0.4s ease;}
 .top-button.show {opacity: 1; visibility: visible; transform: translateY(0);}
-.top-button:hover {transition: all 0.3 ease;border: solid 1px #444; border-radius: 50%; background-color: #ffffff; color: #000000;}
+.top-button:hover {transition: all 0.3 ease; border: solid 1px #444; border-radius: 50%; background-color: #ffffff; color: #000000;}
 
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
 /* Header */
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ  */
+.mainPage {width: 100%;}
 .mainPage_header_all {width: 100%; height: 953px; display: flex; justify-content: center; align-items: center;} 
 .mainPage_header {width: 1920px; height: 70px; background-color: rgb(155, 206, 206); display: block;}
 
 .mainPage_banner_content {width: 1690px; height: 953px; display: flex; justify-content: center;  position: absolute;}
-.mainPage_header_all_banner_img {height: 953px; opacity: 85%; position: relative;}
+.mainPage_header_all_banner_img {height: 970px; opacity: 85%; position: relative;}
 
 /* leftBox */
 .mainPage_banner_content_left_box {width: 55%; overflow: hidden; opacity: 0%; animation: leftSlide 2s ease-out forwards; animation-delay: -0.7s;}
@@ -197,9 +197,8 @@ img {
 .slide_section_arkana_box img {width: 1694px;}
 
 
-
 /* Slide_1 section */
-.slide_1_section {width: 1920PX; height: 953px; display: flex; justify-content: center; align-items: center;}
+.slide_1_section {width: 1920px; height: 953px; display: flex; justify-content: center; align-items: center;}
 .mainPage_slide_1_all {width: 1530px; height: 953px; position: relative; display: flex; justify-content: center; align-items: center;}
 .mainPage_slide_1_left {position: absolute; 
   display: flex; justify-items: center;
@@ -330,3 +329,28 @@ img {
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);}
 
 .mainPage_slide_3_right_content_comment {margin: 0 200px; position: absolute; top: 1160px; right: 0px; text-decoration: underline;}.mainPage_slide_3_right_content_comment {margin: 0 200px; position: absolute; top: 3525px; right: 0px; text-decoration: underline;}
+
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* Footer */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.mainPage_Footer {width: 100%; height: 865px; display: flex; justify-content: center; margin-top: 1090px;}
+.mainPage_Footer_gif img {width: 1694px;}
+.mainPage_Footer_blackBox {width: 1694px; height: 300px; background-color: #000; display: flex; justify-content: space-around; align-items: center;}
+.mainPage_Footer_blackBox_icon {width: 170px; height: 170px; color: #fff; display: flex; justify-content: center; align-items: center; text-align: center;}
+.mainPage_Footer_blackBox_icon a {color: #fff; text-decoration: none;}
+.mainPage_Footer_blackBox_icon a i {font-size: 90px;}
+.mainPage_Footer_blackBox_icon:hover i {font-size: 110px; transition: all 0.1s ease;}
+
+.mainPage_Footer_blackBox_icon a p {font-size: 17px;}
+
+.mainPage_footer_bottom {width: 100%; height: 75px; display: flex; justify-content: center; color: #575757;}
+.mainPage_footer_bottom_box {width: 1694px; height: 70px; margin-top: 35px; border-top: solid 2px #c2c2c2; display: flex; justify-content: center; align-items: center;}
+.mainPage_footer_bottom_box_left_content {width: 847px; height: 80px; display: flex; align-items: center; text-align: left;}
+
+.mainPage_footer_bottom_box_left_content_box, .mainPage_footer_bottom_box_right_content_box {font-size: 13px;}
+.mainPage_footer_bottom_box_left_content_box p:first-child, .mainPage_footer_bottom_box_right_content_box p:first-child {padding-top: 45px;}
+
+.mainPage_footer_bottom_box_right_content {width: 847px; height: 80px; display: flex; justify-content: center; align-items: center;}
+.mainPage_footer_bottom_box_right_content_box {text-align: right;}
