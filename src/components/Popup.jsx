@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import './Popup.css'
 
+const img = (name) => `${import.meta.env.BASE_URL}img/${name}`;
+
 function Popup() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -32,7 +34,7 @@ function Popup() {
                 </button>
 
                 <div className='popup_content'>
-                    <img src="./img/popup_ex1.png" alt="예시 이미지" />
+                    <img src={img("popup_ex1.png")} alt="예시 이미지" />
                 </div>
 
                 <div className='popup_footer'>

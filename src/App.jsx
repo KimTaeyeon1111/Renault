@@ -12,6 +12,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'swiper/css';
 import './최종.css';
 
+const img = (name) => `${import.meta.env.BASE_URL}img/${name}`;
 
 function App() {
   const navigate = useNavigate();
@@ -64,7 +65,7 @@ function App() {
       <div className="mainPage_header_all" id='home'>
         <img
           className="mainPage_header_all_banner_img"
-          src="/img/르노르고_표지.gif"
+          src={img("르노르고_표지.gif")}
           alt="메인 배너 르노 GIF"
         />
         <div className="mainPage_banner_content">
@@ -77,7 +78,7 @@ function App() {
                   <div className="mainPage_banner_content_header">
                     <img
                       className="mainPage_banner_content_header_img"
-                      src="/img/르노logo.png"
+                      src={img("르노logo.png")}
                       alt="르노코리아 로고"
                     />
                   </div>
@@ -182,7 +183,7 @@ function App() {
           {/* Slide_1 section */}
           <div className='slide_section_koleos'>
             <div className='slide_section_koleos_box'>
-              <img src="/img/Koleos_배너.png" alt="콜레오스 배너" />
+              <img src={img("Koleos_배너.png")} alt="콜레오스 배너" />
             </div>
           </div>
           <div className='slide_1_section' id='KOLEOS'>
@@ -198,8 +199,8 @@ function App() {
                     allowTouchMove: false,
                   }}
                   className="mySwiper slide_1">
-                  <SwiperSlide><img src="/img/그랑_콜레오스_1.png" alt="콜레오스 외부 사진" className='slide_1_img_1' /></SwiperSlide>
-                  <SwiperSlide><img src="/img/그랑_콜레오스_2.png" alt="콜레오스 내부 사진" className='slide_1_img_2' /></SwiperSlide>
+                  <SwiperSlide><img src={img("그랑_콜레오스_1.png")} alt="콜레오스 외부 사진" className='slide_1_img_1' /></SwiperSlide>
+                  <SwiperSlide><img src={img("그랑_콜레오스_2.png")} alt="콜레오스 내부 사진" className='slide_1_img_2' /></SwiperSlide>
                 </Swiper>
               </div>
 
@@ -236,7 +237,7 @@ function App() {
           <div className='slide_section_filante_banner'>
             <div className='slide_section_filante'>
               <div className='slide_section_filante_box'>
-                <img src="/img/Filante_배너.png" alt="필랑트 배너" />
+                <img src={img("Filante_배너.png")} alt="필랑트 배너" />
               </div>
             </div>
             <div className='slide_section_filante_box_Rassure_box'>
@@ -277,8 +278,8 @@ function App() {
                   }}
 
                   className="mySwiper2 slide_2">
-                  <SwiperSlide><img src="/img/필랑트_1.png" alt="필랑트 외부 사진" className='slide_2_img_1' /></SwiperSlide>
-                  <SwiperSlide><img src="/img/필랑트_2.png" alt="필랑트 내부 사진" className='slide_2_img_2' /></SwiperSlide>
+                  <SwiperSlide><img src={img("필랑트_1.png")} alt="필랑트 외부 사진" className='slide_2_img_1' /></SwiperSlide>
+                  <SwiperSlide><img src={img("필랑트_2.png")} alt="필랑트 내부 사진" className='slide_2_img_2' /></SwiperSlide>
                 </Swiper>
               </div>
             </div>
@@ -295,13 +296,13 @@ function App() {
           {/* Slide_3 section */}
           <div className='slide_section_arkana'>
             <div className='slide_section_arkana_box'>
-              <img src="/img/Arkana_배너.png" alt="아르카나 배너" />
+              <img src={img("Arkana_배너.png")} alt="아르카나 배너" />
             </div>
           </div>
           <div className='slide_3_section' id='ARKANA'>
             <div className='mainPage_slide_3_all'>
               <div className='mainPage_slide_3_left'>
-                <img src="/img/아르카나_1.png" alt="콜레오스 외부 사진" className='slide_3_img_1' />
+                <img src={img("아르카나_1.png")} alt="콜레오스 외부 사진" className='slide_3_img_1' />
               </div>
 
               <div className='mainPage_slide_3_right'>
@@ -338,7 +339,7 @@ function App() {
 
       <div className='mainPage_Footer'>
         <div className='mainPage_Footer_gif'>
-          <img src="/img/Footer_section.gif" alt="르노코리아 홈페이지 공식 영상" />
+          <img src={img("Footer_section.gif")} alt="르노코리아 홈페이지 공식 영상" />
           <div className='mainPage_Footer_blackBox'>
             <div className='mainPage_Footer_blackBox_icon blackBox_icon1'>
               <a onClick={() => navigate('/user')}>
