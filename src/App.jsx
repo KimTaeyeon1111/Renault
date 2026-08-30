@@ -65,12 +65,12 @@ function App() {
       <div className="mainPage_header_all" id='home'>
         <video
           className="mainPage_header_all_banner_img"
-          src={img("르노르고_표지.mp4")}
+          src="https://github.com/KimTaeyeon1111/Renault/releases/download/v1.0.0/Renault_mainBanner.mp4"
           autoPlay
           loop
           muted
           playsInline
-          preload='auto'
+          preload="auto"
         />
         <div className="mainPage_banner_content">
 
@@ -343,13 +343,14 @@ function App() {
 
       <div className='mainPage_Footer'>
         <div className='mainPage_Footer_video'>
-          <video src={img("Footer_section.mp4")}
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload='auto'
-           />
+          <video
+            src="https://github.com/KimTaeyeon1111/Renault/releases/download/v1.0.0/Footer_section.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+          />
           <div className='mainPage_Footer_blackBox'>
             <div className='mainPage_Footer_blackBox_icon blackBox_icon1'>
               <a onClick={() => navigate('/user')}>
