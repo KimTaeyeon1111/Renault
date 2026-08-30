@@ -21,7 +21,7 @@ function User() {
                 <div className='user_main_box'>
                     <div className='user_main_box_img'>
                         <a onClick={() => navigate('/')}>
-                            <img src={img("르노logo_글포함.gif")} alt="르노코리아 로고"/>
+                            <img src={img("르노logo_글포함.png")} alt="르노코리아 로고"/>
                         </a>
                     </div>
                     <div className='user_main_box_content'>
