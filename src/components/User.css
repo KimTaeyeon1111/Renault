@@ -1,12 +1,20 @@
 
 .user_main_all {width: 100%; height: 800px; display: flex; justify-content: center; align-items: center;}
-.user_main_box {width: 1694px; height: 800px;}
-.user_main_box_img {width: 1694px; height: 150px; background-color: #ececec;}
-.user_main_box a img {margin-left: 43px; margin-top: 3px;}
-.user_main_box_content {width: 1694px; height: 530px; display: flex; justify-content: center; align-items: center;}
-.user_main_box_content_img {width: 600px; box-shadow: 3px 4px 8px 5px rgba(0, 0, 0, 0.3); border-radius: 12px;}
-.user_main_back_home {width: 1694px; height: 155px; display: flex; justify-content: center;}
-.user_main_back_home button {width: 150px; height: 50px; border: solid 2px #afafaf; border-radius: 3px; background-color: white;}
-.user_main_back_home button:hover {color: #fff; background-color: #000; transition: all 0.3s ease;}
+.user_main_box {width: 1600px; height: 800px;}
+.user_main_box_img {width: 1600px; height: 100px; background-color: #ececec;}
+.user_main_box a img {width: 130px; margin-left: 43px;}
+.user_main_box_content {width: 1600px; height: 635px; display: flex; justify-content: center; align-items: center;}
+.user_main_box_content_img {width: 600px; box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.3); border-radius: 12px; margin: 0 20px; border: solid 1px #44444433;}
 
-.user_page_bottom {margin-top: 13px;}
+.user_main_back_home {width: 1600px; height: 155px; display: flex; justify-content: center; position: relative;}
+.user_main_back_home button {width: 150px; height: 50px; border-radius: 3px; color: #fff; background-color: #000; border: solid 1px #000; display: flex; justify-content: center; align-items: center;}
+.user_main_back_home button:hover {transition: all 0.3s ease; color: #000; background-color: white; border: solid 1px #afafaf;}
+
+.user_main_back_home button i {width: 16px; height: 16px; margin-right: 8px; margin-bottom: 7px;}
+.user_main_last_icon {display: none;}
+.user_main_back_home button:hover .user_main_first_icon {display: none;}
+.user_main_back_home button:hover .user_main_last_icon {display: block; transition: all 1s ease; color: #000;}
+
+
+
+.user_page_bottom {margin-top: 75px;}

@@ -1,0 +1,91 @@
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+모바일 M 사이즈 (375px)
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* @media screen and (max-width: 375px) {
+    
+} */
+
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+태블릿 사이즈 (768px)
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* 네비게이션 모바일 반응형 */
+
+@media screen and (max-width: 768px) {
+  html, body, #root, .mainPage {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .mainPage_header_all,
+  .mainPage_banner_content,
+  .mainPage_banner_content_left_box,
+  .mainPage_banner_content_left_container {
+    width: 100% !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 !important;
+    padding: 0 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 3. 햄버거 버튼 위치 확정 */
+  .navbar-toggler {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+
+  .mainPage_banner_content_left_navbar_brand {
+    margin: -24px 0 0 -32px !important;
+    
+  }
+
+  .mainPage_banner_content_header_img {
+    margin: 0 !important;
+  }
+
+  .navbar_koleos {
+    font-size: 1.1rem;
+    margin-left: 0 !important; 
+    padding-top: 10px;
+    border-top: solid 3px #ffffff80;
+    margin-top: 13px !important;
+    width: 100% !important;
+    max-width: 768px !important;
+  }
+
+  .navbar_koleos:hover, .navbar_filante:hover ,.navbar_arkana:hover {background-color: #9b9b9b38;}
+
+  .navbar_filante,
+  .navbar_arkana {
+    margin: 0 !important;
+    font-size: 1.1rem;
+    width: 100% !important;
+    max-width: 768px !important;
+  }
+
+  /* 우측 글 */
+  /* .mainPage_header_all_banner_img {position: relative;}
+  .mainPage_header_all_banner_img::before {content: ""; position: absolute;}
+  .mainPage_banner_content_right_box_content p:nth-child(1) {font-size: 40px !important;}
+  .mainPage_banner_content_right_box_content p:nth-child(2) {font-size: 25px;} */
+}
+
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+모바일 M 사이즈
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+모바일 M 사이즈
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+
+
