@@ -25,10 +25,13 @@ function User() {
                         </a>
                     </div>
                     <div className='user_main_box_content'>
-                        <img src={img("명함_ex1.png")} alt="박진영 명함" className='user_main_box_content_img' />
+                        <img src={img("명함_left.png")} alt="박진영 명함" className='user_main_box_content_img' />
+                        <img src={img("명함_right.png")} alt="박진영 명함" className='user_main_box_content_img' />
                     </div>
                     <div className='user_main_back_home'>
                         <button onClick={() => navigate('/')}>
+                                <i class="bi bi-house user_main_first_icon"></i>
+                                <i class="bi bi-house-fill user_main_last_icon"></i>
                             돌아가기
                         </button>
                     </div>

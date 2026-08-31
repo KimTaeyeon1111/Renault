@@ -31,7 +31,7 @@ function Popup() {
             <div className='popup'>
                 <div className='popup_top'>
                     <button className='popup_close' onClick={closePopup}>
-                        <i class="bi bi-x-lg"></i>
+                        <i className="bi bi-x-lg"></i>
                     </button>
                 </div>
                 <div className='popup_content'>
