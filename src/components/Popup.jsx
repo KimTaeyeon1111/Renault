@@ -39,9 +39,11 @@ function Popup() {
                 </div>
 
                 <div className='popup_footer'>
-                    <button className='popup_footer_more' onClick={() => alert('더 알아보기')}>
-                        더 알아보기 {/* a */}
-                    </button>
+                    <a href="https://blog.naver.com/rkmgjgl/224397516294">
+                        <button className='popup_footer_more'>
+                            더 알아보기
+                        </button>
+                    </a>    
                     <button className='popup_footer_hideToday' onClick={hideToday}>
                         오늘 하루 보지 않기
                     </button>

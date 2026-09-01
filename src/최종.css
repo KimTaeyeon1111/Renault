@@ -111,8 +111,12 @@ img {
   object-fit: cover;
 }
 
+.mainPage_header_all_banner_img_cover_all {position: relative;}
+/* .mainPage_header_all_banner_img_cover {position: absolute; width: 1600px; height: 900px; background-color: #000000; top: 0;} */
+
 .mainPage_banner_content {
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   height: 900px;
   display: flex;
   justify-content: center;
@@ -134,14 +138,26 @@ img {
 }
 
 .mainPage_banner_content_header {
-  width: 100%;
   height: 59px;
   margin: 25px 0 0 33px;
 }
 
+.mainPage_banner_content_left_container {
+  width: 100%;
+  max-width: none !important;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.main_navbar_menu {width: 100%; margin-left: auto;}
 
 .mainPage_banner_content_header_img {width: 51px; margin-left: 30px;}
-.main_page_nav_toggle {filter: brightness(0) invert(1) !important; border-color: #ffffff8f; margin-right: 79px;}
+
+
+.main_page_nav_toggle {filter: brightness(0) invert(1) !important; border-color: #ffffff8f; margin-right: 79px; margin-left: auto;}
 
 .navbar_koleos {margin: 37px 25px 0 20px; font-size: 25px; color: #ffffff !important; text-shadow: none;}
 .navbar_filante {margin: 37px 25px 0 0; font-size: 25px; color: #ffffff !important; text-shadow: none;}
@@ -198,6 +214,8 @@ img {
 }
 
 .mainPage_banner_content_right_box_content {
+  width: 100%;
+  max-width: 475px;
   color: #ffffff;
   font-weight: bold;
   text-align: right;
@@ -212,11 +230,10 @@ img {
 .mainPage_banner_content_right_box_content_p1 {
   position: relative;
   display: block;
-  width: max-content;
   margin: 53px 0 80px;
   padding: 0 25px 0 45px;
   box-sizing: border-box;
-  font-size: 60px;
+  font-size: clamp(20px, 4vw, 58px);
   color: rgb(255, 255, 255);
   font-weight: 800;
 }
@@ -630,7 +647,6 @@ img {
 .slide_1_right_content_p_2 {
   line-height: 8px;
 }
-
 
 /* 오른쪽 박스 */
 

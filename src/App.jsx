@@ -11,7 +11,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import 'swiper/css';
 import './최종.css';
-import './반응형.css';
+import './반응형.css'
+
 
 const img = (name) => `${import.meta.env.BASE_URL}img/${name}`;
 
@@ -67,16 +68,27 @@ function App() {
       ========================================================= */}
       <div className="mainPage_header_all" id='home'>
 
-        <video
-          className="mainPage_header_all_banner_img"
-          src="https://github.com/KimTaeyeon1111/Renault/releases/download/v1.0.0/Renault_mainBanner.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-        />
-
+        <div className='mainPage_header_all_banner_img_cover_all'>
+          <video
+            className="mainPage_header_all_banner_img"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+          >
+            <source
+              src="https://github.com/KimTaeyeon1111/Renault/releases/download/v1.0.0/Renault_mainBanner.mp4"
+              type="video/mp4"
+            />
+          
+          
+          </video>
+        </div>
+        {/* <div className='mainPage_header_all_banner_img_cover'></div> */}
+          
+        
+        
         <div className="mainPage_banner_content">
 
           {/* =========================
@@ -124,25 +136,11 @@ function App() {
 
             <div className="mainPage_banner_content_right_box_content">
 
-              <p className="mainPage_banner_content_right_box_content_p1">
-                2025 호남권 1등<br />
-              </p>
-
-              <p className="mainPage_banner_content_right_box_content_p2">
-                르노코리아 광주갤러리대리점<br />
-              </p>
-
-              <p className="mainPage_banner_content_right_box_content_p3">
-                박진영
-              </p>
-
+              <p className="mainPage_banner_content_right_box_content_p1">2025 호남권 1등<br /></p>
+              <p className="mainPage_banner_content_right_box_content_p2">르노코리아 광주갤러리대리점<br /></p>
+              <p className="mainPage_banner_content_right_box_content_p3">박진영</p>
               <p className="mainPage_banner_content_right_box_content_number mainPage_banner_content_right_box_content_p4">
-
-                <i className="fa-solid fa-mobile-screen phone-icon"></i>
-
-                010 - 4869 - 0592
-
-              </p>
+              <i className="fa-solid fa-mobile-screen phone-icon"></i>010 - 4869 - 0592</p>
 
 
               <div className="mainPage_banner_content_right_box_social mainPage_banner_content_right_box_content_p5">
@@ -260,28 +258,55 @@ function App() {
 
               </div>
 
-
               {/* 오른쪽 프로모션 */}
               <div className='mainPage_slide_1_right'>
-
+                  
                 <div className='mainPage_slide_1_right_content'>
 
-                  <h2>
+                  <h2 style={{ marginBottom: "-13px" }}>
                     Grand KOLEOS 프로모션
                   </h2>
 
-                  <p className='mainPage_slide_1_right_content_strong slide_1_right_strong'>
+                  <p  style={{ marginBottom: "10px" }} className='mainPage_slide_1_right_content_strong slide_1_right_strong'>
                     한정수량 생산 월별 특별 혜택!
                   </p>
 
+                  <p className='mainPage_slide_1_right_content_p koleos_paddingBottom'>
+                    ~ 26.03 생산차량 - <span>300만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
+                  <p style={{ marginTop: "-10px" }}><span>+ 엔진오일세트 7회</span> 무상 교체 + <span>150만 원 할인</span></p>
+                  
+
                   <p className='mainPage_slide_1_right_content_p'>
-                    2026.01 ~ 02 생산차량 - <span>200만 원 기본 할인 및 옵션 + 용품 250만 원 할인!</span>
+                    26.04 ~ 06 생산차량 - <span>200만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
+                  <p style={{ marginTop: "-10px" }}><span>+ 엔진오일세트 7회</span> 무상 교체 + <span>50만 원 할인</span></p>
+                  
+
+                  <p className='mainPage_slide_1_right_content_p'>
+                    26.07 ~ 08 생산차량 - <span>150만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
+                  <p style={{ marginTop: "-10px", marginBottom: "-10px" }}><span>+ 엔진오일세트 7회</span> 무상 교체</p>
+                  
+
+                  <p className='mainPage_slide_1_right_content_strong slide_1_right_strong'>재구매 <span>50만 원 or 100만 원 할인!</span>
                   </p>
 
                   <p className='mainPage_slide_1_right_content_p'>
-                    2026.03 ~ 05 생산차량 - <span>150만 원 할인!</span>
+
+                    <mark>
+                      *혜택 가족
+                    </mark>
+
+                    과 본인의 구매 이력, 르노 중고차를 보유한 합산 만큼 할인
+
                   </p>
 
+                  <p className='mainPage_slide_1_right_content_p'>
+                    신차 구매 이력 + 중고차 보유 합산 4회 이하 시 - <span>50만 원 할인</span>
+                  </p>
+
+                  <p className='mainPage_slide_1_right_content_p'>
+                    합산 5회 이상 시 - <span>100만 원 할인</span>
+                  </p>
+                  
                   <p className='mainPage_slide_1_right_content_strong slide_1_right_strong'>
                     노후차 5년 보유고객 <span>50만 원 할인!</span>
                   </p>
@@ -296,36 +321,7 @@ function App() {
 
                   </p>
 
-                  <p className='mainPage_slide_1_right_content_strong slide_1_right_strong'>재구매 <span>50만 원 할인!</span>
-                  </p>
 
-                  <p className='mainPage_slide_1_right_content_p'>
-
-                    <mark>
-                      *혜택 가족
-                    </mark>
-
-                    이 구매 이력이 있거나 르노차량을 보유하고 계신다면 무조건 할인!
-
-                  </p>
-
-                  <p className='mainPage_slide_1_right_content_strong slide_1_right_strong'>
-                    <span>
-                      8월 한정! 60일 반납보장 프로그램!
-                    </span>
-                  </p>
-
-                  <p className='mainPage_slide_1_right_content_p'>
-                    출고 후 최소 30일, 최대 60일 이내 신청 가능!
-                  </p>
-
-                  <p className='mainPage_slide_1_right_content_p'>
-                    총 주행거리 3,000km 이하, 무사고 기준을 모두 충족했을 때
-                  </p>
-
-                  <p className='mainPage_slide_1_right_content_p'>
-                    차량 가격의 100% 환불이 가능합니다.
-                  </p>
 
                   <hr />
 
@@ -341,9 +337,8 @@ function App() {
 
                   <p className='mainPage_slide_1_right_content_p slide_1_right_content_p_2'>
                     <br />
-                    <span>
-                      3개월 zero 할부, 초기 3개월 월 납입금 0원!!
-                    </span>
+                    <strong className='mainPage_slide_1_right_content_strong slide_1_right_strong'>표준형 카드 할부 </strong>
+                    <span>최저 3.5%</span>
                   </p>
 
                   <p className='mainPage_slide_1_right_content_p slide_1_right_content_p_2'>
@@ -383,14 +378,14 @@ function App() {
                 />
               </div>
             </div>
-            <div className='slide_section_filante_box_Rassure_box'>
+            {/* <div className='slide_section_filante_box_Rassure_box'>
               <p className='slide_section_filante_box_Rassure'>
                 *R:assure 프리미엄 케어 솔루션은 3년 무상 케어 서비스, 중고차 가격 보장,
                 신차 교환 프로그램으로 구성되어 있습니다.
                 <br />
                 상세 서비스 구성 및 조건은 상담을 통해 확인해 주세요.
               </p>
-            </div>
+            </div> */}
           </div>
 
 
@@ -407,7 +402,7 @@ function App() {
 
                 <div className='mainPage_slide_2_left_content'>
 
-                  <h2>
+                  <h2 style={{ marginBottom: "-20px" }}>
                     FILANTE 프로모션
                   </h2>
 
@@ -416,17 +411,35 @@ function App() {
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p'>
-                    ~ 2026.04 생산차량 -
-                    전동 선쉐이드 무상 장착 or 용품<span> 50만 원 할인!</span>
+                    ~ 2026.03 생산차량 - <span>기본 150만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만원 할인</span>
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p'>
-                    에스프리 알핀 1955 전시차<span> 100만 원 할인!</span>
+                    26.04 생산차량 - <span>기본 100만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만 원 할인</span> 
+                  </p>
+
+                  <p className='mainPage_slide_2_left_content_p'>
+                    26.05 생산차량 - <span>기본 70만 원 할인</span>
                   </p>
 
                   <p className='mainPage_slide_2_left_content_strong slide_2_left_strong'>
-                    재구매<span> 50만 원 할인! </span>
-                    or<span> 재구매 초저금리 할부!</span>
+                    재구매 <span> 50만 원 + 100만 원 할인! </span>
+                  </p>
+
+                  <p className='mainPage_slide_2_left_content_p'>
+                    <mark>*혜택 가족</mark>과 본인의 구매 이력, 르노 중고차를 보유한 합산 만큼 할인
+                  </p>
+
+                  <p className='mainPage_slide_2_left_content_p'>
+                    신차 구매 이력 + 중고차 보유 합산 4회 이하 시 - <span>50만 원 할인</span>
+                  </p>
+
+                  <p className='mainPage_slide_2_left_content_p'>
+                    합산 5회 이상 시 - <span>100만 원 할인</span>
+                  </p>
+
+                  <p className='mainPage_slide_2_left_content_strong slide_2_left_strong'>
+                    노후차 5년 보유고객 <span>50만 원 할인!</span>
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p'>
@@ -435,27 +448,8 @@ function App() {
                       *혜택 가족
                     </mark>
 
-                    이 구매 이력이 있거나 르노 차량을 보유하고 계신다면 무조건 할인!
+                    이 5년 이상 된 차량을 보유하고 계신다면 무조건 할인!
 
-                  </p>
-
-                  <p className='mainPage_slide_2_left_content_strong slide_2_left_strong'>
-
-                    5년 걱정 제로 혜택
-                    <span className="slide_2_left_strong_small"> (8월 한정)</span>
-
-                  </p>
-
-                  <p className='mainPage_slide_2_left_content_p'>
-
-                    <span>
-                      "<mark><span>월 40만원</span></mark> 5년만 타고 반납 or 인수하자!!"
-                    </span>
-
-                  </p>
-
-                  <p className='mainPage_slide_2_left_content_p'>
-                    보증 + 정비 + 중고차 잔가 53% 보장!
                   </p>
 
                   <hr style={{ width: "510px" }} />
@@ -463,18 +457,6 @@ function App() {
                   <h2 className='mainPage_slide_2_left_content_h2'>
                     주요 할부 금융
                   </h2>
-
-                  <p
-                    className='mainPage_slide_2_left_content_p slide_2_left_content_p_2 slide_2_left_content_p_2_strong_1'
-                  >
-
-                    <strong className='mainPage_slide_2_left_content_strong slide_2_left_strong'>재구매 초저금리 할부 </strong>
-                    ~36개월
-                    <span> 1.7%</span>,
-                    37~60개월
-                    <span> 2.7%</span>
-
-                  </p>
 
                   <p className='mainPage_slide_2_left_content_p slide_2_left_content_p_2'>
 
@@ -490,10 +472,10 @@ function App() {
 
                   <p className='mainPage_slide_2_left_content_p slide_2_left_content_p_2'>
                     <br />
-                    <span>
-                      3개월 zero 할부, 초기 3개월 월 납입금 0원!!
-                    </span>
+                    <strong className='mainPage_slide_2_left_content_strong slide_2_left_strong slide_2_left_strong_1'>표준형 카드 할부 </strong>
+                    <span>최저 3.5%</span>
                   </p>
+
 
                   <p className='mainPage_slide_2_left_content_p slide_2_left_content_p_2'>
                     <br />
@@ -610,32 +592,36 @@ function App() {
 
                 <div className='mainPage_slide_3_right_content'>
 
-                  <h2>
+                  <h2 style={{ marginBottom: "-20px" }}>
                     ARKANA 프로모션
                   </h2>
 
                   <p className='mainPage_slide_3_right_content_strong slide_3_right_strong'>
-                    <span>
-                      아르카나 구매 고객 200만 원 할인!
-                    </span>
+                    아르카나 구매 고객 <span>유류비 지원!</span>
                   </p>
 
                   <p className='mainPage_slide_3_right_content_p'>
-                    조건 없이 무조건 할인!
+                    가솔린 - <span>200만 원 할인</span>
+                  </p>
+
+                  <p className='mainPage_slide_3_right_content_p'>
+                    하이브리드 - <span>300만 원 할인</span>
                   </p>
 
                   <p className='mainPage_slide_3_right_content_strong slide_3_right_strong'>
-                    재구매<span> 50만 원 할인!</span>
+                    재구매<span> 50만 원 or 100만 원 할인!</span>
                   </p>
 
                   <p className='mainPage_slide_3_right_content_p'>
+                    <mark>*혜택 가족</mark>과 본인의 구매 이력, 르노 중고차를 보유한 합산 만큼 할인
+                  </p>
 
-                    <mark>
-                      *혜택 가족
-                    </mark>
+                  <p className='mainPage_slide_3_right_content_p'>
+                    신차 구매 이력 + 중고차 보유 합산 4회 이하 시 - <span>50만원 할인</span>
+                  </p>
 
-                    이 구매 이력이 있거나 르노 차량을 보유하고 계신다면 무조건 할인!
-
+                  <p className='mainPage_slide_3_right_content_p'>
+                    합산 5회 이상 시 - <span>100만 원 할인</span>
                   </p>
 
                   <p className='mainPage_slide_3_right_content_strong slide_3_right_strong'>
@@ -643,11 +629,11 @@ function App() {
                   </p>
 
                   <p className='mainPage_slide_3_right_content_p'>
-                    하이브리드 -<span> 50만 원 할인!</span>
+                    가솔린 -<span> 100만 원 할인!</span>
                   </p>
 
                   <p className='mainPage_slide_3_right_content_p'>
-                    가솔린 -<span> 100만 원 할인!</span>
+                    하이브리드 -<span> 50만 원 할인!</span>
                   </p>
 
                   <hr />
@@ -656,7 +642,7 @@ function App() {
                     주요 할부 금융
                   </h2>
 
-                  <p className='mainPage_slide_3_right_content_p slide_3_right_content_p_2'>
+                  <p className='mainPage_slide_3_right_content_p slide_3_right_content_p_2' style={{ marginBottom: "2px"}}>
 
                     <strong className='mainPage_slide_3_right_content_strong slide_3_right_strong'>표준형 무이자! </strong>
 
@@ -665,6 +651,7 @@ function App() {
                     </span>
 
                   </p>
+                  <p style={{ fontSize: "14px", marginBottom:"2px" }}><i class="bi bi-arrow-return-right"></i> 가솔린만 적용 가능</p>
 
                   <p className='mainPage_slide_3_right_content_p slide_3_right_content_p_2'>
                     <br />

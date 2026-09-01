@@ -1,9 +1,44 @@
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+/* /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 모바일 M 사이즈 (375px)
 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-/* @media screen and (max-width: 375px) {
-    
-} */
+@media screen and (max-width: 375px) {
+  html, body, #root, .mainPage {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .mainPage_header_all_banner_img_cover {opacity: 50%; width: 1600px; height: 700px;}
+
+  .mainPage_header_all_banner_img_cover_all {height: 700px; width: 375px !important;}
+  .mainPage_header_all_banner_img {height: 700px;}
+
+  /* 2025 호남권 1등 위 아래 border */
+  .mainPage_banner_content_right_box_content_p1 {color: rgb(255, 255, 255);
+  }
+
+  .mainPage_banner_content_right_box_content_p1::before {
+  content: "";
+  position: absolute;
+  left: 33px;
+  top: -17px;
+  width: 25px;
+  height: 15px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.mainPage_banner_content_right_box_content_p1::after {
+  content: "";
+  position: absolute;
+  right: 13px;
+  bottom: -12px;
+  width: 25px;
+  height: 15px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+}
 
 
 
@@ -32,7 +67,8 @@
     box-sizing: border-box !important;
   }
 
-  /* 3. 햄버거 버튼 위치 확정 */
+  .mainPage_header_all_banner_img_cover {opacity: 50%;}
+
   .navbar-toggler {
     margin-left: auto !important;
     margin-right: 0 !important;
@@ -67,25 +103,5 @@
     max-width: 768px !important;
   }
 
-  /* 우측 글 */
-  /* .mainPage_header_all_banner_img {position: relative;}
-  .mainPage_header_all_banner_img::before {content: ""; position: absolute;}
-  .mainPage_banner_content_right_box_content p:nth-child(1) {font-size: 40px !important;}
-  .mainPage_banner_content_right_box_content p:nth-child(2) {font-size: 25px;} */
 }
-
-
-
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-모바일 M 사이즈
-ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-
-
-
-
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-모바일 M 사이즈
-ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-
-
 
