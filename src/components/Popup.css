@@ -1,14 +1,15 @@
 .popup_overlay {position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgb(0, 0, 0, 0.2); display: flex; justify-content: center; align-items: center; z-index: 100;}
 .popup {position: relative; width: 500px; overflow: hidden; box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6); border-radius: 20px;}
-.popup_top {width: 500px; height: 70px; background-color: #f0f0f0;}
-.popup_close {position: absolute; top: 15px; right: 15px; border: none; background: none; color: #888888; cursor: pointer; font-size: 22px;}
+.popup_top {width: 500px; height: 55px; background-color: #f0f0f0;}
+.popup_close {position: absolute; top: 11px; right: 10px; border: none; background: none; color: #888888; cursor: pointer; font-size: 22px;}
 .popup_close:hover {color: #000;}
 
-.popup_content {width: 500px; height: 355px;}
+.popup_content {width: 500px; height: 390px;}
 .popup_content img {width: 500px;}
 
 .popup_footer {display: flex; border-top: solid 3px #7a7a7a;}
 .popup_footer button {flex: 1; height: 60px; border: none; font-size: 14px; font-weight: 500;}
+.popup_footer button a {color: #444; text-decoration: none;}
 .popup_footer button:hover {background-color: #c9c9c9;}
 .popup_footer_more {color: #444; border-right: 1px solid #d3d3d3 !important;}
 .popup_footer_hideToday {color: #444;}
