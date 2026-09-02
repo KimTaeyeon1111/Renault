@@ -81,6 +81,7 @@ function App() {
             <source
               src="https://github.com/KimTaeyeon1111/Renault/releases/download/v1.0.0/Renault_mainBanner.mp4"
               type="video/mp4"
+              className="mainPage_header_all_banner_img"
             />
           
           
@@ -103,7 +104,7 @@ function App() {
           
           </video>
         </div>
-        {/* <div className='mainPage_header_all_banner_img_cover'></div> */}
+        <div className='mainPage_header_all_banner_img_cover'></div>
           
         
         
@@ -205,7 +206,7 @@ function App() {
 
       </div>
 
-
+      
       {/* =========================================================
           Slide Section
       ========================================================= */}
