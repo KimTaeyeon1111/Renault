@@ -1,105 +1,1267 @@
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-모바일 M 사이즈 (375px)
-ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-@media screen and (max-width: 375px) {
-  html, body, #root, .mainPage {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+/* =========================================================
+   1440px
+   작은 PC / 노트북
+   1025px ~ 1440px
+========================================================= */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+  html,
+  body,
+  #root,
+  .mainPage {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
-  /* 2025 호남권 1등 위 아래 border */
-  .mainPage_banner_content_right_box_content_p1 {color: rgb(255, 255, 255);
+
+  /* =========================
+     Header
+  ========================= */
+
+  .mainPage_header_all {
+    width: 100%;
+    position: relative;
   }
 
-  .mainPage_banner_content_right_box_content_p1::before {
-  content: "";
-  position: absolute;
-  left: 33px;
-  top: -17px;
-  width: 25px;
-  height: 15px;
-  border-top: 2px solid white;
-  border-left: 2px solid white;
-}
+  .mainPage_header_all_banner_img {
+    width: 100%;
+    max-width: 1440px;
+    object-fit: cover;
+  }
 
-.mainPage_banner_content_right_box_content_p1::after {
-  content: "";
-  position: absolute;
-  right: 13px;
-  bottom: -12px;
-  width: 25px;
-  height: 15px;
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
-}
-}
-
-
-
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-태블릿 사이즈 (768px)
-ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-
-/* 네비게이션 모바일 반응형 */
-
-@media screen and (max-width: 768px) {
-  html, body, #root, .mainPage {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+  .mainPage_banner_content {
+    width: 100%;
+    max-width: 1440px;
+    height: 810px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
 
 
-  .mainPage_header_all,
-  .mainPage_banner_content,
-  .mainPage_banner_content_left_box,
+  /* =========================
+     Navigation
+  ========================= */
+
+  .mainPage_banner_content_left_box {
+    width: 100%;
+    max-width: 1440px;
+    top: 0;
+    left: 0;
+    overflow: visible;
+    z-index: 9999;
+  }
+
+
+  .main_navbar_nav {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+  }
+
   .mainPage_banner_content_left_container {
-    width: 100% !important;
-    max-width: 100% !important;
-    left: 0 !important;
-    right: 0 !important;
-    margin: 0 !important;
-    padding: 0 15px !important;
-    box-sizing: border-box !important;
-  }
-
-  .mainPage_header_all_banner_img_cover {opacity: 50%;}
-
-  .navbar-toggler {
-    margin-left: auto !important;
-    margin-right: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10001;
   }
 
   .mainPage_banner_content_left_navbar_brand {
-    margin: -24px 0 0 -32px !important;
-    
+    margin: 0;
+    padding: 25px 0 0;
   }
 
   .mainPage_banner_content_header_img {
-    margin: 0 !important;
+    width: 58px;
+    margin: 0;
+  }
+
+  .main_navbar_menu {
+    width: 100%;
+    left: 0;
   }
 
   .navbar_koleos {
-    font-size: 1.1rem;
-    margin-left: 0 !important; 
-    padding-top: 10px;
-    border-top: solid 3px #ffffff80;
-    margin-top: 13px !important;
-    width: 100% !important;
-    max-width: 768px !important;
+    font-size: 21px;
   }
 
-  .navbar_koleos:hover, .navbar_filante:hover ,.navbar_arkana:hover {background-color: #9b9b9b38;}
+  .navbar_filante {
+    font-size: 21px;
+  }
 
-  .navbar_filante,
   .navbar_arkana {
-    margin: 0 !important;
-    font-size: 1.1rem;
-    width: 100% !important;
-    max-width: 768px !important;
+    font-size: 21px;
+  }
+
+
+
+  /* =========================
+     오른쪽 콘텐츠
+  ========================= */
+
+  .mainPage_banner_content_right_box {
+    padding-right: 4%;
+  }
+
+  .mainPage_banner_content_right_box_content {
+    max-width: 420px;
+  }
+
+
+  /* 2025 호남권 1등 */
+
+  .mainPage_banner_content_right_box_content_p1 {
+    font-size: 48px;
+    margin: 50px 0 65px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p1::before {
+    left: 20px;
+    top: -28px;
+    width: 45px;
+    height: 23px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p1::after {
+    right: 0;
+    bottom: -32px;
+    width: 45px;
+    height: 23px;
+  }
+
+
+  /* 광주갤러리 */
+
+  .mainPage_banner_content_right_box_content_p2 {
+    font-size: 27px;
+    margin-bottom: 80px;
+  }
+
+
+  /* 박진영 */
+
+  .mainPage_banner_content_right_box_content_p3 {
+    font-size: 90px;
+    margin-bottom: 70px;
+  }
+
+
+  /* 전화번호 */
+
+  .mainPage_banner_content_right_box_content_p4 {
+    font-size: 31px;
+    margin-bottom: 55px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p4 .phone-icon {
+    font-size: 35px;
+    margin-right: 15px;
+  }
+
+
+
+  /* =========================
+     SNS
+  ========================= */
+
+  .mainPage_banner_content_right_box_social {
+    width: 260px;
+    height: 55px;
+  }
+
+  .mainPage_banner_content_right_box_social i {
+    width: 45px;
+    height: 45px;
+  }
+
+  .mainPage_banner_content_right_box_social a:nth-child(1) i {
+    font-size: 39px;
+  }
+
+  .mainPage_banner_content_right_box_social a:nth-child(2) i {
+    font-size: 32px;
+  }
+
+  .mainPage_banner_content_right_box_social a:nth-child(3) i {
+    font-size: 36px;
+  }
+
+  .mainPage_banner_content_right_box_social a:nth-child(4) i {
+    font-size: 38px;
   }
 
 }
 
+
+
+/* =========================================================
+   1024px
+   태블릿 가로 / 작은 노트북
+   769px ~ 1024px
+========================================================= */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  html,
+  body,
+  #root,
+  .mainPage {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+
+  /* =========================
+     Header
+  ========================= */
+
+  .mainPage_header_all {
+    width: 100%;
+    position: relative;
+  }
+
+
+  .mainPage_header_all_banner_img {
+    width: 100%;
+    max-width: 1024px;
+    object-fit: cover;
+  }
+
+
+  .mainPage_banner_content {
+    width: 100%;
+    max-width: 1024px;
+    height: 700px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+
+  /* =========================
+     Navigation
+  ========================= */
+
+  .mainPage_banner_content_left_box {
+    width: 100%;
+    max-width: 1024px;
+    top: 0;
+    left: 0;
+    overflow: visible;
+    z-index: 9999;
+  }
+
+
+  .main_navbar_nav {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 10000;
+  }
+
+
+  .mainPage_banner_content_left_container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 25px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10001;
+  }
+
+
+  .mainPage_banner_content_left_navbar_brand {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 20px 0 0;
+  }
+
+
+  .mainPage_banner_content_header_img {
+    width: 53px;
+    margin: 0;
+  }
+
+
+  .main_navbar_menu {
+    width: auto;
+    margin-left: auto;
+  }
+
+
+  .navbar_koleos {
+    margin: 22px 18px 0 18px;
+    font-size: 18px;
+  }
+
+
+  .navbar_filante {
+    margin: 22px 18px 0 0;
+    font-size: 18px;
+  }
+
+
+  .navbar_arkana {
+    margin: 22px 0 0;
+    font-size: 18px;
+  }
+
+
+
+  /* =========================
+     오른쪽 콘텐츠
+  ========================= */
+
+  .mainPage_banner_content_right_box {
+    padding-right: 4%;
+  }
+
+
+  .mainPage_banner_content_right_box_content {
+    max-width: 350px;
+  }
+
+
+  /* 2025 호남권 1등 */
+
+  .mainPage_banner_content_right_box_content_p1 {
+    font-size: 36px;
+    margin: 45px 0 55px;
+    padding: 0 20px 0 35px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p1::before {
+    left: 14px;
+    top: -22px;
+    width: 35px;
+    height: 18px;
+    border-width: 3px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p1::after {
+    right: 0;
+    bottom: -25px;
+    width: 35px;
+    height: 18px;
+    border-width: 3px;
+  }
+
+
+  /* 광주갤러리 */
+
+  .mainPage_banner_content_right_box_content_p2 {
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+
+
+  /* 박진영 */
+
+  .mainPage_banner_content_right_box_content_p3 {
+    font-size: 68px;
+    margin-bottom: 55px;
+  }
+
+
+  /* 전화번호 */
+
+  .mainPage_banner_content_right_box_content_p4 {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p4 .phone-icon {
+    font-size: 28px;
+    margin-right: 10px;
+  }
+
+
+
+  /* =========================
+     SNS
+  ========================= */
+
+  .mainPage_banner_content_right_box_social {
+    width: 220px;
+    height: 50px;
+  }
+
+
+  .mainPage_banner_content_right_box_social i {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mainPage_banner_content_right_box_social a:nth-child(1) i {
+    font-size: 34px;
+  }
+
+  .mainPage_banner_content_right_box_social a:nth-child(2) i {
+    font-size: 28px;
+  }
+
+  .mainPage_banner_content_right_box_social a:nth-child(3) i {
+    font-size: 31px;
+  }
+
+  .mainPage_banner_content_right_box_social a:nth-child(4) i {
+    font-size: 33px;
+  }
+
+}
+
+
+
+/* =========================================================
+   768px 이하
+   태블릿 세로 + 모바일 공통
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  html,
+  body,
+  #root,
+  .mainPage {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+
+  /* =========================
+     Header
+  ========================= */
+
+  .mainPage_header_all {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+
+
+  .mainPage_header_all_banner_img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  .mainPage_banner_content {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: auto;
+    margin: 0;
+    padding: 0;
+    transform: none;
+    box-sizing: border-box;
+  }
+
+
+
+  /* =========================
+     Navigation
+  ========================= */
+
+  .mainPage_banner_content_left_box {
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    z-index: 9999;
+  }
+
+
+  .main_navbar_nav {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 10000;
+  }
+
+
+  .mainPage_banner_content_left_container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 85px;
+    margin: 10px 0 0 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10001;
+  }
+
+
+  .mainPage_banner_content_left_navbar_brand {
+    width: auto;
+    height: auto;
+
+    margin: 0 auto 0 0;
+
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .mainPage_banner_content_header {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .mainPage_banner_content_header_img {
+    width: 40px;
+    margin: 0;
+  }
+
+
+  .navbar-toggler,
+  .main_page_nav_toggle {
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    z-index: 10003;
+    width: 47px;
+    height: 32px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0 25px 15px;
+    box-sizing: border-box;
+    z-index: 10002;
+  }
+
+
+  .main_navbar_menu {
+    width: 100%;
+    margin: 0;
+  }
+
+
+  .navbar_koleos {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0 0;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-top: 3px solid #ffffff80;
+  }
+
+
+  .navbar_filante,
+  .navbar_arkana {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+
+
+  .navbar_koleos:hover,
+  .navbar_filante:hover,
+  .navbar_arkana:hover {
+    background-color: #9b9b9b38;
+  }
+
+
+
+  /* =========================
+     오른쪽 콘텐츠
+  ========================= */
+
+  .mainPage_banner_content_right_box {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: visible;
+  }
+
+
+  .mainPage_banner_content_right_box_content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    height: 432px;
+    top: 80px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    text-align: right;
+    position: relative;
+    left: 0;
+    right: auto;
+    transform: none;
+  }
+
+
+
+  /* =========================
+     글자
+  ========================= */
+
+  .mainPage_banner_content_right_box_content_p1 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding-right: 6px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p1::before {
+    left: 500px;
+    top: -12px;
+    width: 22px;
+    height: 12px;
+    border-width: 2px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p1::after {
+    right: 0;
+    bottom: -12px;
+    width: 22px;
+    height: 12px;
+    border-width: 2px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p2 {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p3 {
+    font-size: 55px;
+    margin-bottom: 35px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p4 {
+    font-size: 17px;
+    margin-bottom: 60px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p4 .phone-icon {
+    font-size: 17px;
+    margin-right: 7px;
+  }
+
+
+
+  /* =========================
+     SNS
+  ========================= */
+
+  .mainPage_banner_content_right_box_social {
+    width: 185px;
+    height: auto;
+
+    float: right;
+
+    margin-left: auto;
+    margin-right: 0;
+
+    margin-top: -50px;
+  }
+
+
+  .mainPage_banner_content_right_box_social a:nth-child(1) i {
+    font-size: 22px;
+  }
+
+  .mainPage_banner_content_right_box_social a:nth-child(2) i {
+    font-size: 20px;
+  }
+  .mainPage_banner_content_right_box_social a:nth-child(3) i {
+    font-size: 20px;
+  }
+  .mainPage_banner_content_right_box_social a:nth-child(4) i {
+    font-size: 20px;
+  }
+}
+
+
+
+/* =========================================================
+   모바일 L
+   426px ~ 425px 이하
+========================================================= */
+
+@media screen and (max-width: 425px) {
+
+  html,
+  body,
+  #root,
+  .mainPage {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: hidden;
+  }
+
+
+
+  /* =========================
+     배너
+  ========================= */
+
+  .mainPage_header_all_banner_img {
+    display: none;
+  }
+
+
+  .mainPage_header_all_banner_img_2 {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: cover;
+  }
+
+
+  .mainPage_banner_content {
+    width: 100%;
+    max-width: 100%;
+
+    height: 650px;
+
+    left: 0;
+
+    transform: none;
+  }
+
+
+  .mainPage_header_all_banner_img_cover {
+    width: 100%;
+    height: 702px;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #00000041;
+  }
+
+
+
+  /* =========================
+     Navigation
+  ========================= */
+
+  .mainPage_banner_content_left_container {
+    min-height: 80px;
+
+    padding: 0 18px;
+  }
+
+
+  .mainPage_banner_content_left_navbar_brand {
+    width: auto;
+    height: auto;
+
+    margin: 0 auto 0 0;
+
+    padding: 0;
+  }
+
+
+  .mainPage_banner_content_header_img {
+    width: 40px;
+
+    margin: 0;
+  }
+
+
+  .navbar-toggler,
+  .main_page_nav_toggle {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+
+  .navbar-collapse {
+    width: 100%;
+
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    padding: 0 18px 15px;
+
+    z-index: 10002;
+  }
+
+
+  .navbar_koleos {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 13px 0 0;
+
+    padding-top: 10px;
+
+    font-size: 1.1rem;
+
+    border-top: 3px solid #ffffff80;
+  }
+
+
+  .navbar_filante,
+  .navbar_arkana {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+
+    font-size: 1.1rem;
+  }
+
+
+
+  /* =========================
+     오른쪽 내용
+  ========================= */
+
+  .mainPage_banner_content_right_box {
+    width: 100%;
+
+    padding: 0;
+
+    justify-content: center;
+
+    overflow: visible;
+  }
+
+
+  .mainPage_banner_content_right_box_content {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 0 20px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+  }
+
+
+
+  /* 2025 호남권 1등 */
+
+  .mainPage_banner_content_right_box_content_p1 {
+    color: white;
+
+    margin-right: 0;
+    margin-bottom: 60px;
+
+    font-size: 25px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p1::before {
+    left: 85px;
+    top: -13px;
+
+    width: 20px;
+    height: 13px;
+
+    border-width: 2px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p1::after {
+    right: 45px;
+    bottom: -14px;
+
+    width: 20px;
+    height: 13px;
+
+    border-width: 2px;
+  }
+
+
+
+  /* 광주갤러리 */
+
+  .mainPage_banner_content_right_box_content_p2 {
+    font-size: clamp(12px, 6vw, 31px);
+
+    margin-bottom: 70px;
+  }
+
+
+
+  /* 박진영 */
+
+  .mainPage_banner_content_right_box_content_p3 {
+    font-size: 50px;
+
+    margin-bottom: 30px;
+  }
+
+
+
+  /* 전화번호 */
+
+  .mainPage_banner_content_right_box_content_p4 {
+    font-size: 18px;
+
+    margin-bottom: 65px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p4 .phone-icon {
+    font-size: 18px;
+
+    margin-right: 5px;
+  }
+
+
+
+  /* =========================
+     SNS
+  ========================= */
+
+  .mainPage_banner_content_right_box_social {
+    width: 190px;
+
+    float: none;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .mainPage_banner_content_right_box_social a:nth-child(1) i {
+    font-size: 33px;
+  }
+
+
+  .mainPage_banner_content_right_box_social i {
+    font-size: 27px;
+  }
+
+}
+
+
+
+/* =========================================================
+   모바일 M
+   375px 이하
+========================================================= */
+
+@media screen and (max-width: 375px) {
+
+  html,
+  body,
+  #root,
+  .mainPage {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: hidden;
+  }
+
+
+
+  /* =========================
+     배너
+  ========================= */
+
+  .mainPage_banner_content {
+    height: 570px;
+  }
+
+
+  .mainPage_header_all_banner_img_cover {
+    width: 100%;
+    height: 615px;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    background-color: #00000041;
+  }
+
+
+
+  /* =========================
+     Navigation
+  ========================= */
+
+  .mainPage_banner_content_left_container {
+    min-height: 70px;
+
+    padding: 0 15px;
+  }
+
+
+  .mainPage_banner_content_left_navbar_brand {
+    margin: 0 auto 0 0;
+  }
+
+
+  .mainPage_banner_content_header_img {
+    width: 45px;
+
+    margin: 0;
+  }
+
+
+  .navbar-toggler,
+  .main_page_nav_toggle {
+    width: 45px;
+    height: 30px;
+
+    margin-left: auto;
+    margin-right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .navbar-toggler-icon {
+    font-size: 15px;
+  }
+
+
+  .navbar-collapse {
+    width: 100%;
+
+    top: 100%;
+    left: 0;
+
+    padding: 0 15px 15px;
+  }
+
+
+  .navbar_koleos {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 13px 0 0;
+
+    padding-top: 10px;
+
+    font-size: 1.1rem;
+  }
+
+
+  .navbar_filante,
+  .navbar_arkana {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+
+    font-size: 1.1rem;
+  }
+
+
+
+  /* =========================
+     오른쪽 내용
+  ========================= */
+
+  .mainPage_banner_content_right_box {
+    width: 100%;
+
+    padding: 0;
+
+    justify-content: center;
+
+    overflow: visible;
+  }
+
+
+  .mainPage_banner_content_right_box_content {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 0 15px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+  }
+
+
+
+  /* 2025 호남권 1등 */
+
+  .mainPage_banner_content_right_box_content_p1 {
+    color: white;
+
+    margin-right: 0;
+    margin-bottom: 40px;
+
+    font-size: 22px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p1::before {
+    left: 65px;
+    top: -10px;
+
+    width: 15px;
+    height: 10px;
+
+    border-width: 2px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p1::after {
+    right: 70px;
+    bottom: -10px;
+
+    width: 15px;
+    height: 10px;
+
+    border-width: 2px;
+  }
+
+
+
+  /* 광주갤러리 */
+
+  .mainPage_banner_content_right_box_content_p2 {
+    font-size: 15px;
+
+    margin-bottom: 70px;
+  }
+
+
+
+  /* 박진영 */
+
+  .mainPage_banner_content_right_box_content_p3 {
+    font-size: 35px;
+
+    margin-bottom: 25px;
+  }
+
+
+
+  /* 전화번호 */
+
+  .mainPage_banner_content_right_box_content_p4 {
+    font-size: 15px;
+
+    margin-bottom: 40px;
+  }
+
+
+  .mainPage_banner_content_right_box_content_p4 .phone-icon {
+    font-size: 15px;
+
+    margin-right: 5px;
+  }
+
+
+
+  /* =========================
+     SNS
+  ========================= */
+
+  .mainPage_banner_content_right_box_social {
+    width: 190px;
+
+    padding: 0;
+
+    float: none;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+  }
+
+
+  .mainPage_banner_content_right_box_social a:nth-child(1) i {
+    font-size: 20px;
+  }
+
+
+  .mainPage_banner_content_right_box_social a:nth-child(2) i {
+    font-size: 17px;
+  }
+
+
+  .mainPage_banner_content_right_box_social a:nth-child(3) i {
+    font-size: 19px;
+  }
+
+
+  .mainPage_banner_content_right_box_social a:nth-child(4) i {
+    font-size: 20px;
+  }
+
+}
