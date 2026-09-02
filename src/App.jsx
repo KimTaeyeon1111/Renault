@@ -77,8 +77,26 @@ function App() {
             playsInline
             preload="auto"
           >
+
             <source
               src="https://github.com/KimTaeyeon1111/Renault/releases/download/v1.0.0/Renault_mainBanner.mp4"
+              type="video/mp4"
+            />
+          
+          
+          </video>
+
+          <video
+            className="mainPage_header_all_banner_img_2"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+          >
+            
+            <source
+              src="https://github.com/KimTaeyeon1111/Renault/releases/download/v1.0.0/Renault_mainBanner_responsive.mp4"
               type="video/mp4"
             />
           

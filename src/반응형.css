@@ -1,4 +1,4 @@
-/* /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 모바일 M 사이즈 (375px)
 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 @media screen and (max-width: 375px) {
@@ -7,11 +7,6 @@
     max-width: 100% !important;
     overflow-x: hidden !important;
   }
-
-  .mainPage_header_all_banner_img_cover {opacity: 50%; width: 1600px; height: 700px;}
-
-  .mainPage_header_all_banner_img_cover_all {height: 700px; width: 375px !important;}
-  .mainPage_header_all_banner_img {height: 700px;}
 
   /* 2025 호남권 1등 위 아래 border */
   .mainPage_banner_content_right_box_content_p1 {color: rgb(255, 255, 255);
@@ -45,6 +40,7 @@
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 태블릿 사이즈 (768px)
 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
 /* 네비게이션 모바일 반응형 */
 
 @media screen and (max-width: 768px) {
@@ -53,6 +49,8 @@
     max-width: 100% !important;
     overflow-x: hidden !important;
   }
+
+
 
   .mainPage_header_all,
   .mainPage_banner_content,
