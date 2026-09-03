@@ -453,6 +453,29 @@
     overflow-x: hidden;
   }
 
+  /* =========================
+     Top button
+  ========================= */
+  .top-button {width: 43px; height: 43px; right: 25px; bottom: 25px;}
+
+
+
+  /* =========================
+     Popup
+  ========================= */
+  .popup {width: 350px;}
+  .popup_top {width: 350px; height: 50px;}
+  .popup_close {font-size: 18px; right: 8px; top: 8px;}
+  .popup_content {width: 350px; height: 277px;}
+
+  .popup_footer button {height: 52px;}
+
+  .popup_footer_more {color: #444; border-right: 1px solid #d3d3d3 !important; width: 175px;}
+  .popup_footer_hideToday {width: 175px;}
+
+  .popupSwiper .swiper-pagination {margin-bottom: -8px;}
+  .popupSwiper .swiper-pagination-bullet {width: 20px; height: 3px; border-radius: 0; opacity: 30%; background: #fff;}
+  .popupSwiper .swiper-pagination-bullet-active {background: #fff; opacity: 1;}
 
 
   /* =========================
@@ -517,7 +540,7 @@
   .mainPage_banner_content_left_container {
     width: 100%;
     max-width: 100%;
-    min-height: 85px;
+    min-height: 70px;
     margin: 10px 0 0 0;
     padding: 0 20px;
     box-sizing: border-box;
@@ -550,7 +573,7 @@
 
 
   .mainPage_banner_content_header_img {
-    width: 40px;
+    width: 35px;
     margin: 0;
   }
 
@@ -589,22 +612,28 @@
   .navbar_koleos {
     width: 100%;
     max-width: 100%;
-    margin: 10px 0 0;
-    padding: 10px 0;
-    font-size: 1.1rem;
+    margin: 0;
+    padding: 8px 0 5px 0;
+    font-size: 0.9rem;
     border-top: 3px solid #ffffff80;
   }
 
+  .navbar_filante {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.9rem;
+    padding: 5px 0;
+  }
 
-  .navbar_filante,
+
   .navbar_arkana {
     width: 100%;
     max-width: 100%;
     margin: 0;
-    padding: 10px 0;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    padding: 5px 0 5px 0;
   }
-
 
   .navbar_koleos:hover,
   .navbar_filante:hover,
@@ -658,7 +687,7 @@
 
 
   .mainPage_banner_content_right_box_content_p1::before {
-    left: 500px;
+    left: 472px;
     top: -12px;
     width: 22px;
     height: 12px;
@@ -700,12 +729,13 @@
 
 
 
+
   /* =========================
      SNS
   ========================= */
 
   .mainPage_banner_content_right_box_social {
-    width: 185px;
+    width: 160px;
     height: auto;
 
     float: right;
@@ -723,13 +753,115 @@
 
   .mainPage_banner_content_right_box_social a:nth-child(2) i {
     font-size: 20px;
+    margin-left: -10px
   }
   .mainPage_banner_content_right_box_social a:nth-child(3) i {
     font-size: 20px;
+    margin-left: -10px
   }
   .mainPage_banner_content_right_box_social a:nth-child(4) i {
     font-size: 20px;
+    margin-left: -10px
   }
+
+  /* =========================
+     Slide all
+  ========================= */
+
+  .slide_section_all, .slide_section,
+  .slide_section_koleos, .slide_section_koleos_box, .slide_1_section, .slide_section_koleos_box img,
+  .slide_section_filante, .slide_section_filante_box, .slide_2_section,
+  .slide_section_arkana_box, .slide_3_section {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .slide_section_filante_banner {width: 100%; margin-top: 250px;}
+  .slide_section_arkana {width: 100%; margin-top: 263px;}
+
+  .slide_section_filante_box img, .slide_section_arkana_box img {width: 100%;}
+
+  .mainPage_slide_1_all, .mainPage_slide_2_all, .mainPage_slide_3_all{margin-top: -100px;}
+
+
+
+
+
+  /* =========================
+     Slide_1 Koleos
+  ========================= */
+  .mainPage_slide_1_left {width: 100%; height: 350px; margin-top: 25px; padding: 0;
+    clip-path: none; left: 0;}
+
+  .mainPage_slide_1_right {width: 100%; height: 695px; padding: 0; margin-top: 383px; clip-path: none;
+   text-align: left; padding-left: 60px;}
+
+  .mainPage_slide_1_right_content_comment {width: 100%; z-index: 10; left: -150px; top: 1200px;}
+  .mainPage_slide_1_right_content_comment p {font-size: 15.5px;}
+
+
+
+  /* =========================
+     Slide_2 Filante
+  ========================= */
+  .mainPage_slide_2_right {width: 100%; height: 350px; margin-top: 25px; padding: 0;
+   clip-path: none; left: 0;}
+
+  .mainPage_slide_2_left {width: 100%; height: 685px; padding: 0; margin-top: 383px; clip-path: none;
+   text-align: left;}
+
+  .mainPage_slide_2_left_content_comment {width: 100%; z-index: 10; left: -150px; top: 2400px;}
+  .mainPage_slide_2_left_content_comment_2 {z-index: 10; left: -150px; top: 2422px;}
+  .mainPage_slide_2_left_content_comment p, .mainPage_slide_2_left_content_comment_2 p {font-size: 15.5px;}
+
+
+
+  /* =========================
+     Slide_3 Arkana
+  ========================= */
+  .mainPage_slide_3_left {width: 100%; height: 350px; margin-top: 21px; padding: 0;
+    clip-path: none; left: 0;
+  }
+  .slide_3_img_1 {display: none;}
+  .slide_3_img_2 {display: block; width: 100%;}
+
+
+  .mainPage_slide_3_right {width: 100%; height: 650px; padding: 0; margin-top: 378px; clip-path: none;
+  text-align: left; padding-left: 60px;}
+
+  .mainPage_slide_3_right_content_comment {width: 100%; z-index: 10; left: -150px; top: 3585px;}
+  .mainPage_slide_3_right_content_comment p {font-size: 15.5px;}
+
+  .mainPage_slide_3_right_content_h2 {padding-bottom: 13px;}
+  
+  /* =========================
+     Footer
+  ========================= */
+  .mainPage_Footer {margin-top: 1542px; height: 394px; width: 100%;}
+
+  .mainPage_Footer_video {height: 396px;}
+  .mainPage_Footer_video video {width: 100%;}
+  .mainPage_Footer_blackBox {width: 100%; height: 140px;}
+  .mainPage_Footer_blackBox_icon a i {font-size: 50px;}
+  .mainPage_Footer_blackBox_icon a p {font-size: 12px;}
+  .mainPage_Footer_blackBox_icon:hover i {font-size: 60px;}
+
+  .blackBox_icon5_2_box {top: 44px; left: 54px;}
+
+
+  /* =========================
+     Footer Bottom
+  ========================= */
+  .mainPage_footer_bottom_box {width: 100%; height: 210px; display: block; padding: 0; margin: 0; background-color: rgba(63, 63, 63, 0.164);}
+
+  .mainPage_footer_bottom_box_left_content, .mainPage_footer_bottom_box_right_content,
+  .mainPage_footer_bottom_box_left_content_box, .mainPage_footer_bottom_box_right_content_box {width: 100%; text-align: center;}
+  .mainPage_footer_bottom_box_left_content_box {margin-top: 10px;}
+  .mainPage_footer_bottom_box_right_content_box {margin-top: 60px;}
+  
+  .footer_title_1 {font-size: 16px;}
+  .footer_title_2 {font-size: 13px;}
+  .mainPage_footer_right_p_br {display: block;}
 }
 
 
