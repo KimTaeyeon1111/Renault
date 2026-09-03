@@ -257,7 +257,7 @@ function App() {
                   className="mySwiper slide_1"
                 >
 
-                  <SwiperSlide>
+                  <SwiperSlide className='mainPage_SwiperSlide_1_1'>
                     <img
                       src={img("그랑_콜레오스_1.png")}
                       alt="콜레오스 외부 사진"
@@ -265,7 +265,7 @@ function App() {
                     />
                   </SwiperSlide>
 
-                  <SwiperSlide>
+                  <SwiperSlide className='mainPage_SwiperSlide_1_2'>
                     <img
                       src={img("그랑_콜레오스_2.png")}
                       alt="콜레오스 내부 사진"
@@ -330,7 +330,7 @@ function App() {
                     노후차 5년 보유고객 <span>50만 원 할인!</span>
                   </p>
 
-                  <p className='mainPage_slide_1_right_content_p'>
+                  <p className='mainPage_slide_1_right_content_p mainPage_slide_1_right_content_p_responsive'>
 
                     <mark>
                       *혜택 가족
@@ -397,14 +397,6 @@ function App() {
                 />
               </div>
             </div>
-            {/* <div className='slide_section_filante_box_Rassure_box'>
-              <p className='slide_section_filante_box_Rassure'>
-                *R:assure 프리미엄 케어 솔루션은 3년 무상 케어 서비스, 중고차 가격 보장,
-                신차 교환 프로그램으로 구성되어 있습니다.
-                <br />
-                상세 서비스 구성 및 조건은 상담을 통해 확인해 주세요.
-              </p>
-            </div> */}
           </div>
 
 
@@ -461,7 +453,7 @@ function App() {
                     노후차 5년 보유고객 <span>50만 원 할인!</span>
                   </p>
 
-                  <p className='mainPage_slide_2_left_content_p'>
+                  <p className='mainPage_slide_2_left_content_p mainPage_slide_2_left_content_p_responsive'>
 
                     <mark>
                       *혜택 가족
@@ -573,16 +565,12 @@ function App() {
           ===================================================== */}
 
           <div className='slide_section_arkana'>
-
             <div className='slide_section_arkana_box'>
-
               <img
                 src={img("Arkana_배너.png")}
                 alt="아르카나 배너"
               />
-
             </div>
-
           </div>
 
 
@@ -601,6 +589,11 @@ function App() {
                   src={img("아르카나_1.png")}
                   alt="아르카나 외부 사진"
                   className='slide_3_img_1'
+                />
+                <img 
+                  src={img("아르카나_1_responsive.png")} 
+                  alt="아르카나 반응형 배너"
+                  className='slide_3_img_2'
                 />
 
               </div>
@@ -651,7 +644,7 @@ function App() {
                     가솔린 -<span> 100만 원 할인!</span>
                   </p>
 
-                  <p className='mainPage_slide_3_right_content_p'>
+                  <p className='mainPage_slide_3_right_content_p mainPage_slide_3_right_content_p_responsive'>
                     하이브리드 -<span> 50만 원 할인!</span>
                   </p>
 
@@ -703,7 +696,7 @@ function App() {
 
           </div>
 
-          <hr />
+          <hr style={{ marginTop: "238px" , border: "solid 1px #444" }} />
 
         </div>
 
@@ -838,7 +831,7 @@ function App() {
 
             <div className='mainPage_footer_bottom_box_left_content_box'>
 
-              <p className="footer_title">
+              <p className="footer_title footer_title_1">
                 RKM<span>(Renault Korea Motors) </span>
                 박진영
               </p>
@@ -861,17 +854,17 @@ function App() {
 
             <div className='mainPage_footer_bottom_box_right_content_box'>
 
-              <p className="footer_title">
+              <p className="footer_title footer_title_2">
                 Copyright
                 <i className="bi bi-c-circle"></i>
                 2025 RKM 박진영. All Right Reserved.
               </p>
 
               <p>
-                본 페이지는 차량 구매 상담 및 프로모션 안내를 위한 개인 홍보 페이지입니다.
+                본 페이지는 차량 구매 상담 및 프로모션 안내를 위한 개인 홍보 페이지입니다. <br className='mainPage_footer_right_p_br' />
                 웹페이지에 포함된 일부 콘텐츠는 AI 기술을 통해 수정 또는 생성될 수 있습니다.
                 <br />
-                차량 가격 및 프로모션 내용은 시점 및 조건에 따라 변경될 수 있습니다.
+                차량 가격 및 프로모션 내용은 시점 및 조건에 따라 변경될 수 있습니다. <br className='mainPage_footer_right_p_br' />
                 자세한 내용은 상담을 통해 확인해 주세요.
               </p>
 

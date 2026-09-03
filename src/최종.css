@@ -542,7 +542,7 @@ img {
   width: 1412px;
 }
 
-.slide_section_filante_box_Rassure_box {
+/* .slide_section_filante_box_Rassure_box {
   width: 667px;
   position: absolute;
   margin-left: 892px;
@@ -557,7 +557,7 @@ img {
 .slide_section_filante_box_Rassure a {
   text-decoration: underline;
   color: #ffffff;
-}
+} */
 
 
 .slide_section_arkana {
@@ -894,6 +894,8 @@ mark {
   );
 }
 
+.slide_3_img_2 {display: none;}
+
 
 /* 오른쪽 */
 
@@ -1145,6 +1147,7 @@ mark {
   padding-left: 7px;
 }
 
+.mainPage_footer_right_p_br {display: none;}
 
 /* Copyright */
 
