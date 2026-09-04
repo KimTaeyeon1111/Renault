@@ -331,18 +331,17 @@ function App() {
                   </p>
 
                   <p className='mainPage_slide_1_right_content_p mainPage_slide_1_right_content_p_responsive'>
-
                     <mark>
                       *혜택 가족
                     </mark>
-
                     이 5년 이상 된 차량을 보유하고 계신다면 무조건 할인!
-
                   </p>
 
 
 
-                  <hr />
+                  <hr className='mainPage_slide_1_right_content_hr' />
+
+
 
                   <h2 className='mainPage_slide_1_right_content_h2'>
                     주요 할부 금융
@@ -463,7 +462,7 @@ function App() {
 
                   </p>
 
-                  <hr style={{ width: "510px" }} />
+                  <hr className='mainPage_slide_2_left_content_hr' />
 
                   <h2 className='mainPage_slide_2_left_content_h2'>
                     주요 할부 금융
@@ -696,7 +695,7 @@ function App() {
 
           </div>
 
-          <hr style={{ marginTop: "238px" , border: "solid 1px #444" }} />
+          <hr className='slide_3_hr' />
 
         </div>
 
@@ -707,166 +706,110 @@ function App() {
           Footer
       ========================================================= */}
 
-      <div className='mainPage_Footer'>
+      <div className='mainPage_footer_all'>
+        <div className='mainPage_Footer'>
+          <div className='mainPage_Footer_video'>
 
-        <div className='mainPage_Footer_video'>
+            <video
+              src="https://github.com/KimTaeyeon1111/Renault/releases/download/v1.0.0/Footer_section.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+            />
 
-          <video
-            src="https://github.com/KimTaeyeon1111/Renault/releases/download/v1.0.0/Footer_section.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-          />
+            <div className='mainPage_Footer_blackBox'>
 
-          <div className='mainPage_Footer_blackBox'>
+              <div className='mainPage_Footer_blackBox_icon blackBox_icon1'>
 
-            <div className='mainPage_Footer_blackBox_icon blackBox_icon1'>
+                <a onClick={() => navigate('/user')}>
 
-              <a onClick={() => navigate('/user')}>
+                  <i className="bi bi-person-vcard"></i>
 
-                <i className="bi bi-person-vcard"></i>
+                  <p>
+                    명함
+                  </p>
 
-                <p>
-                  명함
-                </p>
+                </a>
 
-              </a>
-
-            </div>
-
-
-            <div className='mainPage_Footer_blackBox_icon blackBox_icon2'>
-
-              <a
-                target='_blank'
-                href="https://open.kakao.com/o/sAdxIyHh"
-              >
-
-                <i className="bi bi-chat"></i>
-
-                <p>
-                  카카오톡 1:1 문의
-                </p>
-
-              </a>
-
-            </div>
+              </div>
 
 
-            <div className='mainPage_Footer_blackBox_icon blackBox_icon3'>
+              <div className='mainPage_Footer_blackBox_icon blackBox_icon2'>
 
-              <a
-                target='_blank'
-                href="https://www.youtube.com/channel/UCnBso35246pjMuKkDdTLOIw"
-              >
+                <a
+                  target='_blank'
+                  href="https://open.kakao.com/o/sAdxIyHh"
+                >
 
-                <i className="bi bi-car-front-fill"></i>
+                  <i className="bi bi-chat"></i>
 
-                <p>
-                  영상 출고 후기
-                </p>
+                  <p>
+                    카카오톡 1:1 문의
+                  </p>
 
-              </a>
+                </a>
 
-            </div>
-
-
-            <div className='mainPage_Footer_blackBox_icon blackBox_icon5'>
-
-              <a
-                target='_blank'
-                href="https://blog.naver.com/rkmgjgl"
-              >
-
-                <i className="bi bi-window blackBox_icon5_1"></i>
-
-                <div className='blackBox_icon5_2_box'>
-                  <i className="bi bi-car-front-fill blackBox_icon5_2"></i>
-                </div>
-
-                <p>
-                  네이버 출고 후기
-                </p>
-
-              </a>
-
-            </div>
+              </div>
 
 
-            <div className='mainPage_Footer_blackBox_icon blackBox_icon4'>
+              <div className='mainPage_Footer_blackBox_icon blackBox_icon3'>
 
-              <a
-                target='_blank'
-                href="https://naver.me/5A3hOCBr"
-              >
+                <a
+                  target='_blank'
+                  href="https://www.youtube.com/channel/UCnBso35246pjMuKkDdTLOIw"
+                >
 
-                <i className="bi bi-geo-alt"></i>
+                  <i className="bi bi-car-front-fill"></i>
 
-                <p>
-                  전시장
-                </p>
+                  <p>
+                    영상 출고 후기
+                  </p>
 
-              </a>
+                </a>
 
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
+              </div>
 
 
-      {/* =========================================================
-          Footer Bottom
-      ========================================================= */}
+              <div className='mainPage_Footer_blackBox_icon blackBox_icon5'>
 
-      <div className='mainPage_footer_bottom'>
+                <a
+                  target='_blank'
+                  href="https://blog.naver.com/rkmgjgl"
+                >
 
-        <div className='mainPage_footer_bottom_box'>
+                  <i className="bi bi-window blackBox_icon5_1"></i>
 
-          <div className='mainPage_footer_bottom_box_left_content'>
+                  <div className='blackBox_icon5_2_box'>
+                    <i className="bi bi-car-front-fill blackBox_icon5_2"></i>
+                  </div>
 
-            <div className='mainPage_footer_bottom_box_left_content_box'>
+                  <p>
+                    네이버 출고 후기
+                  </p>
 
-              <p className="footer_title footer_title_1">
-                RKM<span>(Renault Korea Motors) </span>
-                박진영
-              </p>
+                </a>
 
-              <p>
-                르노코리아 차량 구매 상담 및 프로모션 안내
-                <br />
-                차량 구매 상담 · 견적 문의 · 시승 상담
-                <span className="footer_phone">
-                  010-4869-0592
-                </span>
-              </p>
-
-            </div>
-
-          </div>
+              </div>
 
 
-          <div className='mainPage_footer_bottom_box_right_content'>
+              <div className='mainPage_Footer_blackBox_icon blackBox_icon4'>
 
-            <div className='mainPage_footer_bottom_box_right_content_box'>
+                <a
+                  target='_blank'
+                  href="https://naver.me/5A3hOCBr"
+                >
 
-              <p className="footer_title footer_title_2">
-                Copyright
-                <i className="bi bi-c-circle"></i>
-                2025 RKM 박진영. All Right Reserved.
-              </p>
+                  <i className="bi bi-geo-alt"></i>
 
-              <p>
-                본 페이지는 차량 구매 상담 및 프로모션 안내를 위한 개인 홍보 페이지입니다. <br className='mainPage_footer_right_p_br' />
-                웹페이지에 포함된 일부 콘텐츠는 AI 기술을 통해 수정 또는 생성될 수 있습니다.
-                <br />
-                차량 가격 및 프로모션 내용은 시점 및 조건에 따라 변경될 수 있습니다. <br className='mainPage_footer_right_p_br' />
-                자세한 내용은 상담을 통해 확인해 주세요.
-              </p>
+                  <p>
+                    전시장
+                  </p>
+
+                </a>
+
+              </div>
 
             </div>
 
@@ -874,6 +817,63 @@ function App() {
 
         </div>
 
+
+        {/* =========================================================
+            Footer Bottom
+        ========================================================= */}
+
+        <div className='mainPage_footer_bottom'>
+
+          <div className='mainPage_footer_bottom_box'>
+
+            <div className='mainPage_footer_bottom_box_left_content'>
+
+              <div className='mainPage_footer_bottom_box_left_content_box'>
+
+                <p className="footer_title footer_title_1">
+                  RKM<span>(Renault Korea Motors) </span>
+                  박진영
+                </p>
+
+                <p>
+                  르노코리아 차량 구매 상담 및 프로모션 안내
+                  <br />
+                  차량 구매 상담 · 견적 문의 · 시승 상담
+                  <span className="footer_phone">
+                    010-4869-0592
+                  </span>
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div className='mainPage_footer_bottom_box_right_content'>
+
+              <div className='mainPage_footer_bottom_box_right_content_box'>
+
+                <p className="footer_title footer_title_2">
+                  Copyright
+                  <i className="bi bi-c-circle"></i>
+                  2025 RKM 박진영. All Right Reserved.
+                </p>
+
+                <p>
+                  본 페이지는 차량 구매 상담 및 프로모션 안내를 위한 개인 홍보 페이지입니다. <br className='mainPage_footer_right_p_br' />
+                  웹페이지에 포함된 일부 콘텐츠는 AI 기술을 통해 수정 또는 생성될 수 있습니다.
+                  <br />
+                  차량 가격 및 프로모션 내용은 시점 및 조건에 따라 변경될 수 있습니다. <br className='mainPage_footer_right_p_br' />
+                  자세한 내용은 상담을 통해 확인해 주세요.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
       </div>
 
     </div>

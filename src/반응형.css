@@ -22,18 +22,18 @@
 
   .mainPage_header_all {
     width: 100%;
+    max-width: 1300px;
     position: relative;
-  }
+    margin: 0 auto;
+    }
 
   .mainPage_header_all_banner_img {
     width: 100%;
-    max-width: 1440px;
     object-fit: cover;
   }
 
   .mainPage_banner_content {
     width: 100%;
-    max-width: 1440px;
     height: 810px;
     top: 0;
     left: 50%;
@@ -48,11 +48,11 @@
 
   .mainPage_banner_content_left_box {
     width: 100%;
-    max-width: 1440px;
     top: 0;
     left: 0;
     overflow: visible;
     z-index: 9999;
+    padding-left: 20px;
   }
 
 
@@ -83,7 +83,7 @@
 
   .mainPage_banner_content_header_img {
     width: 58px;
-    margin: 0;
+    margin: 10px 5px 0 0;
   }
 
   .main_navbar_menu {
@@ -111,6 +111,7 @@
 
   .mainPage_banner_content_right_box {
     padding-right: 4%;
+    margin-top: -70px;
   }
 
   .mainPage_banner_content_right_box_content {
@@ -121,7 +122,7 @@
   /* 2025 호남권 1등 */
 
   .mainPage_banner_content_right_box_content_p1 {
-    font-size: 48px;
+    font-size: 45px;
     margin: 50px 0 65px;
   }
 
@@ -145,30 +146,30 @@
   /* 광주갤러리 */
 
   .mainPage_banner_content_right_box_content_p2 {
-    font-size: 27px;
-    margin-bottom: 80px;
+    font-size: 25px;
+    margin-bottom: 65px;
   }
 
 
   /* 박진영 */
 
   .mainPage_banner_content_right_box_content_p3 {
-    font-size: 90px;
-    margin-bottom: 70px;
+    font-size: 77px;
+    margin-bottom: 55px;
   }
 
 
   /* 전화번호 */
 
   .mainPage_banner_content_right_box_content_p4 {
-    font-size: 31px;
+    font-size: 25px;
     margin-bottom: 55px;
   }
 
 
   .mainPage_banner_content_right_box_content_p4 .phone-icon {
-    font-size: 35px;
-    margin-right: 15px;
+    font-size: 25px;
+    margin-right: 12px;
   }
 
 
@@ -178,8 +179,8 @@
   ========================= */
 
   .mainPage_banner_content_right_box_social {
-    width: 260px;
-    height: 55px;
+    width: 210px;
+    height: 20px;
   }
 
   .mainPage_banner_content_right_box_social i {
@@ -188,21 +189,123 @@
   }
 
   .mainPage_banner_content_right_box_social a:nth-child(1) i {
-    font-size: 39px;
-  }
-
-  .mainPage_banner_content_right_box_social a:nth-child(2) i {
     font-size: 32px;
   }
 
+  .mainPage_banner_content_right_box_social a:nth-child(2) i {
+    font-size: 25px;
+  }
+
   .mainPage_banner_content_right_box_social a:nth-child(3) i {
-    font-size: 36px;
+    font-size: 29px;
   }
 
   .mainPage_banner_content_right_box_social a:nth-child(4) i {
-    font-size: 38px;
+    font-size: 31px;
   }
 
+  /* =========================
+     Slide all
+  ========================= */
+
+  .slide_section_all {width: 100%; max-width: 1300px; margin: 0 auto;}
+
+  .mainPage_slide_1_right_content {width: 480px;}
+
+  .slide_section,
+  .slide_section_koleos, .slide_section_koleos_box, .slide_1_section, .slide_section_koleos_box img,
+  .slide_section_filante, .slide_section_filante_box, .slide_2_section,
+  .slide_section_arkana_box, .slide_3_section, .slide_section_arkana {
+    width: 100%;
+    max-width: 1300px;
+  }
+
+  .slide_section_filante_box img, .slide_section_arkana_box img {width: 100%;}
+
+  /* =========================
+     Slide_1 Koleos
+  ========================= */
+  .mainPage_slide_1_all {max-width: 1240px;}
+  .mainPage_slide_1_right, .mainPage_slide_1_left {width: 730px;}
+  .mainPage_slide_1_right {
+    clip-path: polygon(
+      30% 0,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+  }
+
+  .mainPage_slide_1_right_content_comment {left: 620px; width: 100%;}
+
+  /* =========================
+     Slide_2 Filante
+  ========================= */
+  .mainPage_slide_2_all {max-width: 1240px;}
+  .mainPage_slide_2_left {width: 730px; z-index: 10000;}
+  .mainPage_slide_2_right {width: 740px;}
+  .mainPage_slide_2_right {
+    clip-path: polygon(
+      29.6% 0,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+  }
+
+  .mainPage_slide_2_left_content_comment {left: -137px; width: 100%;}
+  .mainPage_slide_2_left_content_comment_2 {left: -137px; width: 100%;}
+
+  /* =========================
+     Slide_3 Arkana
+  ========================= */
+  .mainPage_slide_3_all {max-width: 1240px;}
+  .mainPage_slide_3_right, .mainPage_slide_3_left {width: 730px;}
+  .mainPage_slide_3_right {
+    clip-path: polygon(
+      30% 0,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+  }
+
+  .mainPage_slide_3_right_content_comment {left: 625px; width: 100%;}
+
+
+
+ 
+  
+  /* =========================
+    Footer
+  ========================= */
+  .mainPage_footer_all {height: 705px;}
+  .slide_3_hr {border: solid 1px #444;}
+  .mainPage_Footer {width: 100%; height: 100%; max-height: 730px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; margin: 920px auto 0;}
+  .mainPage_Footer_video {width: 100%; max-width: 1300px; height: 500px; margin: 0; padding: 0;}
+  .mainPage_Footer_video video {display: block; width: 100%; height: 100%; max-width: 1300px; object-fit: cover; margin: 0; padding: 0;}
+
+  .mainPage_Footer_blackBox {width: 100%; max-width: 1300px; height: 200px; margin: 0; padding: 0;}
+  .mainPage_Footer_blackBox_icon a i {font-size: 75px;}
+  .mainPage_Footer_blackBox_icon a p {font-size: 17px;}
+  .mainPage_Footer_blackBox_icon:hover i {font-size: 100px;}
+  .blackBox_icon5_2_box i {top: 50px;left: 54px;}
+
+
+
+  /* =========================
+    Footer Bottom
+  ========================= */
+
+  .mainPage_footer_bottom {width: 100%; margin: 30px auto;}
+  .mainPage_footer_bottom_box {width: 100%; max-width: 1300px; height: 70px; padding: 0; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; display: flex; justify-content: space-between;}
+  .mainPage_footer_bottom_box_left_content {width: 275px;}
+  .mainPage_footer_bottom_box_right_content {width: 700px;}
+  .mainPage_footer_bottom_box_left_content_box {width: 275px; text-align: left;}
+  .mainPage_footer_bottom_box_right_content_box {width: 700px; text-align: right;}
+
+  .footer_title_1 {font-size: 16px;}
+  .footer_title_2 {font-size: 13px;}
 }
 
 
@@ -224,6 +327,10 @@
     overflow-x: hidden;
   }
 
+  /* =========================
+     Top button
+  ========================= */
+  .top-button {width: 38px; height: 38px; right: 23px; bottom: 25px; font-size: 13px;}
 
 
   /* =========================
@@ -233,19 +340,21 @@
   .mainPage_header_all {
     width: 100%;
     position: relative;
+    margin: 0 auto;
   }
+  /* 배너 위치 확인하기 */
 
 
   .mainPage_header_all_banner_img {
     width: 100%;
-    max-width: 1024px;
+    max-width: 970px;
     object-fit: cover;
   }
 
 
   .mainPage_banner_content {
     width: 100%;
-    max-width: 1024px;
+    max-width: 970px;
     height: 700px;
     top: 0;
     left: 50%;
@@ -260,7 +369,7 @@
 
   .mainPage_banner_content_left_box {
     width: 100%;
-    max-width: 1024px;
+    max-width: 970px;
     top: 0;
     left: 0;
     overflow: visible;
@@ -282,7 +391,7 @@
     width: 100%;
     max-width: 100%;
     margin: 0;
-    padding: 0 25px;
+    padding: 0;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -300,14 +409,14 @@
 
 
   .mainPage_banner_content_header_img {
-    width: 53px;
-    margin: 0;
+    width: 45px;
+    margin: 10px 0 0;
   }
 
 
   .main_navbar_menu {
     width: auto;
-    margin-left: auto;
+    margin-left: 0;
   }
 
 
@@ -335,20 +444,21 @@
   ========================= */
 
   .mainPage_banner_content_right_box {
-    padding-right: 4%;
+    padding-right: 6%;
   }
 
 
   .mainPage_banner_content_right_box_content {
     max-width: 350px;
+    margin-top: -110px;
   }
 
 
   /* 2025 호남권 1등 */
 
   .mainPage_banner_content_right_box_content_p1 {
-    font-size: 36px;
-    margin: 45px 0 55px;
+    font-size: 34px;
+    margin: 0 0 45px;
     padding: 0 20px 0 35px;
   }
 
@@ -374,30 +484,30 @@
   /* 광주갤러리 */
 
   .mainPage_banner_content_right_box_content_p2 {
-    font-size: 22px;
-    margin-bottom: 60px;
+    font-size: 18px;
+    margin-bottom: 50px;
   }
 
 
   /* 박진영 */
 
   .mainPage_banner_content_right_box_content_p3 {
-    font-size: 68px;
-    margin-bottom: 55px;
+    font-size: 60px;
+    margin-bottom: 40px;
   }
 
 
   /* 전화번호 */
 
   .mainPage_banner_content_right_box_content_p4 {
-    font-size: 25px;
-    margin-bottom: 50px;
+    font-size: 20px;
+    margin-bottom: 25px;
   }
 
 
   .mainPage_banner_content_right_box_content_p4 .phone-icon {
-    font-size: 28px;
-    margin-right: 10px;
+    font-size: 20px;
+    margin-right: 8px;
   }
 
 
@@ -407,7 +517,7 @@
   ========================= */
 
   .mainPage_banner_content_right_box_social {
-    width: 220px;
+    width: 180px;
     height: 50px;
   }
 
@@ -418,21 +528,116 @@
   }
 
   .mainPage_banner_content_right_box_social a:nth-child(1) i {
-    font-size: 34px;
-  }
-
-  .mainPage_banner_content_right_box_social a:nth-child(2) i {
     font-size: 28px;
   }
 
+  .mainPage_banner_content_right_box_social a:nth-child(2) i {
+    font-size: 23px;
+  }
+
   .mainPage_banner_content_right_box_social a:nth-child(3) i {
-    font-size: 31px;
+    font-size: 24px;
   }
 
   .mainPage_banner_content_right_box_social a:nth-child(4) i {
-    font-size: 33px;
+    font-size: 26px;
   }
 
+  /* =========================
+     Slide all
+  ========================= */
+
+  .slide_section_all {width: 100%; max-width: 970px; margin: 0 auto;}
+
+  .mainPage_slide_1_right_content {width: 480px;}
+
+  .slide_section,
+  .slide_section_koleos_box, .slide_1_section, .slide_section_koleos_box img,
+  .slide_section_filante_box, .slide_2_section, .slide_3_section, .slide_section_arkana {
+    width: 100%;
+    max-width: 970px;
+  }
+
+  .slide_section_koleos {width: 100%; max-width: 970px; margin-top: 20px;}
+  .slide_section_filante {width: 100%; max-width: 970px; margin-top: -30px}
+  .slide_section_arkana_box {width: 100%; max-width: 970px; margin-top: -195px;}
+
+  .slide_section_filante_box img, .slide_section_arkana_box img {width: 100%;}
+
+  /* =========================
+     Slide_1 Koleos
+  ========================= */
+  .mainPage_slide_1_all {max-width: 970px;}
+  .mainPage_slide_1_right {width: 100%; height: 700px; clip-path: none; left: 0; padding: 0 0 0 60px; margin-top: 10px; text-align: center;}
+  .mainPage_slide_1_left {width: 100%; height: 700px; clip-path: none; left: 0; padding: 0; opacity: 0.4; margin-top: 10px;}
+  
+  .mainPage_slide_1_right_content_comment {left: -166px; width: 100%; top: 900px;}
+  
+  .mainPage_slide_1_right_content_p_responsive {padding-bottom: 13px;}
+  /* =========================
+     Slide_2 Filante
+  ========================= */
+  .mainPage_slide_2_all {max-width: 970px;}
+  .mainPage_slide_2_left {width: 100%; height: 630px; clip-path: none; left: 0; padding: 0; margin-top: 10px; text-align: center; z-index: 1000;}
+  .mainPage_slide_2_right {width: 100%; height: 630px; clip-path: none; left: 0; padding: 0; opacity: 0.4; margin-top: 10px;}
+
+  .mainPage_slide_2_left_content_comment {left: -166px; width: 100%; top: 1762px;}
+  .mainPage_slide_2_left_content_comment_2 {left: -166px; width: 100%; top: 1785px;}
+
+  .mainPage_slide_2_left_content_p_responsive {padding-bottom: 13px;}
+  
+
+
+
+  /* =========================
+     Slide_3 Arkana
+  ========================= */
+  .mainPage_slide_3_all {max-width: 970px;}
+  .mainPage_slide_3_right {width: 100%; height: 640px; clip-path: none; left: 0; padding: 0 0 0 60px; margin-top: -90px; text-align: center;}
+  .mainPage_slide_3_left {width: 100%; height: 640px; clip-path: none; left: 0; padding: 0; opacity: 0.4; margin-top: -90px; display: flex; justify-content: center;}
+  .slide_3_img_1 {display: none;}
+  .slide_3_img_2 {display: block;}
+
+  .mainPage_slide_3_right_content_comment {left: -166px; width: 100%; top: 2660px;}
+
+
+ 
+  
+  /* =========================
+    Footer
+  ========================= */
+  .mainPage_footer_all {height: 535px;}
+  .slide_3_hr {border: solid 1px #444; margin-top: -160px;}
+  .mainPage_Footer {width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; margin: 640px auto 0;}
+  .mainPage_Footer_video {width: 100%; max-width: 970px; height: 340px; margin: 0; padding: 0;}
+  .mainPage_Footer_video video {display: block; width: 100%; height: 100%; max-width: 970px; object-fit: cover; margin: 0; padding: 0;}
+
+  .mainPage_Footer_blackBox {width: 100%; max-width: 970px; height: 200px; margin: 0; padding: 0;}
+  .mainPage_Footer_blackBox_icon a i {font-size: 70px;}
+  .mainPage_Footer_blackBox_icon a p {font-size: 14px;}
+  .mainPage_Footer_blackBox_icon:hover i {font-size: 100px;}
+  .blackBox_icon5_2_box i {top: 50px; left: 54px;}
+
+
+
+  /* =========================
+    Footer Bottom
+  ========================= */
+
+  .mainPage_footer_bottom {width: 100%; margin: 30px auto;}
+  .mainPage_footer_bottom_box {width: 100%; max-width: 970px; height: 45px; padding: 0; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; display: flex; justify-content: space-between;}
+  .mainPage_footer_bottom_box_left_content {width: 205px;}
+  .mainPage_footer_bottom_box_right_content {width: 547px;}
+  .mainPage_footer_bottom_box_left_content_box {width: 275px; text-align: left;}
+  .mainPage_footer_bottom_box_right_content_box {width: 700px; text-align: right;}
+
+  .footer_title_1 {font-size: 11px;}
+  .footer_title_2 {font-size: 10px;}
+  .footer_title_1 span {font-size: 8px;}
+  .footer_phone {font-size: 9px;}
+
+  .mainPage_footer_bottom_box_left_content_box p:nth-child(2),
+  .mainPage_footer_bottom_box_right_content_box p:nth-child(2) {font-size: 9px;}
 }
 
 
@@ -452,13 +657,6 @@
     max-width: 100%;
     overflow-x: hidden;
   }
-
-  /* =========================
-     Top button
-  ========================= */
-  .top-button {width: 43px; height: 43px; right: 25px; bottom: 25px;}
-
-
 
   /* =========================
      Popup
@@ -852,6 +1050,8 @@
   /* =========================
      Footer Bottom
   ========================= */
+  .slide_3_hr {margin-top: 238px; border: solid 1px #444;}
+
   .mainPage_footer_bottom_box {width: 100%; height: 210px; display: block; padding: 0; margin: 0; background-color: rgba(63, 63, 63, 0.164);}
 
   .mainPage_footer_bottom_box_left_content, .mainPage_footer_bottom_box_right_content,
