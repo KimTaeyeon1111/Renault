@@ -3,18 +3,7 @@
    작은 PC / 노트북
    1025px ~ 1440px
 ========================================================= */
-
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-
-  html,
-  body,
-  #root,
-  .mainPage {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
 
   /* =========================
      Header
@@ -23,21 +12,40 @@
   .mainPage_header_all {
     width: 100%;
     max-width: 1300px;
+
     position: relative;
+
     margin: 0 auto;
-    }
+  }
+
 
   .mainPage_header_all_banner_img {
+    display: block;
+
     width: 100%;
+    height: auto;
+
+    margin: 0;
+
     object-fit: cover;
   }
 
+
   .mainPage_banner_content {
-    width: 100%;
-    height: 810px;
+    position: absolute;
+
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+
+    margin: 0;
+    padding: 0;
+
+    transform: none;
   }
 
 
@@ -47,60 +55,82 @@
   ========================= */
 
   .mainPage_banner_content_left_box {
-    width: 100%;
+    position: absolute;
+
     top: 0;
     left: 0;
+
+    width: 100%;
+    max-width: none;
+
+    padding: 0 clamp(20px, 2vw, 30px);
+
+    box-sizing: border-box;
+
     overflow: visible;
+
     z-index: 9999;
-    padding-left: 20px;
   }
 
 
   .main_navbar_nav {
     position: relative;
+
     width: 100%;
-    top: 0;
-    left: 0;
+
+    margin: 0;
+    padding: 0;
+
     z-index: 10000;
   }
+
 
   .mainPage_banner_content_left_container {
     width: 100%;
     max-width: 100%;
+
     margin: 0;
-    padding: 0 30px;
-    box-sizing: border-box;
+
+    padding: 0;
+
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 10001;
+
+    box-sizing: border-box;
   }
+
 
   .mainPage_banner_content_left_navbar_brand {
     margin: 0;
-    padding: 25px 0 0;
+
+    padding-top: clamp(18px, 1.8vw, 25px);
   }
 
+
   .mainPage_banner_content_header_img {
-    width: 58px;
+    width: clamp(48px, 4vw, 58px);
+
     margin: 10px 5px 0 0;
   }
 
+
   .main_navbar_menu {
-    width: 100%;
-    left: 0;
+    width: auto;
+
+    margin-left: clamp(15px, 2vw, 30px);
+
+    display: flex;
+
+    gap: clamp(10px, 1.3vw, 20px);
   }
 
-  .navbar_koleos {
-    font-size: 21px;
-  }
 
-  .navbar_filante {
-    font-size: 21px;
-  }
-
+  .navbar_koleos,
+  .navbar_filante,
   .navbar_arkana {
-    font-size: 21px;
+    margin: clamp(20px, 1.9vw, 27px) 0 0;
+
+    font-size: clamp(17px, 1.45vw, 21px);
   }
 
 
@@ -110,66 +140,119 @@
   ========================= */
 
   .mainPage_banner_content_right_box {
-    padding-right: 4%;
-    margin-top: -70px;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    left: auto;
+
+    width: 48%;
+    height: 100%;
+
+    margin: 0;
+
+    padding:
+      clamp(40px, 4vw, 60px)
+      clamp(20px, 3vw, 45px)
+      0
+      0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    box-sizing: border-box;
   }
+
 
   .mainPage_banner_content_right_box_content {
-    max-width: 420px;
+    width: 100%;
+    max-width: clamp(350px, 30vw, 420px);
+
+    margin: 0;
+    padding: 0;
+
+    text-align: right;
   }
 
 
-  /* 2025 호남권 1등 */
+
+  /* =========================
+     2025 호남권 1등
+  ========================= */
 
   .mainPage_banner_content_right_box_content_p1 {
-    font-size: 45px;
-    margin: 50px 0 65px;
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin:
+      0
+      0
+      clamp(38px, 4vw, 55px)
+      auto;
+    padding: 0;
+    font-size: clamp(40px, 3.4vw, 48px);
+    white-space: nowrap;
   }
 
 
+  /* 왼쪽 위 ㄱ */
   .mainPage_banner_content_right_box_content_p1::before {
-    left: 20px;
-    top: -28px;
-    width: 45px;
-    height: 23px;
+    left: clamp(-18px, -1.4vw, -12px);
+    top: -12px;
+
+    width: clamp(28px, 2.4vw, 35px);
+    height: clamp(14px, 1.3vw, 19px);
   }
 
 
+  /* 오른쪽 아래 ㄴ */
   .mainPage_banner_content_right_box_content_p1::after {
-    right: 0;
-    bottom: -32px;
-    width: 45px;
-    height: 23px;
+    right: clamp(-20px, -1.4vw, -14px);
+    bottom: clamp(-17px, -1.1vw, -12px);
+
+    width: clamp(28px, 2.4vw, 35px);
+    height: clamp(14px, 1.3vw, 19px);
   }
 
 
-  /* 광주갤러리 */
+
+  /* =========================
+     광주갤러리
+  ========================= */
 
   .mainPage_banner_content_right_box_content_p2 {
-    font-size: 25px;
-    margin-bottom: 65px;
+    font-size: clamp(23px, 1.9vw, 27px);
+    margin-bottom: clamp(38px, 4vw, 55px);
   }
 
 
-  /* 박진영 */
+
+  /* =========================
+     박진영
+  ========================= */
 
   .mainPage_banner_content_right_box_content_p3 {
-    font-size: 77px;
-    margin-bottom: 55px;
+    font-size: clamp(72px, 5.5vw, 82px);
+    margin-bottom: clamp(30px, 3.2vw, 45px);
   }
 
 
-  /* 전화번호 */
+
+  /* =========================
+     전화번호
+  ========================= */
 
   .mainPage_banner_content_right_box_content_p4 {
-    font-size: 25px;
-    margin-bottom: 55px;
+    font-size: clamp(24px, 2vw, 28px);
+    margin-bottom: clamp(20px, 2.5vw, 35px);
+    white-space: nowrap;
   }
 
 
   .mainPage_banner_content_right_box_content_p4 .phone-icon {
-    font-size: 25px;
-    margin-right: 12px;
+    font-size: clamp(24px, 2vw, 28px);
+    margin-right: clamp(7px, 0.8vw, 12px);
   }
 
 
@@ -179,30 +262,43 @@
   ========================= */
 
   .mainPage_banner_content_right_box_social {
-    width: 210px;
-    height: 20px;
+    width: clamp(195px, 15vw, 220px);
+    height: auto;
+
+    margin-left: auto;
+    margin-right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
 
   .mainPage_banner_content_right_box_social i {
-    width: 45px;
-    height: 45px;
+    width: auto;
+    height: auto;
   }
+
 
   .mainPage_banner_content_right_box_social a:nth-child(1) i {
-    font-size: 32px;
+    font-size: clamp(30px, 2.4vw, 34px);
   }
+
 
   .mainPage_banner_content_right_box_social a:nth-child(2) i {
-    font-size: 25px;
+    font-size: clamp(24px, 2vw, 27px);
   }
+
 
   .mainPage_banner_content_right_box_social a:nth-child(3) i {
-    font-size: 29px;
+    font-size: clamp(27px, 2.2vw, 30px);
   }
 
+
   .mainPage_banner_content_right_box_social a:nth-child(4) i {
-    font-size: 31px;
+    font-size: clamp(29px, 2.3vw, 32px);
   }
+
 
   /* =========================
      Slide all
@@ -273,7 +369,6 @@
   .mainPage_slide_3_right_content_comment {left: 625px; width: 100%;}
 
 
-
  
   
   /* =========================
@@ -286,9 +381,9 @@
   .mainPage_Footer_video video {display: block; width: 100%; height: 100%; max-width: 1300px; object-fit: cover; margin: 0; padding: 0;}
 
   .mainPage_Footer_blackBox {width: 100%; max-width: 1300px; height: 200px; margin: 0; padding: 0;}
-  .mainPage_Footer_blackBox_icon a i {font-size: 75px;}
-  .mainPage_Footer_blackBox_icon a p {font-size: 17px;}
-  .mainPage_Footer_blackBox_icon:hover i {font-size: 100px;}
+  .mainPage_Footer_blackBox_icon a i {font-size: clamp(62px, 5.2vw, 75px);}
+  .mainPage_Footer_blackBox_icon a p {font-size: clamp(14px, 1.2vw, 17px);}
+  .mainPage_Footer_blackBox_icon:hover i {font-size: clamp(85px, 6.9vw, 100px);}
   .blackBox_icon5_2_box i {top: 50px;left: 54px;}
 
 
@@ -298,16 +393,16 @@
   ========================= */
 
   .mainPage_footer_bottom {width: 100%; margin: 30px auto;}
-  .mainPage_footer_bottom_box {width: 100%; max-width: 1300px; height: 70px; padding: 0; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; display: flex; justify-content: space-between;}
+  .mainPage_footer_bottom_box {width: 100%; max-width: 1300px; height: 70px; padding: 0; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
   .mainPage_footer_bottom_box_left_content {width: 275px;}
   .mainPage_footer_bottom_box_right_content {width: 700px;}
   .mainPage_footer_bottom_box_left_content_box {width: 275px; text-align: left;}
   .mainPage_footer_bottom_box_right_content_box {width: 700px; text-align: right;}
 
-  .footer_title_1 {font-size: 16px;}
-  .footer_title_2 {font-size: 13px;}
-}
+  .footer_title_1 {font-size: clamp(14px, 1.15vw, 16px);}
+  .footer_title_2 {font-size: clamp(11px, 0.95vw, 13px);}
 
+}
 
 
 /* =========================================================
@@ -315,23 +410,7 @@
    태블릿 가로 / 작은 노트북
    769px ~ 1024px
 ========================================================= */
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-
-  html,
-  body,
-  #root,
-  .mainPage {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  /* =========================
-     Top button
-  ========================= */
-  .top-button {width: 38px; height: 38px; right: 23px; bottom: 25px; font-size: 13px;}
-
 
   /* =========================
      Header
@@ -339,26 +418,42 @@
 
   .mainPage_header_all {
     width: 100%;
+    max-width: 970px;
+
     position: relative;
+
     margin: 0 auto;
   }
-  /* 배너 위치 확인하기 */
 
 
   .mainPage_header_all_banner_img {
+    display: block;
+
     width: 100%;
-    max-width: 970px;
+    height: auto;
+
+    margin: 0;
+
     object-fit: cover;
   }
 
 
+  /* ⭐ 이미지가 줄어들면 이 박스도 똑같이 줄어듦 */
   .mainPage_banner_content {
-    width: 100%;
-    max-width: 970px;
-    height: 700px;
+    position: absolute;
+
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+
+    margin: 0;
+    padding: 0;
+
+    transform: none;
   }
 
 
@@ -368,73 +463,85 @@
   ========================= */
 
   .mainPage_banner_content_left_box {
-    width: 100%;
-    max-width: 970px;
+    position: absolute;
+
     top: 0;
     left: 0;
+
+    width: 100%;
+    max-width: none;
+
+    padding: 0 clamp(14px, 2vw, 20px);
+
+    box-sizing: border-box;
+
     overflow: visible;
+
     z-index: 9999;
   }
 
 
   .main_navbar_nav {
     position: relative;
+
     width: 100%;
-    top: 0;
-    left: 0;
+
+    margin: 0;
     padding: 0;
+
     z-index: 10000;
   }
 
 
   .mainPage_banner_content_left_container {
     width: 100%;
-    max-width: 100%;
+
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 10001;
+
+    box-sizing: border-box;
   }
 
 
   .mainPage_banner_content_left_navbar_brand {
     width: auto;
     height: auto;
+
     margin: 0;
-    padding: 20px 0 0;
+
+    padding-top: clamp(12px, 1.8vw, 18px);
   }
 
 
   .mainPage_banner_content_header_img {
-    width: 45px;
-    margin: 10px 0 0;
+    width: clamp(38px, 4.4vw, 45px);
+
+    margin: 8px 0 0;
   }
 
 
   .main_navbar_menu {
     width: auto;
-    margin-left: 0;
+
+    margin-left: clamp(12px, 2vw, 20px);
+
+    display: flex;
+
+    gap: clamp(8px, 1.2vw, 14px);
   }
 
 
-  .navbar_koleos {
-    margin: 22px 18px 0 18px;
-    font-size: 18px;
-  }
-
-
-  .navbar_filante {
-    margin: 22px 18px 0 0;
-    font-size: 18px;
-  }
-
-
+  .navbar_koleos,
+  .navbar_filante,
   .navbar_arkana {
-    margin: 22px 0 0;
-    font-size: 18px;
+    margin: clamp(16px, 2vw, 21px) 0 0;
+
+    font-size: clamp(15px, 1.75vw, 18px);
+
+    white-space: nowrap;
   }
 
 
@@ -444,70 +551,126 @@
   ========================= */
 
   .mainPage_banner_content_right_box {
-    padding-right: 6%;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    left: auto;
+
+    width: 48%;
+    height: 100%;
+
+    margin: 0;
+
+    padding:
+      clamp(20px, 3vw, 30px)
+      clamp(14px, 2.5vw, 25px)
+      0
+      0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    box-sizing: border-box;
   }
 
 
   .mainPage_banner_content_right_box_content {
-    max-width: 350px;
-    margin-top: -110px;
+    width: 100%;
+    max-width: clamp(285px, 34vw, 340px);
+
+    margin: 0;
+    padding: 0;
+
+    text-align: right;
   }
 
 
-  /* 2025 호남권 1등 */
+
+  /* =========================
+     2025 호남권 1등
+  ========================= */
 
   .mainPage_banner_content_right_box_content_p1 {
-    font-size: 34px;
-    margin: 0 0 45px;
-    padding: 0 20px 0 35px;
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin:
+      0
+      0
+      clamp(28px, 3.6vw, 38px)
+      auto;
+    padding: 0;
+    font-size: clamp(30px, 3.6vw, 36px);
+    white-space: nowrap;
   }
 
 
   .mainPage_banner_content_right_box_content_p1::before {
-    left: 14px;
-    top: -22px;
-    width: 35px;
-    height: 18px;
-    border-width: 3px;
+    left: -12px;
+    top: -15px;
+    
+    width: clamp(20px, 2.5vw, 26px);
+    height: clamp(11px, 1.4vw, 14px);
+
+    border-width: 2px;
   }
 
 
   .mainPage_banner_content_right_box_content_p1::after {
-    right: 0;
-    bottom: -25px;
-    width: 35px;
-    height: 18px;
-    border-width: 3px;
+    right: -12px;
+    bottom: -15px;
+
+    width: clamp(20px, 2.5vw, 26px);
+    height: clamp(11px, 1.4vw, 14px);
+
+    border-width: 2px;
   }
 
 
-  /* 광주갤러리 */
+
+  /* =========================
+     광주갤러리
+  ========================= */
 
   .mainPage_banner_content_right_box_content_p2 {
-    font-size: 18px;
-    margin-bottom: 50px;
+    font-size: clamp(18px, 2vw, 21px);
+
+    margin-bottom: clamp(28px, 4vw, 36px);
+
+    white-space: nowrap;
   }
 
 
-  /* 박진영 */
+
+  /* =========================
+     박진영
+  ========================= */
 
   .mainPage_banner_content_right_box_content_p3 {
-    font-size: 60px;
-    margin-bottom: 40px;
+    font-size: clamp(58px, 6.5vw, 66px);
+
+    margin-bottom: clamp(22px, 3vw, 30px);
   }
 
 
-  /* 전화번호 */
+
+  /* =========================
+     전화번호
+  ========================= */
 
   .mainPage_banner_content_right_box_content_p4 {
-    font-size: 20px;
-    margin-bottom: 25px;
+    font-size: clamp(20px, 2.2vw, 23px);
+    margin-bottom: clamp(17px, 2.3vw, 24px);
+    white-space: nowrap;
   }
 
 
   .mainPage_banner_content_right_box_content_p4 .phone-icon {
-    font-size: 20px;
-    margin-right: 8px;
+    font-size: clamp(20px, 2.2vw, 23px);
+
+    margin-right: clamp(5px, 0.7vw, 8px);
   }
 
 
@@ -517,31 +680,43 @@
   ========================= */
 
   .mainPage_banner_content_right_box_social {
-    width: 180px;
-    height: 50px;
+    width: clamp(170px, 18vw, 190px);
+    height: auto;
+
+    margin-left: auto;
+    margin-right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
 
   .mainPage_banner_content_right_box_social i {
-    width: 40px;
-    height: 40px;
+    width: auto;
+    height: auto;
   }
+
 
   .mainPage_banner_content_right_box_social a:nth-child(1) i {
-    font-size: 28px;
+    font-size: clamp(27px, 2.8vw, 30px);
   }
+
 
   .mainPage_banner_content_right_box_social a:nth-child(2) i {
-    font-size: 23px;
+    font-size: clamp(22px, 2.4vw, 25px);
   }
+
 
   .mainPage_banner_content_right_box_social a:nth-child(3) i {
-    font-size: 24px;
+    font-size: clamp(24px, 2.5vw, 27px);
   }
 
+
   .mainPage_banner_content_right_box_social a:nth-child(4) i {
-    font-size: 26px;
+    font-size: clamp(25px, 2.6vw, 28px);
   }
+
 
   /* =========================
      Slide all
@@ -564,6 +739,7 @@
 
   .slide_section_filante_box img, .slide_section_arkana_box img {width: 100%;}
 
+
   /* =========================
      Slide_1 Koleos
   ========================= */
@@ -574,6 +750,8 @@
   .mainPage_slide_1_right_content_comment {left: -166px; width: 100%; top: 900px;}
   
   .mainPage_slide_1_right_content_p_responsive {padding-bottom: 13px;}
+  
+
   /* =========================
      Slide_2 Filante
   ========================= */
@@ -613,9 +791,9 @@
   .mainPage_Footer_video video {display: block; width: 100%; height: 100%; max-width: 970px; object-fit: cover; margin: 0; padding: 0;}
 
   .mainPage_Footer_blackBox {width: 100%; max-width: 970px; height: 200px; margin: 0; padding: 0;}
-  .mainPage_Footer_blackBox_icon a i {font-size: 70px;}
-  .mainPage_Footer_blackBox_icon a p {font-size: 14px;}
-  .mainPage_Footer_blackBox_icon:hover i {font-size: 100px;}
+  .mainPage_Footer_blackBox_icon a i {font-size: clamp(55px, 6.8vw, 70px);}
+  .mainPage_Footer_blackBox_icon a p {font-size: clamp(12px, 1.4vw, 14px);}
+  .mainPage_Footer_blackBox_icon:hover i {font-size: clamp(80px, 9vw, 92px);}
   .blackBox_icon5_2_box i {top: 50px; left: 54px;}
 
 
@@ -625,20 +803,22 @@
   ========================= */
 
   .mainPage_footer_bottom {width: 100%; margin: 30px auto;}
-  .mainPage_footer_bottom_box {width: 100%; max-width: 970px; height: 45px; padding: 0; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; display: flex; justify-content: space-between;}
+  .mainPage_footer_bottom_box {width: 100%; max-width: 970px; height: 45px; padding: 0; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
   .mainPage_footer_bottom_box_left_content {width: 205px;}
   .mainPage_footer_bottom_box_right_content {width: 547px;}
-  .mainPage_footer_bottom_box_left_content_box {width: 275px; text-align: left;}
-  .mainPage_footer_bottom_box_right_content_box {width: 700px; text-align: right;}
+  .mainPage_footer_bottom_box_left_content_box {width: 100%; text-align: left;}
+  .mainPage_footer_bottom_box_right_content_box {width: 100%; text-align: right;}
 
-  .footer_title_1 {font-size: 11px;}
-  .footer_title_2 {font-size: 10px;}
-  .footer_title_1 span {font-size: 8px;}
-  .footer_phone {font-size: 9px;}
+  .footer_title_1 {font-size: clamp(10px, 1.1vw, 11px);}
+  .footer_title_2 {font-size: clamp(9px, 1vw, 10px);}
+  .footer_title_1 span {font-size: clamp(7px, 0.8vw, 8px);}
+  .footer_phone {font-size: clamp(8px, 0.9vw, 9px);}
 
   .mainPage_footer_bottom_box_left_content_box p:nth-child(2),
-  .mainPage_footer_bottom_box_right_content_box p:nth-child(2) {font-size: 9px;}
+  .mainPage_footer_bottom_box_right_content_box p:nth-child(2) {font-size: clamp(8px, 0.9vw, 9px);}
 }
+
+
 
 
 
@@ -789,6 +969,7 @@
     justify-content: center;
     align-items: center;
   }
+
 
   .navbar-collapse {
     width: 100%;
