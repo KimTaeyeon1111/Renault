@@ -115,7 +115,7 @@ function App() {
           ========================= */}
           <div className="mainPage_banner_content_left_box">
             <Navbar expand="lg" className='main_navbar_nav'>
-              <Container className='mainPage_banner_content_left_container'>
+              <Container fluid className='mainPage_banner_content_left_container'>
 
                 <Navbar.Brand href="#home" className='mainPage_banner_content_left_navbar_brand'>
                   <div className="mainPage_banner_content_header">
