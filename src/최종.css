@@ -159,9 +159,11 @@ img {
 .mainPage_banner_content_left_container {
   width: 100%;
   max-width: none !important;
-  display: flex;
-  align-items: center;
+  margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   position: relative;
   z-index: 102;
 }
@@ -235,7 +237,6 @@ img {
   line-height: 13px;
 }
 
-.mainPage_banner_content_left_container {width: 100%; margin: 0; padding: 0; display: flex; justify-content: space-around; align-items: center;}
 
 /* 2025 호남권 1등 */
 
@@ -640,6 +641,10 @@ img {
   font-weight: 700;
 }
 
+.mainPage_slide_1_title {
+  margin-bottom: -13px;
+}
+
 .mainPage_slide_1_right_content_h2 {
   padding-bottom: 10px;
 }
@@ -651,9 +656,21 @@ img {
   margin-bottom: 8px;
 }
 
+.mainPage_slide_1_intro {
+  margin-bottom: 10px;
+}
+
 .mainPage_slide_1_right_content_p {
   font-size: 16px;
   line-height: 8px;
+}
+
+.mainPage_slide_1_bonus_line {
+  margin-top: -10px;
+}
+
+.mainPage_slide_1_bonus_line_last {
+  margin-bottom: -10px;
 }
 
 .slide_1_right_content_p_2 {
@@ -746,6 +763,10 @@ mark {
 .mainPage_slide_2_left_content h2 {
   font-size: 40px;
   font-weight: 700;
+}
+
+.mainPage_slide_2_title {
+  margin-bottom: -20px;
 }
 
 .mainPage_slide_2_left_content_h2 {
@@ -909,6 +930,10 @@ mark {
   font-weight: 700;
 }
 
+.mainPage_slide_3_title {
+  margin-bottom: -20px;
+}
+
 .mainPage_slide_3_right_content_h2 {
   padding-bottom: 22px;
 }
@@ -927,6 +952,15 @@ mark {
 
 .slide_3_right_content_p_2 {
   line-height: 8px;
+}
+
+.mainPage_slide_3_finance_first {
+  margin-bottom: 2px;
+}
+
+.mainPage_slide_3_gas_note {
+  margin-bottom: 2px;
+  font-size: 14px;
 }
 
 
