@@ -282,27 +282,27 @@ function App() {
                   
                 <div className='mainPage_slide_1_right_content'>
 
-                  <h2 style={{ marginBottom: "-13px" }}>
+                  <h2 className='mainPage_slide_1_title'>
                     Grand KOLEOS 프로모션
                   </h2>
 
-                  <p  style={{ marginBottom: "10px" }} className='mainPage_slide_1_right_content_strong slide_1_right_strong'>
+                  <p className='mainPage_slide_1_right_content_strong slide_1_right_strong mainPage_slide_1_intro'>
                     한정수량 생산 월별 특별 혜택!
                   </p>
 
                   <p className='mainPage_slide_1_right_content_p koleos_paddingBottom'>
                     ~ 26.03 생산차량 - <span>300만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
-                  <p style={{ marginTop: "-10px" }}><span>+ 엔진오일세트 7회</span> 무상 교체 + <span>150만 원 할인</span></p>
+                  <p className='mainPage_slide_1_bonus_line'><span>+ 엔진오일세트 7회</span> 무상 교체 + <span>150만 원 할인</span></p>
                   
 
                   <p className='mainPage_slide_1_right_content_p'>
                     26.04 ~ 06 생산차량 - <span>200만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
-                  <p style={{ marginTop: "-10px" }}><span>+ 엔진오일세트 7회</span> 무상 교체 + <span>50만 원 할인</span></p>
+                  <p className='mainPage_slide_1_bonus_line'><span>+ 엔진오일세트 7회</span> 무상 교체 + <span>50만 원 할인</span></p>
                   
 
                   <p className='mainPage_slide_1_right_content_p'>
                     26.07 ~ 08 생산차량 - <span>150만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
-                  <p style={{ marginTop: "-10px", marginBottom: "-10px" }}><span>+ 엔진오일세트 7회</span> 무상 교체</p>
+                  <p className='mainPage_slide_1_bonus_line mainPage_slide_1_bonus_line_last'><span>+ 엔진오일세트 7회</span> 무상 교체</p>
                   
 
                   <p className='mainPage_slide_1_right_content_strong slide_1_right_strong'>재구매 <span>50만 원 or 100만 원 할인!</span>
@@ -412,7 +412,7 @@ function App() {
 
                 <div className='mainPage_slide_2_left_content'>
 
-                  <h2 style={{ marginBottom: "-20px" }}>
+                  <h2 className='mainPage_slide_2_title'>
                     FILANTE 프로모션
                   </h2>
 
@@ -603,7 +603,7 @@ function App() {
 
                 <div className='mainPage_slide_3_right_content'>
 
-                  <h2 style={{ marginBottom: "-20px" }}>
+                  <h2 className='mainPage_slide_3_title'>
                     ARKANA 프로모션
                   </h2>
 
@@ -653,7 +653,7 @@ function App() {
                     주요 할부 금융
                   </h2>
 
-                  <p className='mainPage_slide_3_right_content_p slide_3_right_content_p_2' style={{ marginBottom: "2px"}}>
+                  <p className='mainPage_slide_3_right_content_p slide_3_right_content_p_2 mainPage_slide_3_finance_first'>
 
                     <strong className='mainPage_slide_3_right_content_strong slide_3_right_strong'>표준형 무이자! </strong>
 
@@ -662,7 +662,7 @@ function App() {
                     </span>
 
                   </p>
-                  <p style={{ fontSize: "14px", marginBottom:"2px" }}><i class="bi bi-arrow-return-right"></i> 가솔린만 적용 가능</p>
+                  <p className='mainPage_slide_3_gas_note'><i className="bi bi-arrow-return-right"></i> 가솔린만 적용 가능</p>
 
                   <p className='mainPage_slide_3_right_content_p slide_3_right_content_p_2'>
                     <br />
