@@ -824,7 +824,7 @@ body,
   ========================= */
 
   .mainPage_banner_content_right_box_social {
-    width: clamp(88px, calc(-219.6px + 40vw), 190px);
+    width: clamp(88px, calc(-200.6px + 40vw), 190px);
     height: auto;
 
     margin-left: auto;
@@ -2315,6 +2315,128 @@ body,
      각주 top만 보정
 ========================================================= */
 @media screen and (min-width: 500px) and (max-width: 768px) {
+
+  /* =======================================================
+     Navigation
+     768px 기준 크기를 유지하면서 500px까지 자연스럽게 축소
+  ======================================================= */
+
+  .mainPage_banner_content_left_box {
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    z-index: 9999;
+  }
+
+  .main_navbar_nav {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 10000;
+  }
+
+  .mainPage_banner_content_left_container {
+    width: 100%;
+    max-width: 100%;
+    min-height: clamp(56px, calc(29.88px + 5.2239vw), 70px);
+    margin: clamp(6px, calc(-1.46px + 1.4925vw), 10px) 0;
+    padding: 0 clamp(12px, calc(-2.93px + 2.9851vw), 20px);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10001;
+  }
+
+  .mainPage_banner_content_left_navbar_brand {
+    width: auto;
+    height: auto;
+    margin: 0 auto 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainPage_banner_content_header {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mainPage_banner_content_header_img {
+    width: clamp(28px, calc(14.94px + 2.6119vw), 35px);
+    margin: 0;
+  }
+
+  .navbar-toggler,
+  .main_page_nav_toggle {
+    margin: 0 0 clamp(3px, calc(-0.73px + 0.7463vw), 5px) auto;
+    position: relative;
+    z-index: 10003;
+    width: clamp(40px, calc(26.94px + 2.6119vw), 47px);
+    height: clamp(28px, calc(20.54px + 1.4925vw), 32px);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 10002;
+  }
+
+  .main_navbar_menu {
+    width: clamp(452px, 90.5vw, 695px);
+    max-width: calc(100% - 24px);
+    margin: 0 auto;
+  }
+
+  .navbar_koleos,
+  .navbar_filante,
+  .navbar_arkana {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: clamp(12px, calc(7.52px + 0.8955vw), 14.4px);
+    white-space: nowrap;
+  }
+
+  .navbar_koleos {
+    margin: 0 0 clamp(3px, calc(-0.73px + 0.7463vw), 5px) 0;
+    padding: clamp(6px, calc(2.27px + 0.7463vw), 8px) 0
+             clamp(4px, calc(2.13px + 0.3731vw), 5px);
+    border-top: clamp(2px, calc(0.13px + 0.3731vw), 3px) solid #ffffff80;
+  }
+
+  .navbar_filante {
+    margin: 0 0 clamp(3px, calc(-0.73px + 0.7463vw), 5px) 0;
+    padding: clamp(4px, calc(2.13px + 0.3731vw), 5px) 0;
+  }
+
+  .navbar_arkana {
+    margin: 0;
+    padding: clamp(4px, calc(2.13px + 0.3731vw), 5px) 0;
+  }
+
+  .navbar_koleos:hover,
+  .navbar_filante:hover,
+  .navbar_arkana:hover {
+    background-color: #9b9b9b38;
+  }
 
   /* -------------------------------------------------------
      프로모션 박스 내부 글자 오른쪽 잘림 방지
