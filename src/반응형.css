@@ -161,8 +161,7 @@ body,
     width: 48%;
     height: 100%;
     margin: 0;
-    padding:
-      clamp(40px, 4vw, 60px) clamp(20px, 3vw, 45px) 0 0;
+    padding: clamp(40px, 4vw, 60px) clamp(20px, 3vw, 45px) 0 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
