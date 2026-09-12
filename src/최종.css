@@ -243,21 +243,24 @@ img {
 .mainPage_banner_content_right_box_content_p1 {
   position: relative;
   display: block;
-  margin: 53px 0 80px;
-  padding: 0 25px 0 45px;
+  width: fit-content;
+  margin: 45px 0 58px auto;
+  padding: 6px 22px 10px 28px;
   box-sizing: border-box;
   font-size: clamp(10px, 12vw, 58px);
+  line-height: 1.06;
   color: rgb(255, 255, 255);
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .mainPage_banner_content_right_box_content_p1::before {
   content: "";
   position: absolute;
-  left: 20px;
-  top: -35px;
-  width: 53px;
-  height: 27px;
+  left: 0;
+  top: -13px;
+  width: 50px;
+  height: 22px;
   border-top: 4px solid white;
   border-left: 4px solid white;
 }
@@ -265,10 +268,10 @@ img {
 .mainPage_banner_content_right_box_content_p1::after {
   content: "";
   position: absolute;
-  right: 0px;
-  bottom: -40px;
-  width: 53px;
-  height: 27px;
+  right: 0;
+  bottom: -13px;
+  width: 50px;
+  height: 22px;
   border-right: 4px solid white;
   border-bottom: 4px solid white;
 }

@@ -114,7 +114,7 @@ function App() {
               왼쪽 NAV
           ========================= */}
           <div className="mainPage_banner_content_left_box">
-            <Navbar expand="lg" className='main_navbar_nav'>
+            <Navbar expand="lg" collapseOnSelect className='main_navbar_nav'>
               <Container fluid className='mainPage_banner_content_left_container'>
 
                 <Navbar.Brand href="#home" className='mainPage_banner_content_left_navbar_brand'>
