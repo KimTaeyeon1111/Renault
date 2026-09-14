@@ -51,14 +51,14 @@ function User() {
                     </div>
                     </div>
                     <div className='mainPage_footer_bottom_box_right_content'>
-                    <div className='mainPage_footer_bottom_box_right_content_box'>
-                        <p style={{ fontWeight: "500", color: "#000" }}>Copyright 
-                        <i className="bi bi-c-circle"></i>
-                        2025 RKM 박진영. All Right Reserved.
-                        </p>
-                        <p>본 페이지는 차량 구매 상담 및 프로모션 안내를 위한 개인 홍보 페이지입니다. 웹페이지에 포함된 일부 콘텐츠는 AI 기술을 통해 수정 또는 생성될 수 있습니다. <br />
-                        차량 가격 및 프로모션 내용은 시점 및 조건에 따라 변경될 수 있습니다. 자세한 내용은 상담을 통해 확인해 주세요.</p>
-                    </div>
+                        <div className='mainPage_footer_bottom_box_right_content_box'>
+                            <p style={{ fontWeight: "500", color: "#000" }}>Copyright 
+                            <i className="bi bi-c-circle"></i>
+                            2025 RKM 박진영. All Right Reserved.
+                            </p>
+                            <p>본 페이지는 차량 구매 상담 및 프로모션 안내를 위한 개인 홍보 페이지입니다. 웹페이지에 포함된 일부 콘텐츠는 AI 기술을 통해 수정 또는 생성될 수 있습니다. <br />
+                            차량 가격 및 프로모션 내용은 시점 및 조건에 따라 변경될 수 있습니다. 자세한 내용은 상담을 통해 확인해 주세요.</p>
+                        </div>
                     </div>
                 </div>
             </div>
