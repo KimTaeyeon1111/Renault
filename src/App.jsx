@@ -421,7 +421,7 @@ function App() {
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p'>
-                    ~ 2026.03 생산차량 - <span>기본 150만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만원 할인</span>
+                    ~ 26.03 생산차량 - <span>기본 150만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만원 할인</span>
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p'>
@@ -433,7 +433,7 @@ function App() {
                   </p>
 
                   <p className='mainPage_slide_2_left_content_strong slide_2_left_strong'>
-                    재구매 <span> 50만 원 + 100만 원 할인! </span>
+                    재구매 <span> 50만 원 or 100만 원 할인! </span>
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p'>
