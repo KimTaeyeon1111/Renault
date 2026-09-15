@@ -536,18 +536,14 @@ body,
      내용이 많은 KOLEOS는 필요한 만큼만 벌어져 박스가 꽉 차 보이게 함. */
   .mainPage_slide_1_right_content > .mainPage_slide_1_right_content_strong:not(:first-of-type),
   .mainPage_slide_2_left_content > .mainPage_slide_2_left_content_strong:not(:first-of-type),
-  .mainPage_slide_3_right_content > .mainPage_slide_3_right_content_strong:not(:first-of-type),
+  .mainPage_slide_3_right_content > .mainPage_slide_3_right_content_strong:not(:first-of-type) {
+    margin-top: 10px;
+  }
+
   .mainPage_slide_1_right_content > .mainPage_slide_1_right_content_h2,
   .mainPage_slide_2_left_content > .mainPage_slide_2_left_content_h2,
   .mainPage_slide_3_right_content > .mainPage_slide_3_right_content_h2 {
-    margin-top: auto;
-  }
-
-  /* 금융 영역도 남는 공간을 받아 아래쪽까지 자연스럽게 채운다. */
-  .mainPage_slide_1_right_content_h2,
-  .mainPage_slide_2_left_content_h2,
-  .mainPage_slide_3_right_content_h2 {
-    margin-top: auto;
+    margin-top: 10px;
   }
 
   .mainPage_slide_1_bonus_line {margin-top: -4px;}
@@ -1052,7 +1048,7 @@ body,
   .mainPage_slide_1_right_content > .mainPage_slide_1_right_content_h2,
   .mainPage_slide_2_left_content > .mainPage_slide_2_left_content_h2,
   .mainPage_slide_3_right_content > .mainPage_slide_3_right_content_h2 {
-    margin-top: auto;
+    margin-top: 6px;
   }
 
   .mainPage_slide_1_bonus_line {margin-top: -3px;}
@@ -2267,8 +2263,8 @@ body,
   .mainPage_slide_1_right_content,
   .mainPage_slide_2_left_content,
   .mainPage_slide_3_right_content {
-    justify-content: flex-start;
-    gap: 3px;
+    justify-content: space-between;
+    gap: 0;
   }
 
   .mainPage_slide_1_title,
@@ -2373,6 +2369,17 @@ body,
   }
 }
 
+/* 810~1024px은 글박스의 남는 높이를 모든 행 사이에 고르게 배분한다.
+   특정 주제 앞에만 큰 빈 공간이 생기지 않으면서 박스가 전체적으로 차 보이게 한다. */
+@media screen and (min-width: 810px) and (max-width: 1024px) {
+  .mainPage_slide_1_right_content,
+  .mainPage_slide_2_left_content,
+  .mainPage_slide_3_right_content {
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
 /* 760~809px 마지막 가로형 구간은 세로 공간이 가장 작으므로 한 단계 더 조밀하게 */
 @media screen and (min-width: 760px) and (max-width: 809px) {
   .mainPage_slide_1_right_content,
@@ -2449,22 +2456,25 @@ body,
 
   /* 세로형 footer 시작부터 불필요한 큰 여백 제거 */
   .mainPage_Footer {
-    margin-top: 8px;
+    margin-top: 5px;
   }
 
   .mainPage_footer_bottom {
     width: 100%;
-    margin: 6px 0 0;
-    padding: 6px 0;
+    margin: 5px 0 0;
+    padding: 4px 0;
     background-color: #44444427;
     border-top: 1px solid #c2c2c2;
   }
 
   .mainPage_footer_bottom_box {
     width: 100%;
+    height: auto;
+    min-height: 0;
     margin: 0;
     padding: 0;
-    gap: 6px;
+    justify-content: flex-start;
+    gap: 3px;
     background-color: transparent;
   }
 
@@ -2472,7 +2482,7 @@ body,
   .mainPage_footer_bottom_box_right_content {
     width: 100%;
     margin: 0;
-    padding: 0 8px;
+    padding: 0 6px;
     background-color: transparent;
   }
 
@@ -2480,7 +2490,7 @@ body,
   .mainPage_footer_bottom_box_right_content_box {
     width: 100%;
     margin: 0;
-    padding: 5px 0;
+    padding: 0;
     background-color: transparent;
   }
 
@@ -2501,22 +2511,34 @@ body,
   }
 
   .mainPage_Footer {
-    margin-top: 7px;
+    margin-top: 5px;
   }
 
   .mainPage_footer_bottom {
-    margin-top: 6px;
-    padding: 6px 0;
+    margin-top: 5px;
+    padding: 4px 0;
   }
 
   .mainPage_footer_bottom_box {
     width: 100%;
-    gap: 5px;
+    min-height: 0;
+    justify-content: flex-start;
+    gap: 2px;
   }
 
   .mainPage_footer_bottom_box_left_content_box,
   .mainPage_footer_bottom_box_right_content_box {
-    padding: 5px 0;
+    padding: 0;
+  }
+
+  .footer_title {
+    padding-bottom: 1px;
+    line-height: 1.15;
+  }
+
+  .mainPage_footer_bottom_box_left_content_box p:nth-child(2),
+  .mainPage_footer_bottom_box_right_content_box p:nth-child(2) {
+    line-height: 1.2;
   }
 }
 
@@ -2617,17 +2639,18 @@ body,
   }
 
   .mainPage_footer_bottom {
-    margin-top: 5px;
-    padding: 5px 0;
+    margin-top: 4px;
+    padding: 4px 0;
   }
 
   .mainPage_footer_bottom_box {
-    gap: 4px;
+    min-height: 0;
+    gap: 2px;
   }
 
   .mainPage_footer_bottom_box_left_content_box,
   .mainPage_footer_bottom_box_right_content_box {
-    padding: 4px 0;
+    padding: 0;
   }
 }
 
@@ -2657,3 +2680,705 @@ body,
     font-size: 9.3px;
   }
 }
+
+
+/* =========================================================
+   FINAL EXACT FIX - 2026-09-14
+   1) TOP 버튼은 위치 fixed를 유지하고 크기만 화면과 함께 축소
+   2) 햄버거 메뉴 첫 줄 border를 메뉴 박스 너비 100%에 정확히 일치
+========================================================= */
+@media screen and (max-width: 1440px) {
+  .top-button {
+    width: clamp(30px, 3.4722vw, 50px);
+    height: clamp(30px, 3.4722vw, 50px);
+    font-size: clamp(12px, 1.3889vw, 20px);
+  }
+
+  .top-button:hover {
+    font-size: clamp(12px, 1.3889vw, 20px);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-collapse .main_navbar_menu {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-collapse .navbar_koleos,
+  .navbar-collapse .navbar_filante,
+  .navbar-collapse .navbar_arkana {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar-collapse .navbar_koleos {
+    border-top: 2px solid rgba(255, 255, 255, .5);
+  }
+}
+
+/* =========================================================
+   FILANTE / ARKANA TEXT FILL FINAL FIX - 2026-09-14
+
+   목표
+   - KOLEOS는 현재 밀도를 그대로 유지
+   - 내용량이 적은 FILANTE / ARKANA만 폰트와 주제 간격을 키워
+     같은 크기의 프로모션 박스 안이 비어 보이지 않게 채움
+   - 글 컨테이너는 auto-height + 부모 중앙정렬을 유지해서
+     위/아래 한쪽으로 쏠리지 않게 함
+   - 760px까지 한 줄 유지가 우선이므로 760~809px은 증가폭을 제한
+========================================================= */
+@media screen and (min-width: 760px) and (max-width: 1440px) {
+
+  /* KOLEOS는 건드리지 않고 FILANTE / ARKANA만 적용 */
+  .mainPage_slide_2_left_content,
+  .mainPage_slide_3_right_content {
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  /* FILANTE 구분선은 KOLEOS / ARKANA의 실제 글 영역 길이에 맞춤 */
+  .mainPage_slide_2_left_content_hr {
+    width: 65%;
+    max-width: 65%;
+    align-self: flex-start;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+/* ---------------------------------------------------------
+   1025px ~ 1440px
+   충분한 가로폭이 있으므로 글 자체를 키워 박스를 채움
+--------------------------------------------------------- */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+  .mainPage_slide_2_left_content {
+    width: calc(100% - 24px);
+    margin: 12px;
+  }
+
+  .mainPage_slide_3_right_content {
+    width: calc(100% - 12px);
+    margin: 12px 12px 12px 0;
+  }
+
+  .mainPage_slide_2_left_content h2,
+  .mainPage_slide_3_right_content h2 {
+    font-size: clamp(34px, 2.72vw, 39px);
+    line-height: 1.08;
+    margin-top: 0;
+  }
+
+  .mainPage_slide_2_title,
+  .mainPage_slide_3_title {
+    margin-bottom: 15px;
+  }
+
+  .mainPage_slide_2_left_content_strong,
+  .mainPage_slide_3_right_content_strong {
+    font-size: clamp(18px, 1.53vw, 22px);
+    line-height: 1.18;
+    margin-top: 0;
+    margin-bottom: 6px;
+    white-space: nowrap;
+  }
+
+  .mainPage_slide_2_left_content > .mainPage_slide_2_left_content_strong:not(:first-of-type),
+  .mainPage_slide_3_right_content > .mainPage_slide_3_right_content_strong:not(:first-of-type) {
+    margin-top: 16px;
+  }
+
+  .mainPage_slide_2_left_content p,
+  .mainPage_slide_3_right_content p {
+    font-size: clamp(12.5px, 1.01vw, 14.5px);
+    line-height: 1.26;
+    white-space: nowrap;
+  }
+
+  /* 주제/강조 글씨는 일반 p 규칙보다 높은 우선순위로 다시 지정 */
+  .mainPage_slide_2_left_content .mainPage_slide_2_left_content_strong,
+  .mainPage_slide_3_right_content .mainPage_slide_3_right_content_strong {
+    font-size: clamp(18px, 1.53vw, 22px);
+    line-height: 1.18;
+  }
+
+  .mainPage_slide_2_left_content > p,
+  .mainPage_slide_3_right_content > p {
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+
+  .mainPage_slide_2_left_content_hr,
+  .mainPage_slide_3_right_content hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .mainPage_slide_2_left_content_h2,
+  .mainPage_slide_3_right_content_h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-bottom: 0;
+  }
+
+  .mainPage_slide_3_gas_note {
+    font-size: clamp(10.5px, .88vw, 12.5px);
+    line-height: 1.2;
+  }
+}
+
+/* ---------------------------------------------------------
+   810px ~ 1024px
+   1024에서 충분히 크게 보이되 810으로 갈수록 한 줄 유지에 맞춰 감소
+--------------------------------------------------------- */
+@media screen and (min-width: 810px) and (max-width: 1024px) {
+
+  .mainPage_slide_2_left_content {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+
+  .mainPage_slide_3_right_content {
+    width: calc(100% - 10px);
+    margin: 10px 10px 10px 0;
+  }
+
+  .mainPage_slide_2_left_content h2,
+  .mainPage_slide_3_right_content h2 {
+    font-size: clamp(24px, calc(-6.28px + 3.7383vw), 32px);
+    line-height: 1.08;
+  }
+
+  .mainPage_slide_2_title,
+  .mainPage_slide_3_title {
+    margin-bottom: clamp(10px, 1.27vw, 13px);
+  }
+
+  .mainPage_slide_2_left_content_strong,
+  .mainPage_slide_3_right_content_strong {
+    font-size: clamp(13.2px, calc(-3.07px + 2.0093vw), 17.5px);
+    line-height: 1.17;
+    margin-top: 0;
+    margin-bottom: 5px;
+    white-space: nowrap;
+  }
+
+  .mainPage_slide_2_left_content > .mainPage_slide_2_left_content_strong:not(:first-of-type),
+  .mainPage_slide_3_right_content > .mainPage_slide_3_right_content_strong:not(:first-of-type) {
+    margin-top: clamp(9px, 1.27vw, 13px);
+  }
+
+  .mainPage_slide_2_left_content p,
+  .mainPage_slide_3_right_content p {
+    font-size: clamp(9.5px, calc(-2.24px + 1.449vw), 12.6px);
+    line-height: 1.22;
+    white-space: nowrap;
+  }
+
+  .mainPage_slide_2_left_content .mainPage_slide_2_left_content_strong,
+  .mainPage_slide_3_right_content .mainPage_slide_3_right_content_strong {
+    font-size: clamp(13.2px, calc(-3.07px + 2.0093vw), 17.5px);
+    line-height: 1.17;
+  }
+
+  .mainPage_slide_2_left_content > p,
+  .mainPage_slide_3_right_content > p {
+    margin-top: 0;
+    margin-bottom: clamp(3px, .55vw, 5px);
+  }
+
+  .mainPage_slide_2_left_content_hr,
+  .mainPage_slide_3_right_content hr {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  .mainPage_slide_2_left_content_h2,
+  .mainPage_slide_3_right_content_h2 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    padding-bottom: 0;
+  }
+
+  .mainPage_slide_3_gas_note {
+    font-size: clamp(8.3px, 1vw, 10px);
+  }
+}
+
+/* ---------------------------------------------------------
+   760px ~ 809px
+   가로형 마지막 구간: 긴 문장 잘림 방지가 최우선
+--------------------------------------------------------- */
+@media screen and (min-width: 760px) and (max-width: 809px) {
+
+  .mainPage_slide_2_left_content {
+    width: calc(100% - 16px);
+    margin: 8px;
+  }
+
+  .mainPage_slide_3_right_content {
+    width: calc(100% - 8px);
+    margin: 8px 8px 8px 0;
+  }
+
+  .mainPage_slide_2_left_content h2,
+  .mainPage_slide_3_right_content h2 {
+    font-size: clamp(22px, 2.95vw, 24px);
+  }
+
+  .mainPage_slide_2_title,
+  .mainPage_slide_3_title {
+    margin-bottom: 9px;
+  }
+
+  .mainPage_slide_2_left_content_strong,
+  .mainPage_slide_3_right_content_strong {
+    font-size: clamp(11.5px, 1.62vw, 13.2px);
+    line-height: 1.16;
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+
+  .mainPage_slide_2_left_content > .mainPage_slide_2_left_content_strong:not(:first-of-type),
+  .mainPage_slide_3_right_content > .mainPage_slide_3_right_content_strong:not(:first-of-type) {
+    margin-top: 7px;
+  }
+
+  .mainPage_slide_2_left_content p,
+  .mainPage_slide_3_right_content p {
+    font-size: clamp(8.5px, 1.17vw, 9.5px);
+    line-height: 1.16;
+  }
+
+  .mainPage_slide_2_left_content .mainPage_slide_2_left_content_strong,
+  .mainPage_slide_3_right_content .mainPage_slide_3_right_content_strong {
+    font-size: clamp(11.5px, 1.62vw, 13.2px);
+    line-height: 1.16;
+  }
+
+  .mainPage_slide_2_left_content > p,
+  .mainPage_slide_3_right_content > p {
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+
+  .mainPage_slide_2_left_content_hr,
+  .mainPage_slide_3_right_content hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/* =========================================================
+   KOLEOS FINAL DENSITY FIX
+   - 760~1440 가로형 구간에서 하단 여백 축소
+   - 글 묶음 높이는 내용만큼만 사용하고 박스 중앙 정렬
+   - 화면이 줄면 폰트도 같이 줄여 한 줄 유지
+========================================================= */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .mainPage_slide_1_right {
+    justify-content: center;
+  }
+
+  .mainPage_slide_1_right_content {
+    width: calc(100% - 15px);
+    height: auto;
+    margin: 0 15px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .mainPage_slide_1_right_content h2 {
+    font-size: clamp(32px, 2.64vw, 38px);
+    line-height: 1.06;
+  }
+
+  .mainPage_slide_1_title {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  .mainPage_slide_1_right_content .mainPage_slide_1_right_content_strong {
+    font-size: clamp(17px, 1.42vw, 20.5px);
+    line-height: 1.16;
+  }
+
+  .mainPage_slide_1_right_content > .mainPage_slide_1_right_content_strong {
+    margin-top: 11px;
+    margin-bottom: 4px;
+    padding: 0;
+  }
+
+  .mainPage_slide_1_right_content > .mainPage_slide_1_intro {
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+
+  .mainPage_slide_1_right_content p {
+    font-size: clamp(11.5px, .95vw, 13.7px);
+    line-height: 1.24;
+    white-space: nowrap;
+  }
+
+  .mainPage_slide_1_right_content > p {
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding: 0;
+  }
+
+  .mainPage_slide_1_right_content > .mainPage_slide_1_bonus_line {
+    margin-top: -2px;
+  }
+
+  .mainPage_slide_1_right_content > .mainPage_slide_1_bonus_line_last {
+    margin-bottom: 1px;
+  }
+
+  .mainPage_slide_1_right_content hr {
+    margin: 9px 0 8px;
+  }
+
+  .mainPage_slide_1_right_content > .mainPage_slide_1_right_content_h2 {
+    margin-top: 0;
+    margin-bottom: 7px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 810px) and (max-width: 1024px) {
+  .mainPage_slide_1_right {
+    justify-content: center;
+  }
+
+  .mainPage_slide_1_right_content {
+    width: calc(100% - 10px);
+    height: auto;
+    margin: 0 10px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .mainPage_slide_1_right_content h2 {
+    font-size: clamp(23px, calc(-7.28px + 3.7383vw), 31px);
+    line-height: 1.06;
+  }
+
+  .mainPage_slide_1_title {
+    margin-top: 0;
+    margin-bottom: clamp(8px, 1.05vw, 11px);
+  }
+
+  .mainPage_slide_1_right_content .mainPage_slide_1_right_content_strong {
+    font-size: clamp(12.4px, calc(-2.95px + 1.8953vw), 16.5px);
+    line-height: 1.15;
+  }
+
+  .mainPage_slide_1_right_content > .mainPage_slide_1_right_content_strong {
+    margin-top: clamp(7px, .95vw, 10px);
+    margin-bottom: 3px;
+    padding: 0;
+  }
+
+  .mainPage_slide_1_right_content > .mainPage_slide_1_intro {
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+
+  .mainPage_slide_1_right_content p {
+    font-size: clamp(8.8px, calc(-1.78px + 1.3065vw), 11.6px);
+    line-height: 1.18;
+    white-space: nowrap;
+  }
+
+  .mainPage_slide_1_right_content > p {
+    margin-top: 0;
+    margin-bottom: clamp(2px, .38vw, 4px);
+    padding: 0;
+  }
+
+  .mainPage_slide_1_right_content > .mainPage_slide_1_bonus_line {
+    margin-top: -1px;
+  }
+
+  .mainPage_slide_1_right_content > .mainPage_slide_1_bonus_line_last {
+    margin-bottom: 0;
+  }
+
+  .mainPage_slide_1_right_content hr {
+    margin: 6px 0;
+  }
+
+  .mainPage_slide_1_right_content > .mainPage_slide_1_right_content_h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 809px) {
+  .mainPage_slide_1_right {
+    justify-content: center;
+  }
+
+  .mainPage_slide_1_right_content {
+    width: calc(100% - 8px);
+    height: auto;
+    margin: 0 8px 0 0;
+    padding: 0;
+  }
+
+  .mainPage_slide_1_right_content h2 {
+    font-size: clamp(21px, 2.85vw, 23px);
+  }
+
+  .mainPage_slide_1_title {
+    margin-bottom: 7px;
+  }
+
+  .mainPage_slide_1_right_content .mainPage_slide_1_right_content_strong {
+    font-size: clamp(11px, 1.48vw, 12.4px);
+    line-height: 1.14;
+  }
+
+  .mainPage_slide_1_right_content > .mainPage_slide_1_right_content_strong {
+    margin-top: 6px;
+    margin-bottom: 2px;
+    padding: 0;
+  }
+
+  .mainPage_slide_1_right_content > .mainPage_slide_1_intro {
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+
+  .mainPage_slide_1_right_content p {
+    font-size: clamp(8px, 1.12vw, 8.8px);
+    line-height: 1.15;
+    white-space: nowrap;
+  }
+
+  .mainPage_slide_1_right_content > p {
+    margin-top: 0;
+    margin-bottom: 2px;
+    padding: 0;
+  }
+
+  .mainPage_slide_1_right_content hr {
+    margin: 5px 0;
+  }
+
+  .mainPage_slide_1_right_content > .mainPage_slide_1_right_content_h2 {
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding: 0;
+  }
+}
+
+
+/* =========================================================
+   2026-09-15 DETAIL FINAL FIX
+   1) 세로형 Footer Bottom: 글끼리 붙지 않게 정리하면서 회색 배경 전체 유지
+   2) 네이버 출고 후기 내부 자동차: 반응형에서도 창 하단선 쪽으로 유지
+   3) TOP 버튼: fixed 유지 + 모바일에서 화면 폭에 맞춰 추가 축소
+========================================================= */
+
+/* ---------------------------------------------------------
+   세로형 Footer Bottom
+   - 참고 이미지처럼 가운데 정렬
+   - 제목 / 설명 / Copyright / 안내문 사이에는 분명한 간격
+   - 문장 내부 line-height도 확보
+   - 바깥 회색 배경은 100% 유지
+--------------------------------------------------------- */
+@media screen and (max-width: 759px) {
+  .mainPage_footer_bottom {
+    width: 100%;
+    height: auto;
+    margin: 6px 0 0;
+    padding: 10px 0 12px;
+    background-color: #44444427;
+    border-top: 1px solid #c2c2c2;
+  }
+
+  .mainPage_footer_bottom_box {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+  }
+
+  .mainPage_footer_bottom_box_left_content,
+  .mainPage_footer_bottom_box_right_content {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0 12px;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .mainPage_footer_bottom_box_left_content_box,
+  .mainPage_footer_bottom_box_right_content_box {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .mainPage_footer_bottom_box_left_content_box p,
+  .mainPage_footer_bottom_box_right_content_box p {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* RKM ... 박진영 */
+  .footer_title_1 {
+    margin-bottom: 7px !important;
+    padding: 0;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+
+  /* 왼쪽 설명 2줄 */
+  .mainPage_footer_bottom_box_left_content_box p:nth-child(2) {
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  /* Copyright */
+  .footer_title_2 {
+    margin-top: 1px !important;
+    margin-bottom: 7px !important;
+    padding: 0;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+
+  /* 우측 안내문 */
+  .mainPage_footer_bottom_box_right_content_box p:nth-child(2) {
+    margin: 0;
+    line-height: 1.65;
+    white-space: normal;
+  }
+
+  /* JSX에 이미 있는 구분용 br을 세로형 footer에서는 다시 사용 */
+  .mainPage_footer_right_p_br {
+    display: block;
+  }
+}
+
+/* 모바일 L 이하에서는 공간을 조금만 더 압축하되 글끼리는 붙지 않게 유지 */
+@media screen and (max-width: 425px) {
+  .mainPage_footer_bottom {
+    margin-top: 5px;
+    padding: 9px 0 10px;
+  }
+
+  .mainPage_footer_bottom_box {
+    gap: 9px;
+  }
+
+  .mainPage_footer_bottom_box_left_content,
+  .mainPage_footer_bottom_box_right_content {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .footer_title_1 {
+    margin-bottom: 6px !important;
+  }
+
+  .footer_title_2 {
+    margin-bottom: 6px !important;
+  }
+
+  .mainPage_footer_bottom_box_left_content_box p:nth-child(2),
+  .mainPage_footer_bottom_box_right_content_box p:nth-child(2) {
+    line-height: 1.55;
+  }
+}
+
+/* ---------------------------------------------------------
+   TOP 버튼
+   - 위치 방식(position: fixed)은 그대로
+   - 760px 미만에서 30px 고정으로 남지 않고 30 -> 22px까지 자연스럽게 축소
+   - 우측/하단 거리도 같은 비율로 줄여 작은 화면을 덜 가림
+--------------------------------------------------------- */
+@media screen and (max-width: 759px) {
+  .top-button {
+    position: fixed;
+    width: clamp(22px, calc(14.188px + 2.0833vw), 30px);
+    height: clamp(22px, calc(14.188px + 2.0833vw), 30px);
+    right: clamp(14px, calc(.328px + 3.6458vw), 28px);
+    bottom: clamp(14px, calc(.328px + 3.6458vw), 28px);
+    font-size: clamp(9px, calc(6.070px + .7813vw), 12px);
+    border-width: 1px;
+  }
+
+  .top-button:hover {
+    font-size: clamp(9px, calc(6.070px + .7813vw), 12px);
+  }
+}
+
+
+/* =========================================================
+   2026-09-15 MICRO FINAL FIX
+   1) 네이버 출고 후기 자동차 아이콘: 화면 축소 시 위치가 내려가거나 올라가지 않도록
+      창 아이콘과 같은 grid cell에 겹쳐서 고정
+   2) TOP 버튼: 기본 button padding/baseline 영향을 제거하고 화살표를 항상 정중앙 배치
+========================================================= */
+
+/* ---------------------------------------------------------
+   TOP 버튼 정중앙 고정
+   - 버튼 크기는 기존 반응형 clamp 그대로 사용
+   - padding / line-height / inline baseline을 제거해 화살표가 우측으로 치우치지 않게 함
+--------------------------------------------------------- */
+@media screen and (max-width: 1440px) {
+  .top-button,
+  .top-button:hover {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .top-button > i,
+  .top-button:hover > i {
+    display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    transform: none;
+  }
+}
+

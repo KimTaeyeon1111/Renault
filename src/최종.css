@@ -1,7 +1,6 @@
 /* =========================================================
    기본
 ========================================================= */
-
 body {
   margin: 0;
   padding: 0;
@@ -25,7 +24,6 @@ img {
 /* =========================================================
    Swiper
 ========================================================= */
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -50,7 +48,6 @@ img {
 /* =========================================================
    올라가기 버튼
 ========================================================= */
-
 .top-button {
   position: fixed;
   right: 40px;
@@ -67,11 +64,7 @@ img {
   transition: all 0.4s ease;
 }
 
-.top-button.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
+.top-button.show {opacity: 1; visibility: visible; transform: translateY(0);}
 
 .top-button:hover {
   transition: all 0.3s ease;
@@ -86,17 +79,12 @@ img {
 /* =========================================================
    Main
 ========================================================= */
-
-.mainPage {
-  width: 100%;
-  height: auto;
-}
+.mainPage {width: 100%; height: auto;}
 
 
 /* =========================================================
    Header
 ========================================================= */
-
 .mainPage_header_all {
   width: 100%;
   display: flex;
@@ -133,7 +121,6 @@ img {
 /* =========================================================
    Header Left
 ========================================================= */
-
 .mainPage_banner_content_left_box {
   width: 100%;
   max-width: 1600px;
@@ -148,11 +135,7 @@ img {
   z-index: 100;
 }
 
-.mainPage_banner_content_header {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-}
+.mainPage_banner_content_header {display: flex; justify-content: center; align-self: center;}
 
 .main_navbar_menu {width: 100%; margin-left: auto; position: relative; top: 0; left: 0; z-index: 101;}
 
@@ -209,16 +192,12 @@ img {
 .navbar_arkana:active,
 .navbar_koleos:focus,
 .navbar_filante:focus,
-.navbar_arkana:focus {
-  color: #fff !important;
-  text-shadow: none !important;
-}
+.navbar_arkana:focus {color: #fff !important; text-shadow: none !important;}
 
 
 /* =========================================================
    Header Right
 ========================================================= */
-
 .mainPage_banner_content_right_box {
   width: 100%;
   display: flex;
@@ -239,7 +218,6 @@ img {
 
 
 /* 2025 호남권 1등 */
-
 .mainPage_banner_content_right_box_content_p1 {
   position: relative;
   display: block;
@@ -278,28 +256,14 @@ img {
 
 
 /* 광주갤러리 */
-
-.mainPage_banner_content_right_box_content_p2 {
-  font-size: clamp(12px, 6vw, 31px);
-  margin-bottom: 100px;
-}
-
+.mainPage_banner_content_right_box_content_p2 {font-size: clamp(12px, 6vw, 31px); margin-bottom: 100px;}
 
 /* 박진영 */
-
-.mainPage_banner_content_right_box_content_p3 {
-  font-size: clamp(75px, 8vw, 130px);
-  margin-bottom: 90px;
-}
-
+.mainPage_banner_content_right_box_content_p3 {font-size: clamp(75px, 8vw, 130px); margin-bottom: 90px;}
 
 /* 전화번호 */
 
-.mainPage_banner_content_right_box_content_p4 {
- font-size: clamp(24px, 6vw, 38px);
-  margin-bottom: 60px;
-}
-
+.mainPage_banner_content_right_box_content_p4 {font-size: clamp(24px, 6vw, 38px); margin-bottom: 60px;}
 
 /* 아이콘 */
 
@@ -310,41 +274,21 @@ img {
 
 
 /* 애니메이션 */
-
 .mainPage_banner_content_right_box_content_p1,
 .mainPage_banner_content_right_box_content_p2,
 .mainPage_banner_content_right_box_content_p3,
 .mainPage_banner_content_right_box_content_p4,
-.mainPage_banner_content_right_box_content_p5 {
-  opacity: 0;
-  animation: rightSlide 1s ease-out forwards;
-}
+.mainPage_banner_content_right_box_content_p5 {opacity: 0; animation: rightSlide 1s ease-out forwards;}
 
-.mainPage_banner_content_right_box_content_p1 {
-  animation-delay: 0.2s;
-}
-
-.mainPage_banner_content_right_box_content_p2 {
-  animation-delay: 0.4s;
-}
-
-.mainPage_banner_content_right_box_content_p3 {
-  animation-delay: 0.6s;
-}
-
-.mainPage_banner_content_right_box_content_p4 {
-  animation-delay: 0.8s;
-}
-
-.mainPage_banner_content_right_box_content_p5 {
-  animation-delay: 1s;
-}
-
+.mainPage_banner_content_right_box_content_p1 {animation-delay: 0.2s;}
+.mainPage_banner_content_right_box_content_p2 {animation-delay: 0.4s;}
+.mainPage_banner_content_right_box_content_p3 {animation-delay: 0.6s;}
+.mainPage_banner_content_right_box_content_p4 {animation-delay: 0.8s;}
+.mainPage_banner_content_right_box_content_p5 {animation-delay: 1s;}
 
 /* =========================================================
    우측 슬라이드
 ========================================================= */
-
 @keyframes rightSlide {
   0% {
     opacity: 0;
@@ -357,14 +301,10 @@ img {
   }
 }
 
-
 /* =========================================================
    휴대폰 진동
 ========================================================= */
-
-.mainPage_banner_content_right_box_content_number:hover i {
-  animation: phone 0.3s ease-in-out infinite;
-}
+.mainPage_banner_content_right_box_content_number:hover i {animation: phone 0.3s ease-in-out infinite;}
 
 @keyframes phone {
   0% {
@@ -392,7 +332,6 @@ img {
 /* =========================================================
    SNS 아이콘
 ========================================================= */
-
 .mainPage_banner_content_right_box_social {
   width: 300px;
   height: 59px;
@@ -402,9 +341,7 @@ img {
   float: right;
 }
 
-.mainPage_banner_content_right_box_social a {
-  text-decoration: none;
-}
+.mainPage_banner_content_right_box_social a {text-decoration: none;}
 
 .mainPage_banner_content_right_box_social i {
   width: 51px;
@@ -414,35 +351,16 @@ img {
   align-items: center;
 }
 
-.mainPage_banner_content_right_box_social a:nth-child(1) i {
-  font-size:46px;
-}
-
-.mainPage_banner_content_right_box_social a:nth-child(2) i {
-  font-size: 37px;
-  color: rgb(94, 56, 0);
-}
-
-.mainPage_banner_content_right_box_social a:nth-child(3) i {
-  font-size: 43px;
-  color: red;
-}
-
-.mainPage_banner_content_right_box_social a:nth-child(4) i {
-  font-size: 45px;
-  color: rgb(39, 156, 39);
-}
-
-.mainPage_banner_content_right_box_social i:hover {
-  transition: all 0.3s ease;
-  color: #ffffff;
-}
+.mainPage_banner_content_right_box_social a:nth-child(1) i {font-size:46px;}
+.mainPage_banner_content_right_box_social a:nth-child(2) i {font-size: 37px; color: rgb(94, 56, 0);}
+.mainPage_banner_content_right_box_social a:nth-child(3) i {font-size: 43px; color: red;}
+.mainPage_banner_content_right_box_social a:nth-child(4) i {font-size: 45px; color: rgb(39, 156, 39);}
+.mainPage_banner_content_right_box_social i:hover {transition: all 0.3s ease; color: #ffffff;}
 
 
 /* =========================================================
    인스타그램
 ========================================================= */
-
 .fa-instagram {
   background: linear-gradient(
     45deg,
@@ -452,7 +370,6 @@ img {
     #962fbf,
     #4f5bd5
   );
-
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -471,32 +388,16 @@ img {
   color: transparent;
 }
 
-
 /* =========================================================
    Slide ALL
 ========================================================= */
-
-.slide_section_all {
-  width: 100%;
-  height: 2133px;
-  display: flex;
-  justify-content: center;
-}
-
-.slide_section {
-  width: 1600px;
-  position: relative;
-}
-
-.slide_section span {
-  color: blue;
-}
-
+.slide_section_all {width: 100%; height: 2133px; display: flex; justify-content: center;}
+.slide_section {width: 1600px; position: relative;}
+.slide_section span {color: blue;}
 
 /* =========================================================
    배너
 ========================================================= */
-
 .slide_section_koleos {
   width: 1600px;
   height: 167px;
@@ -505,7 +406,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 .slide_section_koleos_box {
   width: 417px;
   height: 100px;
@@ -513,18 +413,10 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-.slide_section_koleos_box img {
-  width: 1412px;
-}
+.slide_section_koleos_box img {width: 1412px;}
 
 
-.slide_section_filante_banner {
-  width: 1600px;
-  height: 167px;
-  position: relative;
-}
-
+.slide_section_filante_banner {width: 1600px; height: 167px; position: relative;}
 .slide_section_filante {
   width: 1600px;
   height: 167px;
@@ -533,7 +425,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 .slide_section_filante_box {
   width: 417px;
   height: 100px;
@@ -541,10 +432,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-.slide_section_filante_box img {
-  width: 1412px;
-}
+.slide_section_filante_box img {width: 1412px;}
 
 /* .slide_section_filante_box_Rassure_box {
   width: 667px;
@@ -572,7 +460,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 .slide_section_arkana_box {
   width: 417px;
   height: 100px;
@@ -580,10 +467,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-.slide_section_arkana_box img {
-  width: 1412px;
-}
+.slide_section_arkana_box img {width: 1412px;}
 
 
 /* =========================================================
@@ -1186,8 +1070,6 @@ mark {
 }
 
 .mainPage_footer_right_p_br {display: none;}
-
-/* Copyright */
 
 .mainPage_footer_bottom_box_right_content_box .footer_title i {
   margin: 0 4px;
