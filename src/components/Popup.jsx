@@ -222,6 +222,7 @@ function Popup() {
             href={popupLinks[activeSlide]}
             target="_blank"
             rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
           >
             <button className="popup_footer_more">
                 더 알아보기

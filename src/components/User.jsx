@@ -1,14 +1,23 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import react, { useLayoutEffect } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./User.css";
 
 const img = (name) => `${import.meta.env.BASE_URL}img/${name}`;
 
 function User() {
-  const navigate = useNavigate();
+   const navigate = useNavigate();
 
-  const goHome = () => navigate("/");
+    useLayoutEffect(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant",
+      });
+    }, []);
+
+    const goHome = () => navigate("/");
 
   return (
     <div className="rkmUserCardPage">

@@ -136,7 +136,7 @@ function App() {
                     <Nav.Link href="#FILANTE" className="navbar_filante">
                       필랑트
                     </Nav.Link>
-
+ 
                     <Nav.Link href="#ARKANA" className="navbar_arkana">
                       아르카나
                     </Nav.Link>
