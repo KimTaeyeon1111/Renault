@@ -1,19 +1,138 @@
-.popup_overlay {position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgb(0, 0, 0, 0.2); display: flex; justify-content: center; align-items: center; z-index: 100;}
-.popup {position: relative; width: 500px; overflow: hidden; box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6); border-radius: 20px;}
-.popup_top {width: 500px; height: 60px; background-color: #f0f0f0;}
-.popup_close {position: absolute; top: 11px; right: 13px; border: none; background: none; color: #888888; cursor: pointer; font-size: 25px;}
-.popup_close:hover {color: #000;}
+/* =========================================================
+POPUP RESPONSIVE
+========================================================= */
 
-.popup_content {width: 500px; height: 390px;}
-.popup_content img {width: 500px;}
+.popup_overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    z-index: 100;
+}
 
-.popup_footer {display: flex;}
-.popup_footer button {flex: 1; height: 60px; border: none; font-size: 14px; font-weight: 500;}
-.popup_footer button a {color: #444; text-decoration: none;}
+
+/* =========================================================
+1920 ~ 1024px
+========================================================= */
+.popup {
+    position: relative;
+    width: clamp(210px, 52vw, 500px);
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: clamp(12px, 2.2vw, 20px);
+    background: #f0f0f0;
+    box-shadow:
+    4px 8px 18px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+TOP
+========================================================= */
+
+.popup_top {position: relative; width: 100%; height: clamp(34px, 6vw, 60px); background-color: #f0f0f0;}
+.popup_close {
+    position: absolute;
+    top: 50%;
+    right: clamp(8px, 1.7vw, 14px);
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    color: #888888;
+    cursor: pointer;
+    font-size: clamp(16px, 2.7vw, 25px);
+    line-height: 1;
+}
+.popup_close:hover {color: #000000;}
+
+
+/* =========================================================
+POPUP SWIPER
+========================================================= */
+.popup_content {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 500 / 390;
+    overflow: hidden;
+    background: #000000;
+}
+.popupSwiper,
+.popupSwiper .swiper-wrapper,
+.popupSwiper .swiper-slide {width: 100%; height: 100%;}
+.popup_content img {display: block; width: 100%; height: 100%; object-fit: cover;}
+
+
+/* =========================================================
+FOOTER
+========================================================= */
+.popup_footer {width: 100%; display: flex; background-color: #f0f0f0;}
+.popup_footer > a {flex: 1 1 50%; min-width: 0; display: flex;}
+.popup_footer button {
+    flex: 1 1 50%;
+    width: 100%;
+    height: clamp(38px, 6.5vw, 60px);
+    margin: 0;
+    padding: 0 5px;
+    border: 0;
+    background-color: #f0f0f0;
+    color: #444444;
+    font-size: clamp(10px, 1.8vw, 14px);
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
 .popup_footer button:hover {background-color: #c9c9c9;}
-.popup_footer_more {color: #444; border-right: 1px solid #d3d3d3 !important; width: 250px;}
-.popup_footer_hideToday {color: #444;}
+.popup_footer_more {border-right: 1px solid #d3d3d3 !important;}
+.popup_footer_hideToday {color: #444444;}
 
+
+/* =========================================================
+PAGINATION
+========================================================= */
 .popupSwiper .swiper-pagination {margin-bottom: -5px;}
-.popupSwiper .swiper-pagination-bullet {width: 30px; height: 4px; border-radius: 0; opacity: 30%; background: #fff;}
-.popupSwiper .swiper-pagination-bullet-active {background: #fff; opacity: 80%;}
+.popupSwiper .swiper-pagination-bullet {width: clamp(15px, 3vw, 30px); height: clamp(2px, 0.45vw, 4px); border-radius: 0; opacity: 0.3; background: #ffffff;}
+.popupSwiper .swiper-pagination-bullet-active {background: #ffffff; opacity: 0.8;}
+
+/* =========================================================
+ 768px
+========================================================= */
+@media screen and (max-width: 768px) {
+    .popup {width: clamp(230px, 56vw, 360px);}
+}
+
+
+/* =========================================================
+모바일 L / M 사이즈
+========================================================= */
+@media screen and (max-width: 425px) {
+    .popup_overlay {padding: 10px;}
+    .popup {width: clamp(210px, 62vw, 265px); border-radius: 13px;}
+    .popup_top {height: 34px;}
+    .popup_close {right: 8px; font-size: 16px;}
+    .popup_footer button {height: 38px; font-size: 10px;}
+    .popupSwiper .swiper-pagination-bullet {width: 16px; height: 2px;}
+}
+
+/* =========================================================
+375px 이하
+========================================================= */
+@media screen and (max-width: 375px) {
+    .popup {width: clamp(205px, 61vw, 230px);}
+    .popup_top {height: 32px;}
+    .popup_footer button {height: 36px; font-size: 9.5px;}
+    .popup_close {font-size: 15px;}
+}
