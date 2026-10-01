@@ -291,17 +291,17 @@ function App() {
                   </p>
 
                   <p className='mainPage_slide_1_right_content_p koleos_paddingBottom'>
-                    ~ 26.03 생산차량 - <span>300만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
+                    ~ 26.04 생산차량 - <span>300만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
                   <p className='mainPage_slide_1_bonus_line'><span>+ 엔진오일세트 7회</span> 무상 교체 + <span>150만 원 할인</span></p>
                   
 
                   <p className='mainPage_slide_1_right_content_p'>
-                    26.04 ~ 06 생산차량 - <span>200만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
+                    26.05 ~ 07 생산차량 - <span>200만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
                   <p className='mainPage_slide_1_bonus_line'><span>+ 엔진오일세트 7회</span> 무상 교체 + <span>50만 원 할인</span></p>
                   
 
                   <p className='mainPage_slide_1_right_content_p'>
-                    26.07 ~ 08 생산차량 - <span>150만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
+                    26.08 생산차량 - <span>150만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
                   <p className='mainPage_slide_1_bonus_line mainPage_slide_1_bonus_line_last'><span>+ 엔진오일세트 7회</span> 무상 교체</p>
                   
 
@@ -349,7 +349,7 @@ function App() {
 
                   <p className='mainPage_slide_1_right_content_p slide_1_right_content_p_2'>
 
-                    <strong className='mainPage_slide_1_right_content_strong slide_1_right_strong'>표준형 </strong> ~36개월 <span> 3.7%</span>, 37~60개월 <span>4.9%</span>, 61~72개월 <span>5.9%</span>
+                    <strong className='mainPage_slide_1_right_content_strong slide_1_right_strong'>표준형 </strong> ~36개월 <span> 3.7%</span>, 37~60개월 <span>4.4%</span>, 61~72개월 <span>5.9%</span>
 
                   </p>
 
@@ -361,7 +361,11 @@ function App() {
 
                   <p className='mainPage_slide_1_right_content_p slide_1_right_content_p_2'>
                     <br />
-                    3개월 무이자 할부!
+                    3개월 무이자 할부! 
+                  </p>
+                  <p className='mainPage_slide_1_right_content_p slide_1_right_content_p_2'>
+                    <br />
+                    ※ 잔가 보장 할부 시 엔진오일세트 5회 무상 교체권 증정
                   </p>
 
                 </div>
@@ -421,15 +425,15 @@ function App() {
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p'>
-                    ~ 26.03 생산차량 - <span>기본 150만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만원 할인</span>
+                    ~ 26.04 생산차량 - <span>기본 150만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만원 할인</span>
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p'>
-                    26.04 생산차량 - <span>기본 100만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만 원 할인</span> 
+                    26.05 ~ 07 생산차량 - <span>기본 100만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만 원 할인</span> 
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p'>
-                    26.05 생산차량 - <span>기본 70만 원 할인</span>
+                    26.08 생산차량 - <span>기본 70만 원 할인</span>
                   </p>
 
                   <p className='mainPage_slide_2_left_content_strong slide_2_left_strong'>
@@ -474,7 +478,7 @@ function App() {
                     ~36개월
                     <span> 3.7%</span>,
                     37~60개월
-                    <span> 4.9%</span>,
+                    <span> 4.4%</span>,
                     61~72개월
                     <span> 5.9%</span>
 
@@ -490,6 +494,10 @@ function App() {
                   <p className='mainPage_slide_2_left_content_p slide_2_left_content_p_2'>
                     <br />
                     3개월 무이자 할부!
+                  </p>
+                  <p className='mainPage_slide_2_left_content_p slide_2_left_content_p_2'>
+                    <br />
+                    ※ 잔가 보장 할부 시 엔진오일세트 5회 무상 교체권 증정
                   </p>
 
                 </div>
@@ -548,7 +556,7 @@ function App() {
           </div>
 
 
-          <div className='mainPage_slide_2_left_content_comment_2'>
+          {/* <div className='mainPage_slide_2_left_content_comment_2'>
 
             <p>
               <mark>
@@ -556,7 +564,7 @@ function App() {
               </mark>
             </p>
 
-          </div>
+          </div> */}
 
 
           {/* =====================================================
@@ -612,11 +620,11 @@ function App() {
                   </p>
 
                   <p className='mainPage_slide_3_right_content_p'>
-                    가솔린 - <span>200만 원 할인</span>
+                    가솔린 - <span>100만 원 할인</span>
                   </p>
 
                   <p className='mainPage_slide_3_right_content_p'>
-                    하이브리드 - <span>300만 원 할인</span>
+                    하이브리드 - <span>500만 원 할인</span>
                   </p>
 
                   <p className='mainPage_slide_3_right_content_strong slide_3_right_strong'>
@@ -644,7 +652,7 @@ function App() {
                   </p>
 
                   <p className='mainPage_slide_3_right_content_p mainPage_slide_3_right_content_p_responsive'>
-                    하이브리드 -<span> 50만 원 할인!</span>
+                    하이브리드 -<span> 500만 원 할인!</span>
                   </p>
 
                   <hr />
