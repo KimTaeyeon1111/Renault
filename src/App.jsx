@@ -361,11 +361,7 @@ function App() {
 
                   <p className='mainPage_slide_1_right_content_p slide_1_right_content_p_2'>
                     <br />
-                    3개월 무이자 할부! 
-                  </p>
-                  <p className='mainPage_slide_1_right_content_p slide_1_right_content_p_2'>
-                    <br />
-                    ※ 잔가 보장 할부 시 엔진오일세트 5회 무상 교체권 증정
+                    3개월 무이자 할부! <span style={{ color: 'red' }}>※ 잔가 보장 할부 시 엔진오일세트 5회 무상 교체권 증정</span>
                   </p>
 
                 </div>
@@ -433,7 +429,7 @@ function App() {
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p'>
-                    26.08 생산차량 - <span>기본 70만 원 할인</span>
+                    26.08 생산차량 - <span>기본 70만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만 원 할인</span>
                   </p>
 
                   <p className='mainPage_slide_2_left_content_strong slide_2_left_strong'>
@@ -493,11 +489,7 @@ function App() {
 
                   <p className='mainPage_slide_2_left_content_p slide_2_left_content_p_2'>
                     <br />
-                    3개월 무이자 할부!
-                  </p>
-                  <p className='mainPage_slide_2_left_content_p slide_2_left_content_p_2'>
-                    <br />
-                    ※ 잔가 보장 할부 시 엔진오일세트 5회 무상 교체권 증정
+                    3개월 무이자 할부! <span style={{ color: 'red' }}>※ 잔가 보장 할부 시 엔진오일세트 5회 무상 교체권 증정</span>
                   </p>
 
                 </div>
