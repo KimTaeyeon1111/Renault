@@ -39,6 +39,7 @@ function Popup() {
   const popupLinks = [
     "https://blog.naver.com/rkmgjgl/224399921133",
     "https://blog.naver.com/rkmgjgl/224397516294",
+    "https://blog.naver.com/rkmgjgl/224442581835",
   ];
 
 
@@ -178,11 +179,11 @@ function Popup() {
                 1번 슬라이드
             ========================= */}
 
-            <SwiperSlide>
+             <SwiperSlide>
 
               <img
-                src={img("popup_ex2.png")}
-                alt="팝업 시승 방문 이벤트"
+                src={img("popup_ex3.png")}
+                alt="잠실 더 라스트 이닝 by 르노 티켓 증정 이벤트"
               />
 
             </SwiperSlide>
@@ -193,7 +194,21 @@ function Popup() {
                 2번 슬라이드
             ========================= */}
 
-            <SwiperSlide>
+           <SwiperSlide>
+
+              <img
+                src={img("popup_ex2.png")}
+                alt="팝업 시승 방문 이벤트"
+              />
+
+            </SwiperSlide>
+
+
+            {/* =========================
+                3번 슬라이드
+            ========================= */}
+
+             <SwiperSlide>
 
               <img
                 src={img("popup_ex1.png")}

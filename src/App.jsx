@@ -361,7 +361,7 @@ function App() {
 
                   <p className='mainPage_slide_1_right_content_p slide_1_right_content_p_2'>
                     <br />
-                    3개월 무이자 할부! <span style={{ color: 'red' }}>※ 잔가 보장 할부 시 엔진오일세트 5회 무상 교체권 증정</span>
+                    <strong className='mainPage_slide_1_right_content_strong slide_1_right_strong'>삼성카드로 선수금 결제 시</strong> ~36개월 <span>2.99%</span>, 37~60개월 <span>3.89%</span>
                   </p>
 
                 </div>
@@ -378,6 +378,9 @@ function App() {
             <p>
               <mark>
                 * 혜택 가족 : 본인 / 배우자 / 자녀 / 자녀의 배우자 / 부모 / 배우자의 부모
+              </mark> <br />
+              <mark>
+                * 잔가 보장 할부 시 엔진오일 세트 5회 무상 교체권 증정
               </mark>
             </p>
 
@@ -489,7 +492,7 @@ function App() {
 
                   <p className='mainPage_slide_2_left_content_p slide_2_left_content_p_2'>
                     <br />
-                    3개월 무이자 할부! <span style={{ color: 'red' }}>※ 잔가 보장 할부 시 엔진오일세트 5회 무상 교체권 증정</span>
+                    <strong className='mainPage_slide_2_left_content_strong slide_2_left_strong slide_2_left_strong_1'>삼성카드로 선수금 결제 시</strong> ~36개월 <span>2.99%</span>, 37~60개월 <span>3.89%</span>
                   </p>
 
                 </div>
@@ -542,6 +545,9 @@ function App() {
             <p>
               <mark>
                 * 혜택 가족 : 본인 / 배우자 / 자녀 / 자녀의 배우자 / 부모 / 배우자의 부모
+              </mark> <br />
+              <mark>
+                * 잔가 보장 할부 시 엔진오일 세트 5회 무상 교체권 증정 
               </mark>
             </p>
 
