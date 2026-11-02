@@ -37,9 +37,9 @@ function Popup() {
   ========================= */
 
   const popupLinks = [
+    "https://blog.naver.com/rkmgjgl/224462113096",
     "https://blog.naver.com/rkmgjgl/224399921133",
     "https://blog.naver.com/rkmgjgl/224397516294",
-    "https://blog.naver.com/rkmgjgl/224442581835",
   ];
 
 
@@ -183,7 +183,7 @@ function Popup() {
 
               <img
                 src={img("popup_ex3.png")}
-                alt="잠실 더 라스트 이닝 by 르노 티켓 증정 이벤트"
+                alt="필랑트 누아르(블랙) 에디션 출시! 1,000대 한정"
               />
 
             </SwiperSlide>
