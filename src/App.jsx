@@ -291,17 +291,17 @@ function App() {
                   </p>
 
                   <p className='mainPage_slide_1_right_content_p koleos_paddingBottom'>
-                    ~ 26.04 생산차량 - <span>300만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
+                    ~ 26.05 생산차량 - <span>300만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
                   <p className='mainPage_slide_1_bonus_line'><span>+ 엔진오일세트 7회</span> 무상 교체 + <span>150만 원 할인</span></p>
                   
 
                   <p className='mainPage_slide_1_right_content_p'>
-                    26.05 ~ 07 생산차량 - <span>200만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
+                    26.06 ~ 08 생산차량 - <span>200만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
                   <p className='mainPage_slide_1_bonus_line'><span>+ 엔진오일세트 7회</span> 무상 교체 + <span>50만 원 할인</span></p>
                   
 
                   <p className='mainPage_slide_1_right_content_p'>
-                    26.08 생산차량 - <span>150만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
+                    26.09 생산차량 - <span>150만 원 기본 할인 or 7년/14만km 무상 보증 연장</span></p>
                   <p className='mainPage_slide_1_bonus_line mainPage_slide_1_bonus_line_last'><span>+ 엔진오일세트 7회</span> 무상 교체</p>
                   
 
@@ -327,7 +327,7 @@ function App() {
                   </p>
                   
                   <p className='mainPage_slide_1_right_content_strong slide_1_right_strong'>
-                    노후차 5년 보유고객 <span>50만 원 할인!</span>
+                    노후차 5년 보유고객 <span>20만 원 할인!</span>
                   </p>
 
                   <p className='mainPage_slide_1_right_content_p mainPage_slide_1_right_content_p_responsive'>
@@ -349,19 +349,21 @@ function App() {
 
                   <p className='mainPage_slide_1_right_content_p slide_1_right_content_p_2'>
 
-                    <strong className='mainPage_slide_1_right_content_strong slide_1_right_strong'>표준형 </strong> ~36개월 <span> 3.7%</span>, 37~60개월 <span>4.4%</span>, 61~72개월 <span>5.9%</span>
+                    <strong className='mainPage_slide_1_right_content_strong slide_1_right_strong'>26년식 할부 표준형 </strong> ~72개월 <span> 3.7%</span>
 
+                  </p>
+                  
+
+                  <p className='mainPage_slide_1_right_content_p slide_1_right_content_p_2'>
+                    <br />
+                    <strong className='mainPage_slide_1_right_content_strong slide_1_right_strong'>표준형 카드 할부 </strong> 
+                    <span> 3.5%</span>
+                    
                   </p>
 
                   <p className='mainPage_slide_1_right_content_p slide_1_right_content_p_2'>
                     <br />
-                    <strong className='mainPage_slide_1_right_content_strong slide_1_right_strong'>표준형 카드 할부 </strong>
-                    <span>최저 3.5%</span>
-                  </p>
-
-                  <p className='mainPage_slide_1_right_content_p slide_1_right_content_p_2'>
-                    <br />
-                    <strong className='mainPage_slide_1_right_content_strong slide_1_right_strong'>삼성카드로 선수금 결제 시</strong> ~36개월 <span>2.99%</span>, 37~60개월 <span>3.89%</span>
+                    <strong className='mainPage_slide_1_right_content_strong slide_1_right_strong'>삼성카드로 선수금 결제 시</strong> 최저 <span>2.79%</span>
                   </p>
 
                 </div>
@@ -424,15 +426,15 @@ function App() {
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p'>
-                    ~ 26.04 생산차량 - <span>기본 150만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만원 할인</span>
+                    ~ 26.05 생산차량 - <span>250만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만원 할인</span>
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p'>
-                    26.05 ~ 07 생산차량 - <span>기본 100만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만 원 할인</span> 
+                    26.06 ~ 08 생산차량 - <span>150만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만 원 할인</span> 
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p'>
-                    26.08 생산차량 - <span>기본 70만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만 원 할인</span>
+                    26.09 생산차량 - <span>100만 원 할인 + 전동 선쉐이드 무상 장착 or 용품비 50만 원 할인</span>
                   </p>
 
                   <p className='mainPage_slide_2_left_content_strong slide_2_left_strong'>
@@ -452,7 +454,7 @@ function App() {
                   </p>
 
                   <p className='mainPage_slide_2_left_content_strong slide_2_left_strong'>
-                    노후차 5년 보유고객 <span>50만 원 할인!</span>
+                    노후차 5년 보유고객 <span>20만 원 할인!</span>
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p mainPage_slide_2_left_content_p_responsive'>
@@ -473,26 +475,22 @@ function App() {
 
                   <p className='mainPage_slide_2_left_content_p slide_2_left_content_p_2'>
 
-                    <strong className='mainPage_slide_2_left_content_strong slide_2_left_strong slide_2_left_strong_1'>표준형 </strong>
-                    ~36개월
-                    <span> 3.7%</span>,
-                    37~60개월
-                    <span> 4.4%</span>,
-                    61~72개월
-                    <span> 5.9%</span>
+                    <strong className='mainPage_slide_2_left_content_strong slide_2_left_strong slide_2_left_strong_1'>할부 표준형 </strong>
+                    ~72개월
+                    <span> 3.7%</span>
 
                   </p>
 
                   <p className='mainPage_slide_2_left_content_p slide_2_left_content_p_2'>
                     <br />
                     <strong className='mainPage_slide_2_left_content_strong slide_2_left_strong slide_2_left_strong_1'>표준형 카드 할부 </strong>
-                    <span>최저 3.5%</span>
+                    <span>3.5%</span>
                   </p>
 
 
                   <p className='mainPage_slide_2_left_content_p slide_2_left_content_p_2'>
                     <br />
-                    <strong className='mainPage_slide_2_left_content_strong slide_2_left_strong slide_2_left_strong_1'>삼성카드로 선수금 결제 시</strong> ~36개월 <span>2.99%</span>, 37~60개월 <span>3.89%</span>
+                    <strong className='mainPage_slide_2_left_content_strong slide_2_left_strong slide_2_left_strong_1'>삼성카드로 선수금 결제 시</strong> 최저 <span>2.79%</span>
                   </p>
 
                 </div>
@@ -621,10 +619,6 @@ function App() {
                     가솔린 - <span>100만 원 할인</span>
                   </p>
 
-                  <p className='mainPage_slide_3_right_content_p'>
-                    하이브리드 - <span>500만 원 할인</span>
-                  </p>
-
                   <p className='mainPage_slide_3_right_content_strong slide_3_right_strong'>
                     재구매<span> 50만 원 or 100만 원 할인!</span>
                   </p>
@@ -647,10 +641,6 @@ function App() {
 
                   <p className='mainPage_slide_3_right_content_p'>
                     가솔린 -<span> 100만 원 할인!</span>
-                  </p>
-
-                  <p className='mainPage_slide_3_right_content_p mainPage_slide_3_right_content_p_responsive'>
-                    하이브리드 -<span> 500만 원 할인!</span>
                   </p>
 
                   <hr />
